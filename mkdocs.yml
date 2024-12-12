@@ -1,0 +1,53 @@
+site_name: TidyBot++ Docs
+site_url: http://tidybot2.github.io/docs  # Social cards
+site_description: "TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning"  # Social cards
+copyright: Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+extra:
+  analytics:
+    provider: google
+    property: G-NBGQBQD9W5
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+markdown_extensions:
+  - admonition  # Call-outs
+  - attr_list  # Images
+  - md_in_html  # Images
+  - pymdownx.blocks.html  # Wrap Markdown tables with HTML
+  - pymdownx.details  # Collapsible call-outs
+  - pymdownx.snippets:  # Include other files
+      base_path: docs/snippets
+  - pymdownx.superfences:  # Nested fences
+      custom_fences:  # Diagrams
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:  # Content tabs
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+nav:
+  - index.md
+  - bom.md
+  - caster-modules.md
+  - power-system.md
+  - can-system.md
+  - frame.md
+  - integration.md
+  - arm-mounting.md
+  - software.md
+  - usage.md
+plugins:
+  - glightbox  # Image zoom
+  - search
+  - social  # Social cards
+repo_name: tidybot2
+repo_url: https://github.com/jimmyyhwu/tidybot2
+theme:
+  name: material
+  features:
+    - content.code.copy  # Code copy button
+    - content.tabs.link  # Linked content tabs
+    - navigation.footer  # "Previous" and "Next" footer buttons
