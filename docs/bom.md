@@ -244,12 +244,13 @@ We also provide the BOM for each reference design in a spreadsheet format:
 | Hex key set<br>![](images/bom/parts/51Wq4dxttoL._AC_SL1000_.jpg) | $31.19<br>[[Amazon](https://www.amazon.com/Bondhus-20199-Balldriver-L-Wrench-1-5-10mm/dp/B00012Y38W)] | 1 | $31.19 | |
 | Phillips screwdriver (#1)<br>![](images/bom/parts/51OcfR9Va1L._AC_SL1500_.jpg) | | 1 | | For encoder assembly |
 | Torx screwdriver (T9, T10)<br>![](images/bom/parts/712McDbizyL._AC_SL1200_.jpg) | | 1 | | For motor assembly |
+| Pliers<br>![](images/bom/parts/71ZCr0TQKtL._AC_SL1500_.jpg) | | 1 | | For caster module assembly |
 | Socket wrench set<br>![](images/bom/parts/9154f8zK31L._AC_SL1500_.jpg) | | 1 | | For power system assembly |
 | Loctite 609 retaining compound<br>![](images/bom/parts/51dnvEw7vKL._SL1000_.jpg) | $16.05<br>[[Amazon](https://www.amazon.com/Genuine-Loctite-Retaining-Compound-General/dp/B07BCDYD2C)] | 1 | $16.05 | For caster module assembly |
 | Loctite 243 threadlocker<br>![](images/bom/parts/51erfFRhloL._SL1500_.jpg) | $16.42<br>[[Amazon](https://www.amazon.com/Loctite-1329467-Medium-Strength-Threadlockers/dp/B009I2UC3Q)] | 1 | $16.42 | For caster module assembly |
 | White lithium grease<br>![](images/bom/parts/51hKLfS1xJL._AC_SL1000_.jpg) | $7.99<br>[[Amazon](https://www.amazon.com/Lucas-Oil-Products-LUC10533-Lithium/dp/B06XSYB7VL)] | 1 | $7.99 | For lubricating caster module gears |
 | Wire stripper<br>![](images/bom/parts/61Svsk9jkaL._AC_SL1500_.jpg) | $10.99<br>[[Amazon](https://www.amazon.com/VISE-GRIP-Stripping-Cutter-8-Inch-2078309/dp/B000JNNWQ2)] | 1 | $10.99 | For encoder power cables (22 AWG solid) |
-| Large gauge wire stripper<br>![](images/bom/parts/71HmuSVKD4L._SL1500_.jpg) | $12.14<br>[[Amazon](https://www.amazon.com/Southwire-Equipment-S612STR-Ergonomic-Stripper/dp/B00N4TW2BE)] | 1 | $12.14 | For motor power cables (10 AWG stranded) |
+| Large-gauge wire stripper<br>![](images/bom/parts/71HmuSVKD4L._SL1500_.jpg) | $12.14<br>[[Amazon](https://www.amazon.com/Southwire-Equipment-S612STR-Ergonomic-Stripper/dp/B00N4TW2BE)] | 1 | $12.14 | For motor power cables (10 AWG stranded) |
 | Electrical tape (black, red)<br>![](images/bom/parts/6613.webp) | | 1 | | For power system assembly |
 | Straightedge (50cm)<br>![](images/bom/parts/711-sl2drrL._AC_SL1500_.jpg) | | 1 | | For aligning the wheels when setting encoder magnet offsets. You can also just use an extra T-slot extrusion. |
 ///
@@ -424,7 +425,7 @@ We have verified a few camping batteries as viable substitutes. Below, we list t
 
 === "Franka"
 
-    !!! note "EcoFlow DELTA 2 Max (2048 Wh) [[Amazon](https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Optional/dp/B0C4DW17PD)]"
+    ??? note "EcoFlow DELTA 2 Max (2048 Wh) [[Amazon](https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Optional/dp/B0C4DW17PD)]"
 
         Compared to the camping battery used in our reference design, this one is much wider and requires several modifications to to incorporate:
 
@@ -460,7 +461,7 @@ We have verified a few camping batteries as viable substitutes. Below, we list t
 
 === "ARX5"
 
-    !!! note "EcoFlow RIVER 2 (256 Wh) [[Amazon](https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Charging/dp/B0CMQYK2KW)]"
+    ??? note "EcoFlow RIVER 2 (256 Wh) [[Amazon](https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Charging/dp/B0CMQYK2KW)]"
 
         This battery has lower capacity (256 Wh) compared to the one used in our reference design (288 Wh). No modifications are needed. Below are a few photos showing how it can be secured to the frame with 1 rope ratchet:
 
