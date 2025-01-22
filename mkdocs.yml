@@ -18,7 +18,11 @@ markdown_extensions:
   - pymdownx.details  # Collapsible call-outs
   - pymdownx.snippets:  # Include other files
       base_path: docs/snippets
-  - pymdownx.superfences  # Nested fences
+  - pymdownx.superfences:  # Nested fences
+      custom_fences:  # Diagrams
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:  # Content tabs
       alternate_style: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify

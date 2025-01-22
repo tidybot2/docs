@@ -8,14 +8,19 @@ This page describes how to set up the power system, which supplies power from th
 
 [Tools:](bom.md#tools)
 
-* Socket wrench with 10mm socket
-* 5/64" hex key
 * 5mm hex key
+* 5/64" hex key
+* Socket wrench with 10mm socket
 * Electrical tape
 * Zip ties
 
-Connect the power cable and 120A circuit breaker to the power distribution panel (PDP), then use electrical tape to cover any exposed connections.
-Next, install the eight 40A breakers and the 5A breaker with the [terminal spacer](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Breaker%20Terminal%20Spacer.stl).
+Assemble the power distribution panel (PDP) and power cable using the following procedure:
+
+1. Connect the power cable and 120A circuit breaker to the PDP
+2. Use electrical tape to cover any exposed connections, and use zip ties to secure the tape
+3. Install the eight 40A breakers into channels 0-3 and 12-15
+4. Install the 5A breaker into channel 4 with the [terminal spacer](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Breaker%20Terminal%20Spacer.stl)
+
 See video (4x speed):
 
 <video data-src="../videos/power-system/IMG_4764-4x.mp4#t=0.001" controls playsinline></video>
@@ -102,19 +107,19 @@ See video (4x/16x speed):
 
 !!! note
 
-    Some people may find the Wago connectors on the PDP challenging to work with.
+    Some people may find the WAGO connectors on the PDP challenging to work with.
     Here is a close-up video demonstrating their usage (2x speed):
 
     <video data-src="../videos/power-system/IMG_6687-2x.mp4#t=0.001" controls playsinline></video>
 
-    As shown in the video, the Wago operating tool should be inserted straight into the actuation slot at a slight angle to horizontal.
+    As shown in the video, the WAGO operating tool should be inserted straight into the actuation slot at a slight angle to horizontal.
     Then, the end of the tool should be pushed downwards to open the slot.
 
-    We also recommend watching this video explaining how Wago connectors work: [Wago connectors explained](https://www.youtube.com/watch?v=t-zb7j4ikHM)
+    We also recommend watching this video explaining how WAGO connectors work: [WAGO connectors explained](https://www.youtube.com/watch?v=t-zb7j4ikHM)
 
 !!! note
 
-    **Do not forcefully wiggle the Wago tool or pry the end of the tool upwards!**
+    **Do not forcefully wiggle the WAGO tool or pry the end of the tool upwards!**
     Doing so can deform the plastic housing, making the connector harder to operate in the future.
 
 !!! tip
@@ -150,9 +155,12 @@ See video (2x speed):
 
 <video data-src="../videos/power-system/IMG_6710-2x.mp4#t=0.001" controls playsinline></video>
 
-## Connecting the battery
+## Setup complete
 
-At this point, you are ready to connect the SLA battery.
+At this point, the power system setup is complete and you should be ready to connect the SLA battery.
 Make sure to double-check the polarity of all power connections (power cable, battery cable, motors, encoders) before proceeding.
-Once the battery is connected, all motors and encoders should light up, indicating they are powered on.
-For battery charging instructions, please see the [Usage](usage.md#sla-battery) page.
+Once the battery is connected, all motors and encoders should light up, indicating that they are powered on.
+
+!!! note
+
+    For battery charging instructions, please see the [Usage](usage.md#sla-battery) page.

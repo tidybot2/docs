@@ -12,7 +12,6 @@ This page will guide you through assembly of the 4 caster modules.
 
 [Tools:](bom.md#tools)
 
-* Phillips screwdriver (#1)
 * Imperial hex keys (3/16", 5/32", and 1/8")
 
 Our caster module is adapted from the [SDS MK4 swerve module](https://www.swervedrivespecialties.com/products/mk4-swerve-module?variant=47316033995053), widely used in the [FIRST robotics competition (FRC)](https://www.firstinspires.org/robotics/frc).
@@ -253,9 +252,9 @@ If the gears are too close together, gear interference will occur, preventing th
 
 [Tools:](bom.md#tools)
 
-* Large gauge wire stripper (10 AWG stranded)
 * Torx screwdriver (T9)
 * Torx screwdriver (T10)
+* Large gauge wire stripper (10 AWG stranded)
 
 Assemble the motors by connecting the power cables (red/black) and CAN bus cables (yellow/green). Then, install the terminal cover.
 See video (4x speed):
@@ -306,8 +305,8 @@ Use a large-gauge wire stripper (10 AWG stranded) to strip 3/8" (1 cm) of insula
 
 * Phillips screwdriver (#1)
 * Imperial hex keys (3/16", 5/32", and 1/8")
-* Loctite 243 threadlocker
 * Loctite 609 retaining compound
+* Loctite 243 threadlocker
 * Paper towels
 
 At this point, you should be ready to assemble the caster modules.
