@@ -223,7 +223,7 @@ We also provide the BOM for each reference design in a spreadsheet format:
 /// html | div.bom-table
 | Item | Unit Cost | Quantity | Total Cost | Notes |
 |-|-:|:-:|-:|-|
-| Rope ratchet<br>![](images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg) | $22.99<br>[[Amazon](https://www.amazon.com/VIPARSPECTRA-Retractable-Ratchet-Carabiner-Tie-Down/dp/B07Z613ZM2)] | 1 | $22.99 | For securing components to the frame to prevent movement during operation |
+| Rope ratchets<br>![](images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg) | $22.99<br>[[Amazon](https://www.amazon.com/VIPARSPECTRA-Retractable-Ratchet-Carabiner-Tie-Down/dp/B07Z613ZM2)] | 1 | $22.99 | For securing components to the frame to prevent movement during operation |
 | Cable sleeves<br>![](images/bom/parts/71t6eXtVD6L._AC_SL1500_.jpg) | $8.99<br>[[Amazon](https://www.amazon.com/Alex-Tech-25ft-Protector-Sleeving/dp/B07FW3GTXB)] | 1 | $8.99 | For organizing CAN bus cables |
 | Velcro cable ties<br>![](images/bom/parts/81cK1XA+ufL._AC_SL1500_.jpg) | $10.98<br>[[Amazon](https://www.amazon.com/VELCRO-Brand-Cable-Ties-100Pk/dp/B001E1Y5O6)] | 1 | $10.98 | |
 | Zip ties<br>![](images/bom/parts/71yHM8Ex8mL._AC_SL1500_.jpg) | $3.99<br>[[Amazon](https://www.amazon.com/Tensile-Strength-indoor-outdoor-Skalon/dp/B09PJ8L58G)] | 1 | $3.99 | |
