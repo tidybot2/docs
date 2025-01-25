@@ -203,8 +203,9 @@ If the gears are too close together, gear interference will occur, preventing th
 
     If you wish to make your own modifications to the CAD design, the original STEP files are available here:
 
-    * [Wheel Mount A.step](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20A.step)
-    * [Wheel Mount B.step](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20B.step)
+    | Wheel mount A | Wheel mount B |
+    |:-:|:-:|
+    | ![](images/caster-modules/Wheel Mount A.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20A.step)] | ![](images/caster-modules/Wheel Mount B.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20B.step)] |
 
     For 3D printing, we made the following modifications to account for printer tolerances, and then exported to STL format:
 
