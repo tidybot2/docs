@@ -239,12 +239,13 @@ We also provide the BOM for each reference design in a spreadsheet format:
 | 3D printer<br>![](images/bom/parts/91zdmEeZIGL._SL1500_.jpg) | | 1 | | We recommend using a printer from [Bambu Lab](https://bambulab.com/en-us) or [Original Prusa](https://www.prusa3d.com/) |
 | PLA filament (white)<br>![](images/bom/parts/61EgDD2cE7L._AC_SL1500_.jpg) | | 1 | | |
 | PLA filament (black)<br>![](images/bom/parts/61kT6QXpbFL._AC_SL1500_.jpg) | | 1 | | |
+| Pliers<br>![](images/bom/parts/71ZCr0TQKtL._AC_SL1500_.jpg) | | 1 | | For 3D print support removal |
+| Hook and pick set<br>![](images/bom/parts/51mwGfgk5EL._AC_SL1500_.jpg) | $8.09<br>[[Amazon](https://www.amazon.com/HARDK-Hook-Pick-Set-B/dp/B07JYWND74)] | 1 | $8.09 | For 3D print support removal |
 | Imperial hex T-handles<br>![](images/bom/parts/71c5dqdlzKL._AC_SL1500_.jpg) | $52.12<br>[[Amazon](https://www.amazon.com/Bondhus-13190-Balldriver-T-handles-8-Inch/dp/B00012WYEM)] | 1 | $52.12 | For caster module assembly |
 | Metric hex T-handles<br>![](images/bom/parts/51Ng-BQbLXL._AC_SL1000_.jpg) | $40.96<br>[[Amazon](https://www.amazon.com/Bondhus-13189-Balldriver-T-handles-2-10mm/dp/B00012Y38M)] | 1 | $40.96 | For frame assembly |
 | Hex key set<br>![](images/bom/parts/51Wq4dxttoL._AC_SL1000_.jpg) | $31.19<br>[[Amazon](https://www.amazon.com/Bondhus-20199-Balldriver-L-Wrench-1-5-10mm/dp/B00012Y38W)] | 1 | $31.19 | |
 | Phillips screwdriver (#1)<br>![](images/bom/parts/51OcfR9Va1L._AC_SL1500_.jpg) | | 1 | | For encoder assembly |
 | Torx screwdriver (T9, T10)<br>![](images/bom/parts/712McDbizyL._AC_SL1200_.jpg) | | 1 | | For motor assembly |
-| Pliers<br>![](images/bom/parts/71ZCr0TQKtL._AC_SL1500_.jpg) | | 1 | | For caster module assembly |
 | Socket wrench set<br>![](images/bom/parts/9154f8zK31L._AC_SL1500_.jpg) | | 1 | | For power system assembly |
 | Loctite 609 retaining compound<br>![](images/bom/parts/51dnvEw7vKL._SL1000_.jpg) | $16.05<br>[[Amazon](https://www.amazon.com/Genuine-Loctite-Retaining-Compound-General/dp/B07BCDYD2C)] | 1 | $16.05 | For caster module assembly |
 | Loctite 243 threadlocker<br>![](images/bom/parts/51erfFRhloL._SL1500_.jpg) | $16.42<br>[[Amazon](https://www.amazon.com/Loctite-1329467-Medium-Strength-Threadlockers/dp/B009I2UC3Q)] | 1 | $16.42 | For caster module assembly |
@@ -475,7 +476,7 @@ The onboard mini PC is a dedicated computer for running robot controllers. It ty
 
 !!! note
 
-    To minimize latency spikes in the control loop, we recommend running all other tasks else on a separate computer, such as a GPU laptop or workstation. This includes workloads like deep learning, point cloud processing, visualization, VS Code, web browsing, TeamViewer, etc. While it is possible to run everything on a single computer, you will likely need to spend additional effort mitigating latency spikes in the controller.
+    To minimize latency spikes in the control loop, we recommend running all other tasks on a separate computer, such as a GPU laptop or workstation. This includes workloads like deep learning, point cloud processing, visualization, VS Code, web browsing, TeamViewer, etc. While it is possible to run everything on a single computer, you will likely need to spend additional effort mitigating latency spikes in the controller.
 
 These are the basic criteria we look for when selecting a mini PC:
 

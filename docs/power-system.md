@@ -163,4 +163,4 @@ Once the battery is connected, all motors and encoders should light up, indicati
 
 !!! note
 
-    For battery charging instructions, please see the [Usage](usage.md#sla-battery) page.
+    For battery charging instructions, please see the [Usage](usage.md#power-off-procedure) page.

@@ -360,4 +360,4 @@ You will reconnect them in the same way later, after the modules are installed i
 
     Sealed lead-acid (SLA) batteries should not be left in a discharged state, as it can degrade the battery.
     Please charge the battery after use.
-    Refer to the [Usage](usage.md#sla-battery) page for charging instructions.
+    Refer to the [Usage](usage.md#power-off-procedure) page for charging instructions.

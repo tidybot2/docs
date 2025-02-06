@@ -48,5 +48,6 @@ repo_url: https://github.com/jimmyyhwu/tidybot2
 theme:
   name: material
   features:
+    - content.code.copy  # Code copy button
     - content.tabs.link  # Linked content tabs
     - navigation.footer  # "Previous" and "Next" footer buttons

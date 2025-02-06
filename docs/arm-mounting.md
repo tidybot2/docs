@@ -322,7 +322,7 @@ Next, install the camera with the fisheye lens onto the wrist of the arm:
 
 === "ARX5"
 
-    Insert the Logitech camera into the [top part]((https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Wrist%20Camera%20Mount%20Top.stl)) of the ARX5 wrist camera mount:
+    Insert the Logitech camera into the [top part](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Wrist%20Camera%20Mount%20Top.stl) of the ARX5 wrist camera mount:
 
     ![](images/arm-mounting/arx5/IMG_1653.jpg){ width="49.45%" }
 
@@ -367,4 +367,4 @@ Next, install the camera with the fisheye lens onto the wrist of the arm:
 
     | Logitech camera mount (top) | Logitech camera mount (bottom) |
     |:-:|:-:|
-    | ![](images/arm-mounting/Logitech Wrist Camera Mount Top.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Logitech%20Wrist%20Camera%20Mount%20Top.step)] | ![](images/arm-mounting/Logitech Wrist Camera Mount Bottom.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Logitech%20Wrist%20Camera%20Mount%20Bottom.step)] |
+    | ![](images/arm-mounting/Logitech Wrist Camera Mount Top.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Logitech%20Camera%20Mount%20Top.step)] | ![](images/arm-mounting/Logitech Wrist Camera Mount Bottom.png)<br>[[STEP](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Logitech%20Camera%20Mount%20Bottom.step)] |
