@@ -1,7 +1,7 @@
 # Software
 
 This page provides instructions to prepare a new mini PC for running real-time controllers and communicating with the robotic arm.
-After completing the steps below, follow the setup instructions in the [codebase](https://github.com/jimmyyhwu/tidybot2) for further setup.
+After completing the steps below, follow the instructions in the [codebase](https://github.com/jimmyyhwu/tidybot2) for further setup.
 
 ## Mini PC setup
 
