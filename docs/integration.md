@@ -421,40 +421,6 @@ Install the USB hub and HDMI extender, which are useful for connecting a monitor
 
     Make sure all cables are securely fastened to prevent them from accidentally getting caught in the caster module gears.
 
-## Encoder offsets
-
-To set up our codebase for a newly assembled mobile base, you will need to determine an encoder offset for each caster so that the controller has a reference point for the zero steer position.
-
-Follow these steps to prepare the base:
-
-1. Double-check that everything inside the mobile base, including the camping battery and SLA battery, is fully secured
-1. Ensure that all cables are properly secured and kept away from the caster module gears
-1. Turn the mobile base onto its side, with the right side of the base facing up
-
-We define the zero steer position as the configuration that the base assumes when driving forwards, with all casters in the trailing position:
-
-![](images/integration/IMG_6863.jpg){ width="49.45%" }
-
-!!! note
-
-    In these photos, the robot's forward +x direction is towards the right side.
-
-Use a straightedge to align the top wheels so that they are both in the zero position:
-
-![](images/integration/IMG_8733.jpg){ width="49.45%" }
-
-The [wheel alignment jig](https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Wheel%20Alignment%20Jig.stl) helps create a level surface on each wheel:
-
-![](images/integration/IMG_8730.jpg){ width="49.45%" }
-
-Repeat the process to orient the bottom two wheels as well.
-
-Once all four casters are in the zero steer position, follow the instructions in the [codebase](https://github.com/jimmyyhwu/tidybot2) to print out the encoder offsets and store them in `constants.py`.
-
-!!! tip
-
-    If you find later on that your base odometry is not accurate, you can improve performance by fine-tuning the encoder offsets in increments of 1/4096 for better accuracy. For example, inaccurate odometry may cause the robot, when commanded to go straight, to take a curved path or rotate slightly.
-
 ## Integration testing
 
 The mobile base should now be ready for integration testing with the software.
@@ -463,13 +429,14 @@ Before proceeding, please perform the following checks:
 1. Double-check the polarity of all power and CAN connections
 1. Verify that all connections are securely attached by gently tugging on each one
 
-If everything checks out, please proceed to the [Software](software.md) page to set up the mini PC, and then the [codebase](https://github.com/jimmyyhwu/tidybot2) for further setup.
+If everything checks out, please proceed to the [Software](software.md) page for further setup.
 
-We typically perform an integration test by controlling the base using gamepad teleoperation and verifying that the casters move as expected:
+Once the mini PC and codebase are ready, we typically perform an integration test using [gamepad teleoperation](usage.md#gamepad-teleoperation).
+This involves turning the base on its side and verifying that the casters move as expected:
 
 <video data-src="../videos/usage/IMG_6867.mp4#t=0.001" controls playsinline></video>
 
-After confirming that the mobile base is operational via gamepad teleoperation, return to this page to complete the remaining integration steps.
+After confirming that the mobile base is operational, return to this page to complete the remaining integration steps.
 
 ## Cable organization
 

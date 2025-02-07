@@ -2,6 +2,15 @@
 
 Welcome to the TidyBot++ usage guide! This page provides operating instructions for the various capabilities of the robot, such as teleoperation, data collection, and policy inference.
 
+!!! note
+
+    Before proceeding, please make sure you have already set up the mini PC and codebase following the steps on the [Software](software.md) page.
+
+!!! tip
+
+    If you plan to use phone teleoperation, data collection, or policy inference, we recommend familiarizing yourself with these components in simulation first before using them on the real robot.
+    You can find instructions in the [Usage](https://github.com/jimmyyhwu/tidybot2#usage) section of the codebase README.
+
 ## General safety
 
 It is very important to monitor the robot closely at all times during operation.
