@@ -1,7 +1,12 @@
 # Software
 
-This page provides instructions to prepare a new mini PC for running real-time controllers and communicating with the robotic arm.
-After completing the steps below, follow the instructions in the [codebase](https://github.com/jimmyyhwu/tidybot2) for further setup.
+This page provides instructions to prepare a new mini PC for running the real robot with our [codebase](https://github.com/jimmyyhwu/tidybot2).
+
+!!! note
+
+    These setup steps are specific to configuring the mini PC for working with the real robot.
+    If you only need to run in simulation on a dev machine, please see the [Usage](https://github.com/jimmyyhwu/tidybot2#usage) section of the codebase README.
+    The full policy learning pipeline can be tested in simulation without a physical robot, including phone teleoperation, data collection, and policy inference.
 
 ## Mini PC setup
 
@@ -410,12 +415,6 @@ Follow the steps below to configure the mini PC for controlling your robotic arm
 ## Codebase setup
 
 This section describes the steps required to set up the [codebase](https://github.com/jimmyyhwu/tidybot2) on the mini PC for use with the real robot.
-
-!!! note
-
-    These setup steps are specific to configuring the mini PC for working with the real robot.
-    If you only need to run in simulation, please see the [Usage](https://github.com/jimmyyhwu/tidybot2#usage) section of the codebase README.
-    The simulation allows you to test the full policy learning pipeline without a physical robot, including phone teleoperation, data collection, and policy inference.
 
 ### Real-time priority
 
