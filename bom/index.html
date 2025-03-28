@@ -1,0 +1,3087 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning">
+      
+      
+      
+        <link rel="canonical" href="http://tidybot2.github.io/docs/bom/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../caster-modules/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Bill of materials (BOM) - TidyBot++ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NBGQBQD9W5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NBGQBQD9W5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NBGQBQD9W5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Bill of materials (BOM) - TidyBot++ Docs" >
+      
+        <meta  property="og:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  property="og:image"  content="http://tidybot2.github.io/docs/assets/images/social/bom.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="http://tidybot2.github.io/docs/bom/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Bill of materials (BOM) - TidyBot++ Docs" >
+      
+        <meta  name="twitter:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  name="twitter:image"  content="http://tidybot2.github.io/docs/assets/images/social/bom.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bill-of-materials-bom" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TidyBot++ Docs" class="md-header__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TidyBot++ Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bill of materials (BOM)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TidyBot++ Docs" class="md-nav__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TidyBot++ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drive-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drive system
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Drive system">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caster-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caster modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power system
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAN system
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arm-mounting-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm mounting hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manufacturing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manufacturing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D printing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laser-cutting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laser cutting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machining
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logitech-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logitech camera
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caster-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../can-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arm-mounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arm mounting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drive-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drive system
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Drive system">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caster-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caster modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power system
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAN system
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arm-mounting-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm mounting hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manufacturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manufacturing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manufacturing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D printing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laser-cutting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laser cutting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machining
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logitech-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logitech camera
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="bill-of-materials-bom">Bill of materials (BOM)</h1>
+<p>This page provides the complete list of parts needed to build the TidyBot++ open-source robot.
+The BOM includes approximately 50 parts which can be purchased online from seven vendors: <a href="https://store.ctr-electronics.com">CTRE</a>, <a href="https://wcproducts.com">WCP</a>, <a href="https://www.swervedrivespecialties.com">SDS</a>, <a href="https://www.andymark.com">AndyMark</a>, <a href="https://www.amazon.com">Amazon</a>, <a href="https://www.tapplastics.com">TAP Plastics</a>, and <a href="https://www.xometry.com">Xometry</a>.
+Placing these orders online typically takes around 30 minutes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When ordering, please double-check that the product page matches the BOM item description, especially for Amazon links.
+While the provided URLs are current as of October 2024, links may change and redirect to different items.
+For example, if the BOM specifies M6 screws but the URL opens a page for M3 screws, the link may have been modified.</p>
+</div>
+<p>In addition, there are a few parts that require 3D printing or laser cutting, as well as a single machined part which can be ordered from <a href="https://www.xometry.com">Xometry</a>.
+Detailed instructions for preparing these parts are provided in the <a href="#manufacturing">Manufacturing</a> section below.</p>
+<p>There is a separate BOM for each of the three reference designs.
+Please make sure that the correct tab (<a href="#kinova">Kinova</a>, <a href="#franka">Franka</a>, or <a href="#arx5">ARX5</a>) is selected below.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="kinova" name="__tabbed_1" type="radio" /><input id="franka" name="__tabbed_1" type="radio" /><input id="arx5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="kinova">Kinova</label><label for="franka">Franka</label><label for="arx5">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/P1012001.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/P1012001.jpg" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/P1012027.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/P1012027.jpg" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/P1011970.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/P1011970.jpg" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+<p>We also provide the BOM for each reference design in spreadsheet format:</p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/BOM/BOM%20-%20Kinova.csv">BOM - Kinova</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/BOM/BOM%20-%20Franka.csv">BOM - Franka</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/BOM/BOM%20-%20ARX5.csv">BOM - ARX5</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/BOM/BOM%20-%20Tools.csv">BOM - Tools</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The BOM spreadsheets are provided for reference only.
+We highly recommend directly using this webpage to order parts, as it contains the most complete information.</p>
+</div>
+<h2 id="main-components">Main components</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="kinova_1" name="__tabbed_2" type="radio" /><input id="franka_1" name="__tabbed_2" type="radio" /><input id="arx5_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="kinova_1">Kinova</label><label for="franka_1">Franka</label><label for="arx5_1">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Total cost of mobile base: $5,379.63</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kinova arm<br><a class="glightbox" href="../images/bom/parts/Gen3-robot-img-Cover-img-is-loaded-block-1B.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/Gen3-robot-img-Cover-img-is-loaded-block-1B.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>We used the Gen3 7-DoF arm with a Robotiq 2F-85 gripper</td>
+</tr>
+<tr>
+<td><a href="#drive-system">Drive system<br><a class="glightbox" href="../images/bom/drive-system.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/drive-system.png" /></a></a></td>
+<td style="text-align: right;">$4,370.92</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$4,370.92</td>
+<td>See <a href="#drive-system">Drive system</a> section</td>
+</tr>
+<tr>
+<td><a href="#frame">Frame<br><a class="glightbox" href="../images/bom/Frame%20-%20Kinova.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20Kinova.png" /></a></a></td>
+<td style="text-align: right;">$390.35</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$390.35</td>
+<td>See <a href="#frame">Frame</a> section</td>
+</tr>
+<tr>
+<td><a href="#arm-mounting-hardware">Arm mounting hardware<br><a class="glightbox" href="../images/bom/parts/51hWR0lWAqL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51hWR0lWAqL._AC_SL1000_.jpg" /></a></a></td>
+<td style="text-align: right;">$20.26</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$20.26</td>
+<td>See <a href="#arm-mounting-hardware">Arm mounting hardware</a> section</td>
+</tr>
+<tr>
+<td>Portable power station<br><a class="glightbox" href="../images/bom/parts/61ooUabaG9L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61ooUabaG9L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$399.00<br>[<a href="https://www.amazon.com/EF-ECOFLOW-Portable-Charging-Generator/dp/B0BVLPGS79">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$399.00</td>
+<td>For powering the arm and onboard compute. See <a href="#portable-power-station">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td><a href="#accessories">Accessories<br><a class="glightbox" href="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" /></a></a></td>
+<td style="text-align: right;">$67.93</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$67.93</td>
+<td>See <a href="#accessories">Accessories</a> section</td>
+</tr>
+<tr>
+<td>Mini PC<br><a class="glightbox" href="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Onboard computer for running low-level control. See <a href="#mini-pc">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>GPU laptop<br><a class="glightbox" href="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Used for onboard or offboard policy inference. A GPU workstation could also work but would not be as portable.</td>
+</tr>
+<tr>
+<td>Wi-Fi router<br><a class="glightbox" href="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For communication with the onboard computer</td>
+</tr>
+<tr>
+<td>Wireless gamepad<br><a class="glightbox" href="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$38.19<br>[<a href="https://www.amazon.com/Logitech-Wireless-Nano-Receiver-Controller-Vibration/dp/B0041RR0TW">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$38.19</td>
+<td>For joystick teleop of the mobile base</td>
+</tr>
+<tr>
+<td>Logitech C930e webcam<br><a class="glightbox" href="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$79.99<br>[<a href="https://www.amazon.com/Logitech-C930e-1080P-Video-Webcam/dp/B00CRJWW2G">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$79.99</td>
+<td>Forward-facing onboard camera for the mobile base with wide (90-degree) field of view. Note: Watch out for fakes, see <a href="#logitech-camera">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>Fisheye lens attachment<br><a class="glightbox" href="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/fisheye-Samsung-BlackBerry-anamorphic-Pictures/dp/B08NSGWNTX">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For expanding the field of view of the wrist camera</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of mobile base: $6,272.77</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Franka arm<br><a class="glightbox" href="../images/bom/parts/IKR_FR3_noFE_v2-1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/IKR_FR3_noFE_v2-1.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>We used the FR3 arm with Franka Hand gripper</td>
+</tr>
+<tr>
+<td><a href="#drive-system">Drive system<br><a class="glightbox" href="../images/bom/drive-system.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/drive-system.png" /></a></a></td>
+<td style="text-align: right;">$4,396.05</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$4,396.05</td>
+<td>See <a href="#drive-system">Drive system</a> section</td>
+</tr>
+<tr>
+<td><a href="#frame">Frame<br><a class="glightbox" href="../images/bom/Frame%20-%20Franka.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20Franka.png" /></a></a></td>
+<td style="text-align: right;">$379.07</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$379.07</td>
+<td>See <a href="#frame">Frame</a> section</td>
+</tr>
+<tr>
+<td><a href="#arm-mounting-hardware">Arm mounting hardware<br><a class="glightbox" href="../images/bom/parts/81IHm5LC-UL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81IHm5LC-UL._SL1500_.jpg" /></a></a></td>
+<td style="text-align: right;">$19.56</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$19.56</td>
+<td>See <a href="#arm-mounting-hardware">Arm mounting hardware</a> section</td>
+</tr>
+<tr>
+<td>Portable power station<br><a class="glightbox" href="../images/bom/parts/61vTzzwZzWL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61vTzzwZzWL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$1,199.00<br>[<a href="https://www.amazon.com/Jackery-Explorer-Portable-Generator-Emergency/dp/B0B8ZLZ53M">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$1,199.00</td>
+<td>For powering the arm and onboard compute. See <a href="#portable-power-station">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td><a href="#accessories">Accessories<br><a class="glightbox" href="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" /></a></a></td>
+<td style="text-align: right;">$67.93</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$67.93</td>
+<td>See <a href="#accessories">Accessories</a> section</td>
+</tr>
+<tr>
+<td>Mini PC<br><a class="glightbox" href="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Onboard computer for running low-level control. See <a href="#mini-pc">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>GPU laptop<br><a class="glightbox" href="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Used for onboard or offboard policy inference. A GPU workstation could also work but would not be as portable.</td>
+</tr>
+<tr>
+<td>Wi-Fi router<br><a class="glightbox" href="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For communication with the onboard computer</td>
+</tr>
+<tr>
+<td>Wireless gamepad<br><a class="glightbox" href="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$38.19<br>[<a href="https://www.amazon.com/Logitech-Wireless-Nano-Receiver-Controller-Vibration/dp/B0041RR0TW">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$38.19</td>
+<td>For joystick teleop of the mobile base</td>
+</tr>
+<tr>
+<td>Logitech C930e webcam<br><a class="glightbox" href="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$79.99<br>[<a href="https://www.amazon.com/Logitech-C930e-1080P-Video-Webcam/dp/B00CRJWW2G">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$159.98</td>
+<td>Two wide (90-degree) field of view cameras: (1) forward-facing onboard camera for the mobile base, and (2) wrist camera for the arm. Note: Watch out for fakes, see <a href="#logitech-camera">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>Fisheye lens attachment<br><a class="glightbox" href="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/fisheye-Samsung-BlackBerry-anamorphic-Pictures/dp/B08NSGWNTX">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For expanding the field of view of the wrist camera</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of mobile base: $5,205.71</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARX5 arm<br><a class="glightbox" href="../images/bom/parts/IMG_2296.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/IMG_2296.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>We used the L5 model from October 2024</td>
+</tr>
+<tr>
+<td><a href="#drive-system">Drive system<br><a class="glightbox" href="../images/bom/drive-system.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/drive-system.png" /></a></a></td>
+<td style="text-align: right;">$4,410.91</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$4,410.91</td>
+<td>See <a href="#drive-system">Drive system</a> section</td>
+</tr>
+<tr>
+<td><a href="#frame">Frame<br><a class="glightbox" href="../images/bom/Frame%20-%20ARX5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20ARX5.png" /></a></a></td>
+<td style="text-align: right;">$285.21</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$285.21</td>
+<td>See <a href="#frame">Frame</a> section</td>
+</tr>
+<tr>
+<td><a href="#arm-mounting-hardware">Arm mounting hardware<br><a class="glightbox" href="../images/bom/parts/61SqJiUDsQL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61SqJiUDsQL._AC_SL1500_.jpg" /></a></a></td>
+<td style="text-align: right;">$30.51</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$30.51</td>
+<td>See <a href="#arm-mounting-hardware">Arm mounting hardware</a> section</td>
+</tr>
+<tr>
+<td>Portable power station<br><a class="glightbox" href="../images/bom/parts/71gIlsob%2BiL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71gIlsob%2BiL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$199.99<br>[<a href="https://www.amazon.com/Anker-Portable-Generator-Traveling-Emergencies/dp/B0D62GMQ3F">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$199.99</td>
+<td>For powering the arm and onboard compute. See <a href="#portable-power-station">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td><a href="#accessories">Accessories<br><a class="glightbox" href="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" /></a></a></td>
+<td style="text-align: right;">$67.93</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$67.93</td>
+<td>See <a href="#accessories">Accessories</a> section</td>
+</tr>
+<tr>
+<td>Mini PC<br><a class="glightbox" href="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/613UrXD1c5L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Onboard computer for running low-level control. See <a href="#mini-pc">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>GPU laptop<br><a class="glightbox" href="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51NBGzeca3L._AC_SL1400_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Used for onboard or offboard policy inference. A GPU workstation could also work but would not be as portable.</td>
+</tr>
+<tr>
+<td>Wi-Fi router<br><a class="glightbox" href="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/41trwL%2B%2Bf3L._AC_SL1200_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For communication with the onboard computer</td>
+</tr>
+<tr>
+<td>Wireless gamepad<br><a class="glightbox" href="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81MoJ86bE8L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$38.19<br>[<a href="https://www.amazon.com/Logitech-Wireless-Nano-Receiver-Controller-Vibration/dp/B0041RR0TW">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$38.19</td>
+<td>For joystick teleop of the mobile base</td>
+</tr>
+<tr>
+<td>Logitech C930e webcam<br><a class="glightbox" href="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81hrviDN%2BnL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$79.99<br>[<a href="https://www.amazon.com/Logitech-C930e-1080P-Video-Webcam/dp/B00CRJWW2G">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$159.98</td>
+<td>Two wide (90-degree) field of view cameras: (1) forward-facing onboard camera for the mobile base, and (2) wrist camera for the arm. Note: Watch out for fakes, see <a href="#logitech-camera">component notes</a> for more details.</td>
+</tr>
+<tr>
+<td>Fisheye lens attachment<br><a class="glightbox" href="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61NEpWwQtQL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/fisheye-Samsung-BlackBerry-anamorphic-Pictures/dp/B08NSGWNTX">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For expanding the field of view of the wrist camera</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h2 id="drive-system">Drive system</h2>
+<p><a class="glightbox" href="../images/bom/drive-system.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/drive-system.png" width="49.45%" /></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="kinova_2" name="__tabbed_3" type="radio" /><input id="franka_2" name="__tabbed_3" type="radio" /><input id="arx5_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="kinova_2">Kinova</label><label for="franka_2">Franka</label><label for="arx5_2">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Total cost of drive system: $4,370.92</strong></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of drive system: $4,396.05</strong></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of drive system: $4,410.91</strong></p>
+</div>
+</div>
+</div>
+<h3 id="caster-modules">Caster modules</h3>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MK4 swerve module<br><a class="glightbox" href="../images/bom/parts/mk4-swerve-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/mk4-swerve-module.png" /></a></td>
+<td style="text-align: right;">$300.00<br>[<a href="https://www.swervedrivespecialties.com/products/mk4-swerve-module?variant=47316033995053">SDS</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$1,200.00</td>
+<td><strong>Make sure to select "Kraken X60", NOT "Falcon 500".</strong> Select these options: Kraken X60, L1, Colson. If you purchase the Falcon version by accident, please contact the vendor to correct the order.</td>
+</tr>
+<tr>
+<td>Kraken X60 motor<br><a class="glightbox" href="../images/bom/parts/WCP-0940__46919.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/WCP-0940__46919.webp" /></a></td>
+<td style="text-align: right;">$199.99<br>[<a href="https://wcproducts.com/products/wcp-0940">WCP</a>] [<a href="https://store.ctr-electronics.com/products/kraken-x60">CTRE</a>]</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">$1,599.92</td>
+<td>All academic institutions can use the same academic pricing as FRC teams ($199.99). For non-academic use, please contact the vendor directly.</td>
+</tr>
+<tr>
+<td>CANcoder encoder<br><a class="glightbox" href="../images/bom/parts/PXL_20220325_192019738__19732.1648236485.386.513__28379.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PXL_20220325_192019738__19732.1648236485.386.513__28379.jpg" /></a></td>
+<td style="text-align: right;">$89.99<br>[<a href="https://store.ctr-electronics.com/products/cancoder?variant=43631126642861">CTRE</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$359.96</td>
+<td><strong>Make sure to select the "Wired" option, NOT the "Standard" option.</strong> The wired option comes with pre-soldered wires.</td>
+</tr>
+<tr>
+<td>MK4 motor riser kit<br><a class="glightbox" href="../images/bom/parts/KrakenMotorSpacer_2048x2048.jpg.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/KrakenMotorSpacer_2048x2048.jpg.webp" /></a></td>
+<td style="text-align: right;">$28.00<br>[<a href="https://www.swervedrivespecialties.com/products/kit-riser-motor?variant=47673275089197">SDS</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$112.00</td>
+<td><strong>Make sure to select "Kraken X60", NOT "Falcon 500"</strong></td>
+</tr>
+<tr>
+<td>Custom machined shaft<br><a class="glightbox" href="../images/bom/parts/xometry-intermediate-shaft-thumbnail.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/xometry-intermediate-shaft-thumbnail.png" /></a></td>
+<td style="text-align: right;">$15.00<br>[<a href="https://www.xometry.com/">Xometry</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$60.00</td>
+<td>See <a href="#machining">Machining</a> section for more details</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please double-check the selected options for these caster module parts very carefully.
+If you select the default options, you may receive parts that do not fit.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>While we have not encountered any reliability issues with these parts so far, it is still a good idea to keep a few spares on hand, especially the motors and encoders.</p>
+</div>
+<h3 id="power-system">Power system</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="kinova_3" name="__tabbed_4" type="radio" /><input id="franka_3" name="__tabbed_4" type="radio" /><input id="arx5_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="kinova_3">Kinova</label><label for="franka_3">Franka</label><label for="arx5_3">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sealed lead acid (SLA) batteries<br><a class="glightbox" href="../images/bom/parts/WCP-1492_e2f8c61f-10f1-4b87-af6c-b7d373906ce2_600x.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/WCP-1492_e2f8c61f-10f1-4b87-af6c-b7d373906ce2_600x.jpg" /></a></td>
+<td style="text-align: right;">$99.99<br>[<a href="https://wcproducts.com/products/wcp-1492">WCP</a>] [<a href="https://www.revrobotics.com/rev-19-2487/">REV</a>] [<a href="https://www.andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$99.99</td>
+<td>These MK ES17-12 batteries are sold in pairs so quantity 1 gives you 2 batteries.</td>
+</tr>
+<tr>
+<td>Battery cable<br><a class="glightbox" href="../images/bom/parts/am-0009.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0009.jpg" /></a></td>
+<td style="text-align: right;">$19.00<br>[<a href="https://www.andymark.com/products/6-gauge-battery-cable?Insulation%20Type=Stiff%20PVC%20(am-0009)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$38.00</td>
+<td>One battery cable per battery</td>
+</tr>
+<tr>
+<td>Battery charger<br><a class="glightbox" href="../images/bom/parts/am-4968_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4968_1.jpg" /></a></td>
+<td style="text-align: right;">$94.00<br>[<a href="https://www.andymark.com/products/frc-battery-charger?Bank=1%20Bank&amp;quantity=1&amp;Connectors=SB50%20Connectors">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$94.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Power cable and 120A breaker kit<br><a class="glightbox" href="../images/bom/parts/am-RbtPwrCblKit.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-RbtPwrCblKit.jpg" /></a></td>
+<td style="text-align: right;">$76.75<br>[<a href="https://www.andymark.com/products/robot-power-cable-kit-custom-lengths-up-to-36-in">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$76.75</td>
+<td>Select these options: (1) 6 AWG Jacket With SB50, (2) 12 in., (3) 5 in.</td>
+</tr>
+<tr>
+<td>Power distribution panel (PDP)<br><a class="glightbox" href="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" /></a></td>
+<td style="text-align: right;">$204.99<br>[<a href="https://store.ctr-electronics.com/products/pdp-2">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$204.99</td>
+<td></td>
+</tr>
+<tr>
+<td>40A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-4947.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4947.jpg" /></a></td>
+<td style="text-align: right;">$7.00<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=40A%20AT2%20Style&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">$56.00</td>
+<td>For powering the motors</td>
+</tr>
+<tr>
+<td>5A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-2096.1.am-2096.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-2096.1.am-2096.jpg" /></a></td>
+<td style="text-align: right;">$6.40<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=5A%20(am-2096)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$6.40</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>22 AWG wire<br><a class="glightbox" href="../images/bom/parts/615orurJReL._SL1024_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/615orurJReL._SL1024_.jpg" /></a></td>
+<td style="text-align: right;">$9.98<br>[<a href="https://www.amazon.com/BNTECHGO-Electric-Gauge-Tinned-Copper/dp/B07JNRJW37">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.98</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>5-port wire connectors<br><a class="glightbox" href="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.22<br>[<a href="https://www.amazon.com/Wago-221-415-LEVER-NUTS-Conductor-Connectors/dp/B06XH47DC2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.22</td>
+<td>For powering the encoders. 10-pack, 2 will be used.</td>
+</tr>
+<tr>
+<td>Inline wire connectors<br><a class="glightbox" href="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$13.75<br>[<a href="https://www.amazon.com/221-2401-Compact-Splicing-Inline-Connectors/dp/B0BT8DHLJJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$13.75</td>
+<td>For powering the encoders. 20-pack, 6 will be used.</td>
+</tr>
+<tr>
+<td>PDP WAGO tool<br><a class="glightbox" href="../images/bom/parts/wgo2__62473.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/wgo2__62473.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://store.ctr-electronics.com/products/power-distribution-panel-wago-tool">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For opening the WAGO connectors on the PDP</td>
+</tr>
+<tr>
+<td>Battery flag<br><a class="glightbox" href="../images/bom/parts/am-0122.1.am-0122.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0122.1.am-0122.jpg" /></a></td>
+<td style="text-align: right;">$1.50<br>[<a href="https://www.andymark.com/products/battery-flag">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$3.00</td>
+<td>For marking SLA batteries after they have been charged</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sealed lead acid (SLA) batteries<br><a class="glightbox" href="../images/bom/parts/WCP-1492_e2f8c61f-10f1-4b87-af6c-b7d373906ce2_600x.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/WCP-1492_e2f8c61f-10f1-4b87-af6c-b7d373906ce2_600x.jpg" /></a></td>
+<td style="text-align: right;">$99.99<br>[<a href="https://wcproducts.com/products/wcp-1492">WCP</a>] [<a href="https://www.revrobotics.com/rev-19-2487/">REV</a>] [<a href="https://www.andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$99.99</td>
+<td>These MK ES17-12 batteries are sold in pairs so quantity 1 gives you 2 batteries.</td>
+</tr>
+<tr>
+<td>Battery cable<br><a class="glightbox" href="../images/bom/parts/am-0009.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0009.jpg" /></a></td>
+<td style="text-align: right;">$19.00<br>[<a href="https://www.andymark.com/products/6-gauge-battery-cable?Insulation%20Type=Stiff%20PVC%20(am-0009)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$38.00</td>
+<td>One battery cable per battery</td>
+</tr>
+<tr>
+<td>Battery charger<br><a class="glightbox" href="../images/bom/parts/am-4968_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4968_1.jpg" /></a></td>
+<td style="text-align: right;">$94.00<br>[<a href="https://www.andymark.com/products/frc-battery-charger?Bank=1%20Bank&amp;quantity=1&amp;Connectors=SB50%20Connectors">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$94.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Power cable and 120A breaker kit<br><a class="glightbox" href="../images/bom/parts/am-RbtPwrCblKit.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-RbtPwrCblKit.jpg" /></a></td>
+<td style="text-align: right;">$76.75<br>[<a href="https://www.andymark.com/products/robot-power-cable-kit-custom-lengths-up-to-36-in">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$76.75</td>
+<td>Select these options: (1) 6 AWG Jacket With SB50, (2) 12 in., (3) 5 in.</td>
+</tr>
+<tr>
+<td>Power distribution panel (PDP)<br><a class="glightbox" href="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" /></a></td>
+<td style="text-align: right;">$204.99<br>[<a href="https://store.ctr-electronics.com/products/pdp-2">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$204.99</td>
+<td></td>
+</tr>
+<tr>
+<td>40A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-4947.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4947.jpg" /></a></td>
+<td style="text-align: right;">$7.00<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=40A%20AT2%20Style&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">$56.00</td>
+<td>For powering the motors</td>
+</tr>
+<tr>
+<td>5A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-2096.1.am-2096.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-2096.1.am-2096.jpg" /></a></td>
+<td style="text-align: right;">$6.40<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=5A%20(am-2096)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$6.40</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>22 AWG wire<br><a class="glightbox" href="../images/bom/parts/615orurJReL._SL1024_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/615orurJReL._SL1024_.jpg" /></a></td>
+<td style="text-align: right;">$9.98<br>[<a href="https://www.amazon.com/BNTECHGO-Electric-Gauge-Tinned-Copper/dp/B07JNRJW37">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.98</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>5-port wire connectors<br><a class="glightbox" href="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.22<br>[<a href="https://www.amazon.com/Wago-221-415-LEVER-NUTS-Conductor-Connectors/dp/B06XH47DC2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.22</td>
+<td>For powering the encoders. 10-pack, 2 will be used.</td>
+</tr>
+<tr>
+<td>Inline wire connectors<br><a class="glightbox" href="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$13.75<br>[<a href="https://www.amazon.com/221-2401-Compact-Splicing-Inline-Connectors/dp/B0BT8DHLJJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$13.75</td>
+<td>For powering the encoders. 20-pack, 6 will be used.</td>
+</tr>
+<tr>
+<td>PDP WAGO tool<br><a class="glightbox" href="../images/bom/parts/wgo2__62473.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/wgo2__62473.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://store.ctr-electronics.com/products/power-distribution-panel-wago-tool">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For opening the WAGO connectors on the PDP</td>
+</tr>
+<tr>
+<td>Battery flag<br><a class="glightbox" href="../images/bom/parts/am-0122.1.am-0122.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0122.1.am-0122.jpg" /></a></td>
+<td style="text-align: right;">$1.50<br>[<a href="https://www.andymark.com/products/battery-flag">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$3.00</td>
+<td>For marking SLA batteries after they have been charged</td>
+</tr>
+<tr>
+<td>10 AWG wire<br><a class="glightbox" href="../images/bom/parts/61n%2B75lSiFL._SL1001_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61n%2B75lSiFL._SL1001_.jpg" /></a></td>
+<td style="text-align: right;">$16.88<br>[<a href="https://www.amazon.com/BNTECHGO-Silicone-Flexible-Strands-Stranded/dp/B01ABOPO2S">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.88</td>
+<td>For extending the motor power cables</td>
+</tr>
+<tr>
+<td>10 AWG wire connectors<br><a class="glightbox" href="../images/bom/parts/713fGfHBGUL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/713fGfHBGUL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.25<br>[<a href="https://www.amazon.com/221-612-LEVER-NUTS-Conductor-Compact-Connectors/dp/B085P2WT8K">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.25</td>
+<td>For extending the motor power cables. 10-pack, 8 will be used.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sealed lead acid (SLA) battery<br><a class="glightbox" href="../images/bom/parts/dura12-14nb-duracell-ultra-12v-14ah-agm-deep-cycle-battery-nut-and-bolt-terminals__22497.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/dura12-14nb-duracell-ultra-12v-14ah-agm-deep-cycle-battery-nut-and-bolt-terminals__22497.jpg" /></a></td>
+<td style="text-align: right;">$69.99<br>[<a href="https://gmienergy.com/DURDC12-14NB">GMI Energy</a>] [<a href="https://www.batteriesplus.com/productdetails/WKDC12=14NB">Batteries Plus</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$139.98</td>
+<td>We use smaller batteries in this design due to limited space in the smaller frame</td>
+</tr>
+<tr>
+<td>Battery cable<br><a class="glightbox" href="../images/bom/parts/am-0009.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0009.jpg" /></a></td>
+<td style="text-align: right;">$19.00<br>[<a href="https://www.andymark.com/products/6-gauge-battery-cable?Insulation%20Type=Stiff%20PVC%20(am-0009)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$38.00</td>
+<td>One battery cable per battery</td>
+</tr>
+<tr>
+<td>Battery charger<br><a class="glightbox" href="../images/bom/parts/am-4968_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4968_1.jpg" /></a></td>
+<td style="text-align: right;">$94.00<br>[<a href="https://www.andymark.com/products/frc-battery-charger?Bank=1%20Bank&amp;quantity=1&amp;Connectors=SB50%20Connectors">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$94.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Power cable and 120A breaker kit<br><a class="glightbox" href="../images/bom/parts/am-RbtPwrCblKit.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-RbtPwrCblKit.jpg" /></a></td>
+<td style="text-align: right;">$76.75<br>[<a href="https://www.andymark.com/products/robot-power-cable-kit-custom-lengths-up-to-36-in">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$76.75</td>
+<td>Select these options: (1) 6 AWG Jacket With SB50, (2) 12 in., (3) 5 in.</td>
+</tr>
+<tr>
+<td>Power distribution panel (PDP)<br><a class="glightbox" href="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PDP1forshopify_a4f5565d-eb18-4a5f-9c6c-ed6e73ea9c9b.webp" /></a></td>
+<td style="text-align: right;">$204.99<br>[<a href="https://store.ctr-electronics.com/products/pdp-2">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$204.99</td>
+<td></td>
+</tr>
+<tr>
+<td>40A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-4947.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-4947.jpg" /></a></td>
+<td style="text-align: right;">$7.00<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=40A%20AT2%20Style&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">$56.00</td>
+<td>For powering the motors</td>
+</tr>
+<tr>
+<td>5A Snap Action breaker<br><a class="glightbox" href="../images/bom/parts/am-2096.1.am-2096.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-2096.1.am-2096.jpg" /></a></td>
+<td style="text-align: right;">$6.40<br>[<a href="https://www.andymark.com/products/snap-action-breakers?Amperage=5A%20(am-2096)&amp;quantity=1">AndyMark</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$6.40</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>22 AWG wire<br><a class="glightbox" href="../images/bom/parts/615orurJReL._SL1024_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/615orurJReL._SL1024_.jpg" /></a></td>
+<td style="text-align: right;">$9.98<br>[<a href="https://www.amazon.com/BNTECHGO-Electric-Gauge-Tinned-Copper/dp/B07JNRJW37">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.98</td>
+<td>For powering the encoders</td>
+</tr>
+<tr>
+<td>5-port wire connectors<br><a class="glightbox" href="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61EXwd9as9L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.22<br>[<a href="https://www.amazon.com/Wago-221-415-LEVER-NUTS-Conductor-Connectors/dp/B06XH47DC2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.22</td>
+<td>For powering the encoders. 10-pack, 2 will be used.</td>
+</tr>
+<tr>
+<td>Inline wire connectors<br><a class="glightbox" href="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61yTGs92OcL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$13.75<br>[<a href="https://www.amazon.com/221-2401-Compact-Splicing-Inline-Connectors/dp/B0BT8DHLJJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$13.75</td>
+<td>For powering the encoders. 20-pack, 6 will be used.</td>
+</tr>
+<tr>
+<td>PDP WAGO tool<br><a class="glightbox" href="../images/bom/parts/wgo2__62473.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/wgo2__62473.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://store.ctr-electronics.com/products/power-distribution-panel-wago-tool">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.99</td>
+<td>For opening the WAGO connectors on the PDP</td>
+</tr>
+<tr>
+<td>Battery flag<br><a class="glightbox" href="../images/bom/parts/am-0122.1.am-0122.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/am-0122.1.am-0122.jpg" /></a></td>
+<td style="text-align: right;">$1.50<br>[<a href="https://www.andymark.com/products/battery-flag">AndyMark</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$3.00</td>
+<td>For marking SLA batteries after they have been charged</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h3 id="can-system">CAN system</h3>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows computer<br><a class="glightbox" href="../images/bom/parts/windows10pc.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/windows10pc.webp" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>Windows is only needed for initial setup of the motors and encoders with the <a href="https://pro.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Phoenix Tuner X</a> application. Our low-level control codebase uses Ubuntu.</td>
+</tr>
+<tr>
+<td>CANivore USB-to-CAN adapter<br><a class="glightbox" href="../images/bom/parts/canivore_main__07095.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/canivore_main__07095.jpg" /></a></td>
+<td style="text-align: right;">$299.99<br>[<a href="https://store.ctr-electronics.com/products/canivore">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$299.99</td>
+<td>For communication with the motors and encoders</td>
+</tr>
+<tr>
+<td>Phoenix Pro license<br><a class="glightbox" href="../images/bom/parts/license_logo__15636.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/license_logo__15636.webp" /></a></td>
+<td style="text-align: right;">$100.00<br>[<a href="https://store.ctr-electronics.com/products/phoenix-pro?variant=43631137489069">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$100.00</td>
+<td><strong>Select the "2024 CANivore Bus x2" option, NOT the "Single Device" or "Season Pass" options.</strong> This software license enables field-oriented control (FOC) on the motors.</td>
+</tr>
+<tr>
+<td>CAN bus and power cable kit<br><a class="glightbox" href="../images/bom/parts/PXL_20220325_193447803__25372.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PXL_20220325_193447803__25372.jpg" /></a></td>
+<td style="text-align: right;">$9.99<br>[<a href="https://store.ctr-electronics.com/products/can-bus-power-cable-kit">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.99</td>
+<td>For connecting the CANivore USB-to-CAN adapter at one end of the bus and the termination resistor at the other end</td>
+</tr>
+<tr>
+<td>120 Ohm resistor<br><a class="glightbox" href="../images/bom/parts/PXL_20220201_175459268__68626.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/PXL_20220201_175459268__68626.jpg" /></a></td>
+<td style="text-align: right;">$4.99<br>[<a href="https://store.ctr-electronics.com/products/120-ohm-axial-resistors">CTRE</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$4.99</td>
+<td>CAN bus termination resistor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="frame">Frame</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="kinova_4" name="__tabbed_5" type="radio" /><input id="franka_4" name="__tabbed_5" type="radio" /><input id="arx5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="kinova_4">Kinova</label><label for="franka_4">Franka</label><label for="arx5_4">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/bom/Frame%20-%20Kinova.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20Kinova.png" width="49.45%" /></a></p>
+<p><strong>Total cost of frame: $390.35</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 500mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$30.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B08CMZ2D8N">Amazon</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$123.96</td>
+<td>16 total, 13 will be used</td>
+</tr>
+<tr>
+<td>2020 250mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$16.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B08CN9B5VC">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.99</td>
+<td>4-pack, all will be used</td>
+</tr>
+<tr>
+<td>2020 28mm gussets<br><a class="glightbox" href="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/Bracket-Connectors-Aluminum-Extrusion-Accessories/dp/B0B9JVW5X8">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$38.97</td>
+<td>30 total, 24 will be used. Screws and slide-in T-nuts are included.</td>
+</tr>
+<tr>
+<td>2020 20mm gussets<br><a class="glightbox" href="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$7.99<br>[<a href="https://www.amazon.com/LANIAKEA-Extrusion-20Series-Connector-Accessories/dp/B08NXGV1YH">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.99</td>
+<td>50-pack, 8 will be used</td>
+</tr>
+<tr>
+<td>2020 90 degree plates<br><a class="glightbox" href="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$15.99<br>[<a href="https://www.amazon.com/Boeray-10pcs-Joining-Aluminum-Profile/dp/B076DNR5DY">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$47.97</td>
+<td>30 total, 24 will be used</td>
+</tr>
+<tr>
+<td>2020 20mm corner brackets<br><a class="glightbox" href="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/Qjaiune-Aluminum-Extrusion-Brackets-Connector/dp/B09G6KRZ1H">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.99</td>
+<td>10-pack, 8 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$14.59<br>[<a href="https://www.amazon.com/KOOTANS-Assembly-Fastener-Aluminum-Extrusion/dp/B07PQ13LCQ">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$43.77</td>
+<td>300 total, 228 will be used</td>
+</tr>
+<tr>
+<td>M5 8mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B084MMND2L">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$17.98</td>
+<td>200 total, 174 will be used</td>
+</tr>
+<tr>
+<td>M5 10mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$9.29<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B07NVHPPBC">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.29</td>
+<td>100 total, 54 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 roll-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$16.68<br>[<a href="https://www.amazon.com/100-Pack-Aluminum-Extrusions-Profile-Accessories/dp/B07VHNGBWJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.68</td>
+<td>100-pack, can be useful if you forget to pre-install a slide-in T-nut</td>
+</tr>
+<tr>
+<td>6mm clear acrylic sheet (550 x 510 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$35.40<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_clear/508">TAP Plastics</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$35.40</td>
+<td>For the laser-cut bottom acrylic plate</td>
+</tr>
+<tr>
+<td>3mm white acrylic sheet (550 x 230 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$11.18<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_color/341">TAP Plastics</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$22.36</td>
+<td>For the laser-cut top acrylic plates. The exact color we used was "Lightning White 45%".</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/bom/Frame%20-%20Franka.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20Franka.png" width="49.45%" /></a></p>
+<p><strong>Total cost of frame: $379.07</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 500mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$30.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B08CMZ2D8N">Amazon</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$123.96</td>
+<td>16 total, all will be used</td>
+</tr>
+<tr>
+<td>2020 300mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$17.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B08744RN57">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$17.99</td>
+<td>4-pack, all will be used</td>
+</tr>
+<tr>
+<td>2020 28mm gussets<br><a class="glightbox" href="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/Bracket-Connectors-Aluminum-Extrusion-Accessories/dp/B0B9JVW5X8">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$25.98</td>
+<td>20 total, all will be used. Screws and slide-in T-nuts are included.</td>
+</tr>
+<tr>
+<td>2020 20mm gussets<br><a class="glightbox" href="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$7.99<br>[<a href="https://www.amazon.com/LANIAKEA-Extrusion-20Series-Connector-Accessories/dp/B08NXGV1YH">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.99</td>
+<td>50-pack, 8 will be used</td>
+</tr>
+<tr>
+<td>2020 90 degree plates<br><a class="glightbox" href="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$15.99<br>[<a href="https://www.amazon.com/Boeray-10pcs-Joining-Aluminum-Profile/dp/B076DNR5DY">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$31.98</td>
+<td>20 total, all will be used</td>
+</tr>
+<tr>
+<td>2020 20mm corner brackets<br><a class="glightbox" href="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/Qjaiune-Aluminum-Extrusion-Brackets-Connector/dp/B09G6KRZ1H">Amazon</a>]</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">$35.96</td>
+<td>40 total, 32 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$14.59<br>[<a href="https://www.amazon.com/KOOTANS-Assembly-Fastener-Aluminum-Extrusion/dp/B07PQ13LCQ">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$43.77</td>
+<td>300 total, 243 will be used</td>
+</tr>
+<tr>
+<td>M5 8mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B084MMND2L">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$26.97</td>
+<td>300 total, 197 will be used</td>
+</tr>
+<tr>
+<td>M5 10mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$9.29<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B07NVHPPBC">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.29</td>
+<td>100 total, 46 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 roll-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$16.68<br>[<a href="https://www.amazon.com/100-Pack-Aluminum-Extrusions-Profile-Accessories/dp/B07VHNGBWJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.68</td>
+<td>100-pack, can be useful if you forget to pre-install a slide-in T-nut</td>
+</tr>
+<tr>
+<td>6mm clear acrylic sheet (160 x 310 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$11.80<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_clear/508">TAP Plastics</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$23.60</td>
+<td>For the laser-cut bottom acrylic plates</td>
+</tr>
+<tr>
+<td>3mm white acrylic sheet (117 x 510 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$7.88<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_color/341">TAP Plastics</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.88</td>
+<td>For the laser-cut top acrylic plates. The exact color we used was "Lightning White 45%".</td>
+</tr>
+<tr>
+<td>3mm white acrylic sheet (103 x 510 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$7.02<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_color/341">TAP Plastics</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.02</td>
+<td>For the laser-cut top acrylic plates. The exact color we used was "Lightning White 45%".</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/bom/Frame%20-%20ARX5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Frame%20-%20ARX5.png" width="49.45%" /></a></p>
+<p><strong>Total cost of frame: $285.21</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 400mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$18.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B0874387ZB">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$56.97</td>
+<td>12 total, all will be used</td>
+</tr>
+<tr>
+<td>2020 250mm T-slot extrusions<br><a class="glightbox" href="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61sVlt3zn0L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$16.99<br>[<a href="https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B08CN9B5VC">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.99</td>
+<td>4-pack, all will be used</td>
+</tr>
+<tr>
+<td>2020 28mm gussets<br><a class="glightbox" href="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e46o4i29L._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$12.99<br>[<a href="https://www.amazon.com/Bracket-Connectors-Aluminum-Extrusion-Accessories/dp/B0B9JVW5X8">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$25.98</td>
+<td>20 total, 16 will be used. Screws and slide-in T-nuts are included.</td>
+</tr>
+<tr>
+<td>2020 20mm gussets<br><a class="glightbox" href="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81We6WbCDJL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$7.99<br>[<a href="https://www.amazon.com/LANIAKEA-Extrusion-20Series-Connector-Accessories/dp/B08NXGV1YH">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.99</td>
+<td>50-pack, 8 will be used</td>
+</tr>
+<tr>
+<td>2020 90 degree plates<br><a class="glightbox" href="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71mIOmgx4CS._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$15.99<br>[<a href="https://www.amazon.com/Boeray-10pcs-Joining-Aluminum-Profile/dp/B076DNR5DY">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$31.98</td>
+<td>20 total, all will be used</td>
+</tr>
+<tr>
+<td>2020 tee plates<br><a class="glightbox" href="../images/bom/parts/513dHjF5WBL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/513dHjF5WBL._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$9.99<br>[<a href="https://www.amazon.com/Boeray-10pcs-Aluminum-Joining-Profile/dp/B076CXZPG7">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.99</td>
+<td>10-pack, 2 will be used</td>
+</tr>
+<tr>
+<td>2020 20mm corner brackets<br><a class="glightbox" href="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51qnaG4QRHL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/Qjaiune-Aluminum-Extrusion-Brackets-Connector/dp/B09G6KRZ1H">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.99</td>
+<td>10-pack, 8 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61hJHQHkaCL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$14.59<br>[<a href="https://www.amazon.com/KOOTANS-Assembly-Fastener-Aluminum-Extrusion/dp/B07PQ13LCQ">Amazon</a>]</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$43.77</td>
+<td>300 total, 207 will be used</td>
+</tr>
+<tr>
+<td>M5 8mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B084MMND2L">Amazon</a>]</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$17.98</td>
+<td>200 total, 158 will be used</td>
+</tr>
+<tr>
+<td>M5 10mm screws<br><a class="glightbox" href="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OJWVOQRrL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$9.29<br>[<a href="https://www.amazon.com/M5-0-8-Button-Socket-Stainless-Quantity/dp/B07NVHPPBC">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.29</td>
+<td>100 total, 49 will be used</td>
+</tr>
+<tr>
+<td>2020 M5 roll-in T-nuts<br><a class="glightbox" href="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61G73Qsfs5L._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$16.68<br>[<a href="https://www.amazon.com/100-Pack-Aluminum-Extrusions-Profile-Accessories/dp/B07VHNGBWJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.68</td>
+<td>100-pack, can be useful if you forget to pre-install a slide-in T-nut</td>
+</tr>
+<tr>
+<td>6mm clear acrylic sheet (450 x 410 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_sheets_clear-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$23.60<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_clear/508">TAP Plastics</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$23.60</td>
+<td>For the laser-cut bottom acrylic plate</td>
+</tr>
+<tr>
+<td>3mm white acrylic sheet (450 x 410 mm)<br><a class="glightbox" href="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/acrylic_color_new-all-xl-1200x705.jpg" /></a></td>
+<td style="text-align: right;">$15.00<br>[<a href="https://www.tapplastics.com/product/plastics/cut_to_size_plastic/acrylic_sheets_color/341">TAP Plastics</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$15.00</td>
+<td>For the laser-cut top acrylic plate. The exact color we used was "Lightning White 45%".</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h2 id="arm-mounting-hardware">Arm mounting hardware</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:6"><input checked="checked" id="kinova_5" name="__tabbed_6" type="radio" /><input id="franka_5" name="__tabbed_6" type="radio" /><input id="arx5_5" name="__tabbed_6" type="radio" /><input id="xarm" name="__tabbed_6" type="radio" /><input id="ur5" name="__tabbed_6" type="radio" /><input id="viperx" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="kinova_5">Kinova</label><label for="franka_5">Franka</label><label for="arx5_5">ARX5</label><label for="xarm">xArm</label><label for="ur5">UR5</label><label for="viperx">ViperX</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Total cost of arm mounting hardware: $20.26</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 M6 roll-in T-nuts<br><a class="glightbox" href="../images/bom/parts/71%2BBfUx84wL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71%2BBfUx84wL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$11.99<br>[<a href="https://www.amazon.com/Rierdge-European-Standard-Aluminum-Extrusion/dp/B0B7RR2W69">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$11.99</td>
+<td>For securing the Kinova mounting plate to the frame</td>
+</tr>
+<tr>
+<td>M6 25mm flat head screws<br><a class="glightbox" href="../images/bom/parts/51hWR0lWAqL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51hWR0lWAqL._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$8.27<br>[<a href="https://www.amazon.com/M6-1-0-Socket-Screws-Alloy-Steel/dp/B085M3HN8V">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.27</td>
+<td>For securing the Kinova mounting plate to the frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of arm mounting hardware: $19.56</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 M6 slide-in T-nuts<br><a class="glightbox" href="../images/bom/parts/71SpCvZ8BoL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71SpCvZ8BoL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$5.99<br>[<a href="https://www.amazon.com/PHITUODA-30pcs-Sliding-Hammer-Fastener/dp/B09X16W3KX">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$5.99</td>
+<td>For securing the Franka base flange to the frame</td>
+</tr>
+<tr>
+<td>M6 14mm socket head cap screws<br><a class="glightbox" href="../images/bom/parts/81IHm5LC-UL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81IHm5LC-UL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$7.78<br>[<a href="https://www.amazon.com/10-M6-1-0-8mm-Stainless-MonsterBolts/dp/B078KRYVTW">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.78</td>
+<td>For securing the Franka base flange to the frame</td>
+</tr>
+<tr>
+<td>M6 washers (OD 15.9mm)<br><a class="glightbox" href="../images/bom/parts/61ruJx0sueL._SL1134_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61ruJx0sueL._SL1134_.jpg" /></a></td>
+<td style="text-align: right;">$5.79<br>[<a href="https://www.amazon.com/Stainless-Washer-Outside-Diameter-Washers/dp/B08V5MJCX3">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$5.79</td>
+<td>For securing the Franka base flange to the frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Total cost of arm mounting hardware: $30.51</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 M6 roll-in T-nuts<br><a class="glightbox" href="../images/bom/parts/71%2BBfUx84wL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71%2BBfUx84wL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$11.99<br>[<a href="https://www.amazon.com/Rierdge-European-Standard-Aluminum-Extrusion/dp/B0B7RR2W69">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$11.99</td>
+<td>For securing the ARX5 mounting plate to the frame</td>
+</tr>
+<tr>
+<td>M6 16mm screws<br><a class="glightbox" href="../images/bom/parts/61SqJiUDsQL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61SqJiUDsQL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.54<br>[<a href="https://www.amazon.com/Socket-Screws-Metric-Machine-Thread/dp/B0BHZTQTK4">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.54</td>
+<td>For securing the ARX5 mounting plate to the frame</td>
+</tr>
+<tr>
+<td>M3 100mm screws<br><a class="glightbox" href="../images/bom/parts/819dBIytd-L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/819dBIytd-L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$9.98<br>[<a href="https://www.amazon.com/iexcell-Thread-Stainless-Socket-Screws/dp/B0D5LQH3X5">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.98</td>
+<td>For installing a riser between the base of the ARX5 arm and the mounting plate</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M5 10mm socket head cap screws<br><a class="glightbox" href="../images/bom/parts/51g0635zgRL._AC_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51g0635zgRL._AC_.jpg" /></a></td>
+<td style="text-align: right;">$9.02<br>[<a href="https://www.amazon.com/M5-0-8-Socket-Screws-Stainless-Machine/dp/B08JL9NJ4T">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9.02</td>
+<td>For securing the xArm base flange to the frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 M6 slide-in T-nuts<br><a class="glightbox" href="../images/bom/parts/71SpCvZ8BoL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71SpCvZ8BoL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$5.99<br>[<a href="https://www.amazon.com/PHITUODA-30pcs-Sliding-Hammer-Fastener/dp/B09X16W3KX">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$5.99</td>
+<td>For securing the UR5 base flange to the frame</td>
+</tr>
+<tr>
+<td>M6 25mm socket head cap screws<br><a class="glightbox" href="../images/bom/parts/712RfnjN0lL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/712RfnjN0lL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/M6-1-0-Socket-Screws-Stainless-Machine/dp/B07D9P9KKH">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.99</td>
+<td>For securing the UR5 base flange to the frame</td>
+</tr>
+<tr>
+<td>M6 washers (OD 12mm)<br><a class="glightbox" href="../images/bom/parts/51TfnCs0eTL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51TfnCs0eTL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$4.57<br>[<a href="https://www.amazon.com/Washer-Stainless-Steel-Washers-100PCS/dp/B0BGH5GWQJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$4.57</td>
+<td>For securing the UR5 base flange to the frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M5 14mm screws<br><a class="glightbox" href="../images/bom/parts/41KHd9%2B%2BYuL.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/41KHd9%2B%2BYuL.jpg" /></a></td>
+<td style="text-align: right;">$8.46<br>[<a href="https://www.amazon.com/iExcell-Thread-Socket-Screws-Finish/dp/B08S7FLZ1C">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.46</td>
+<td>For securing the ViperX base plate to the frame</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h2 id="accessories">Accessories</h2>
+<p><strong>Total cost of accessories: $67.93</strong></p>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rope ratchets<br><a class="glightbox" href="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61e1MjpkNIL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$22.99<br>[<a href="https://www.amazon.com/VIPARSPECTRA-Retractable-Ratchet-Carabiner-Tie-Down/dp/B07Z613ZM2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$22.99</td>
+<td>For securing components to the frame to prevent movement during operation</td>
+</tr>
+<tr>
+<td>Cable sleeves<br><a class="glightbox" href="../images/bom/parts/71t6eXtVD6L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71t6eXtVD6L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.99<br>[<a href="https://www.amazon.com/Alex-Tech-25ft-Protector-Sleeving/dp/B07FW3GTXB">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.99</td>
+<td>For organizing CAN bus cables</td>
+</tr>
+<tr>
+<td>Velcro cable ties<br><a class="glightbox" href="../images/bom/parts/81cK1XA%2BufL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/81cK1XA%2BufL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$10.98<br>[<a href="https://www.amazon.com/VELCRO-Brand-Cable-Ties-100Pk/dp/B001E1Y5O6">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$10.98</td>
+<td></td>
+</tr>
+<tr>
+<td>Zip ties<br><a class="glightbox" href="../images/bom/parts/71yHM8Ex8mL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71yHM8Ex8mL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$3.99<br>[<a href="https://www.amazon.com/Tensile-Strength-indoor-outdoor-Skalon/dp/B09PJ8L58G">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$3.99</td>
+<td></td>
+</tr>
+<tr>
+<td>USB hub<br><a class="glightbox" href="../images/bom/parts/51%2BU60trRlL._AC_SL1100_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51%2BU60trRlL._AC_SL1100_.jpg" /></a></td>
+<td style="text-align: right;">$14.99<br>[<a href="https://www.amazon.com/Anker-Extended-MacBook-Surface-Notebook/dp/B07L32B9C2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$14.99</td>
+<td>This makes it easier to plug peripherals into the onboard mini PC</td>
+</tr>
+<tr>
+<td>HDMI extender<br><a class="glightbox" href="../images/bom/parts/716HRUANI3L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/716HRUANI3L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$5.99<br>[<a href="https://www.amazon.com/Extension-Highwings-High-Speed-Compatible-Chromecast/dp/B09MJ3M5NJ">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$5.99</td>
+<td>This makes it easier to plug a monitor into the onboard mini PC</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="tools">Tools</h2>
+<div class="bom-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Total Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D printer<br><a class="glightbox" href="../images/bom/parts/91zdmEeZIGL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/91zdmEeZIGL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>We recommend using a <a href="https://bambulab.com/en-us">Bambu Lab</a> or <a href="https://www.prusa3d.com/">Original Prusa</a> printer</td>
+</tr>
+<tr>
+<td>PLA filament (white)<br><a class="glightbox" href="../images/bom/parts/61EgDD2cE7L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61EgDD2cE7L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>PLA filament (black)<br><a class="glightbox" href="../images/bom/parts/61kT6QXpbFL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61kT6QXpbFL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Pliers<br><a class="glightbox" href="../images/bom/parts/71ZCr0TQKtL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71ZCr0TQKtL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For 3D print support removal</td>
+</tr>
+<tr>
+<td>Hook and pick set<br><a class="glightbox" href="../images/bom/parts/51mwGfgk5EL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51mwGfgk5EL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$8.09<br>[<a href="https://www.amazon.com/HARDK-Hook-Pick-Set-B/dp/B07JYWND74">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$8.09</td>
+<td>For 3D print support removal</td>
+</tr>
+<tr>
+<td>Imperial hex T-handles<br><a class="glightbox" href="../images/bom/parts/71c5dqdlzKL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71c5dqdlzKL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$52.12<br>[<a href="https://www.amazon.com/Bondhus-13190-Balldriver-T-handles-8-Inch/dp/B00012WYEM">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$52.12</td>
+<td>For caster module assembly</td>
+</tr>
+<tr>
+<td>Metric hex T-handles<br><a class="glightbox" href="../images/bom/parts/51Ng-BQbLXL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51Ng-BQbLXL._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$40.96<br>[<a href="https://www.amazon.com/Bondhus-13189-Balldriver-T-handles-2-10mm/dp/B00012Y38M">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$40.96</td>
+<td>For frame assembly</td>
+</tr>
+<tr>
+<td>Hex key set<br><a class="glightbox" href="../images/bom/parts/51Wq4dxttoL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51Wq4dxttoL._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$31.19<br>[<a href="https://www.amazon.com/Bondhus-20199-Balldriver-L-Wrench-1-5-10mm/dp/B00012Y38W">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$31.19</td>
+<td></td>
+</tr>
+<tr>
+<td>Phillips screwdriver (#1)<br><a class="glightbox" href="../images/bom/parts/51OcfR9Va1L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51OcfR9Va1L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For encoder assembly</td>
+</tr>
+<tr>
+<td>Torx screwdriver (T9, T10)<br><a class="glightbox" href="../images/bom/parts/712McDbizyL._AC_SL1200_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/712McDbizyL._AC_SL1200_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For motor assembly</td>
+</tr>
+<tr>
+<td>Socket wrench set<br><a class="glightbox" href="../images/bom/parts/9154f8zK31L._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/9154f8zK31L._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For power system assembly</td>
+</tr>
+<tr>
+<td>Loctite 609 retaining compound<br><a class="glightbox" href="../images/bom/parts/51dnvEw7vKL._SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51dnvEw7vKL._SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$16.05<br>[<a href="https://www.amazon.com/Genuine-Loctite-Retaining-Compound-General/dp/B07BCDYD2C">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.05</td>
+<td>For caster module assembly</td>
+</tr>
+<tr>
+<td>Loctite 243 threadlocker<br><a class="glightbox" href="../images/bom/parts/51erfFRhloL._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51erfFRhloL._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$16.42<br>[<a href="https://www.amazon.com/Loctite-1329467-Medium-Strength-Threadlockers/dp/B009I2UC3Q">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$16.42</td>
+<td>For caster module assembly</td>
+</tr>
+<tr>
+<td>White lithium grease<br><a class="glightbox" href="../images/bom/parts/51hKLfS1xJL._AC_SL1000_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/51hKLfS1xJL._AC_SL1000_.jpg" /></a></td>
+<td style="text-align: right;">$7.99<br>[<a href="https://www.amazon.com/Lucas-Oil-Products-LUC10533-Lithium/dp/B06XSYB7VL">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7.99</td>
+<td>For lubricating caster module gears</td>
+</tr>
+<tr>
+<td>Wire stripper<br><a class="glightbox" href="../images/bom/parts/61Svsk9jkaL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/61Svsk9jkaL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$10.99<br>[<a href="https://www.amazon.com/VISE-GRIP-Stripping-Cutter-8-Inch-2078309/dp/B000JNNWQ2">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$10.99</td>
+<td>For encoder power cables (22 AWG solid)</td>
+</tr>
+<tr>
+<td>Large-gauge wire stripper<br><a class="glightbox" href="../images/bom/parts/71HmuSVKD4L._SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/71HmuSVKD4L._SL1500_.jpg" /></a></td>
+<td style="text-align: right;">$12.14<br>[<a href="https://www.amazon.com/Southwire-Equipment-S612STR-Ergonomic-Stripper/dp/B00N4TW2BE">Amazon</a>]</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$12.14</td>
+<td>For motor power cables (10 AWG stranded)</td>
+</tr>
+<tr>
+<td>Electrical tape (black, red)<br><a class="glightbox" href="../images/bom/parts/6613.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/6613.webp" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For power system assembly</td>
+</tr>
+<tr>
+<td>Straightedge (50cm)<br><a class="glightbox" href="../images/bom/parts/711-sl2drrL._AC_SL1500_.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/parts/711-sl2drrL._AC_SL1500_.jpg" /></a></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;"></td>
+<td>For aligning the wheels when setting encoder magnet offsets. You can also just use an extra T-slot extrusion.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The imperial and metric hex tools are NOT interchangeable.
+Please make sure you have both sets.
+Using one in place of the other can result in stripped screws.</p>
+</div>
+<h2 id="manufacturing">Manufacturing</h2>
+<h3 id="3d-printing">3D printing</h3>
+<p><em>Estimated time: 3 days</em></p>
+<p>We provide STL files for our 3D-printed parts below, along with the required quantities for each.
+All parts can be printed with PLA filament on a consumer-grade 3D printer.
+Please make sure to enable supports where specified.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have tested a variety of 3D printers to verify that our parts can be easily reproduced in other labs.
+We recommend using a printer from <a href="https://bambulab.com/en-us">Bambu Lab</a> or <a href="https://www.prusa3d.com/">Original Prusa</a> for high print quality, speed, and overall ease of use.
+We do not recommend using a Creality Ender series printer.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="kinova_6" name="__tabbed_7" type="radio" /><input id="franka_6" name="__tabbed_7" type="radio" /><input id="arx5_6" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="kinova_6">Kinova</label><label for="franka_6">Franka</label><label for="arx5_6">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="stl-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: center;">Quantity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20A.stl">Wheel mount A</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20A.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20B.stl">Wheel mount B</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20B.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Breaker%20Terminal%20Spacer.stl">Breaker terminal spacer</a><br><a class="glightbox" href="../images/bom/stl/Breaker%20Terminal%20Spacer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Breaker%20Terminal%20Spacer.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For covering the exposed terminals of the 5A breaker in the power distribution panel (PDP)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module%20Alignment%20Jig.stl">Caster module alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>(Optional) Helpful for installing caster modules into the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Wheel%20Alignment%20Jig.stl">Wheel alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td>For setting the encoder magnet offsets</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Battery%20Mount%20Left.stl">Battery mount (left)</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Battery%20Mount%20Left.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Battery%20Mount%20Left.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For securing the SLA battery to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Battery%20Mount%20Right.stl">Battery mount (right)</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Battery%20Mount%20Right.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Battery%20Mount%20Right.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For securing the SLA battery to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Base%20Camera%20Mount%20Top.stl">Base camera mount (top)</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Base%20Camera%20Mount%20Top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Base%20Camera%20Mount%20Top.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Base%20Camera%20Mount%20Bottom.stl">Base camera mount (bottom)</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Base%20Camera%20Mount%20Bottom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Base%20Camera%20Mount%20Bottom.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Base%20Camera%20Mount%20Shim.stl">Base camera mount shim</a><br><a class="glightbox" href="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For keeping the base camera angle fixed</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Mounting%20Plate%20Alignment%20Jig.stl">Kinova mounting plate alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Mounting%20Plate%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Mounting%20Plate%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>(Optional) Helpful for mounting the Kinova arm on the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20T-Nut%20Alignment%20Jig.stl">Kinova T-nut alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20T-Nut%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20T-Nut%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>(Optional) Helpful for mounting the Kinova arm on the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Kinova/Kinova%20Fisheye%20Mount.stl">Kinova fisheye mount</a><br><a class="glightbox" href="../images/bom/stl/Kinova%20Fisheye%20Mount.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Kinova%20Fisheye%20Mount.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting a fisheye lens on the Kinova wrist camera. Print with supports enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="stl-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: center;">Quantity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20A.stl">Wheel mount A</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20A.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20B.stl">Wheel mount B</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20B.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Breaker%20Terminal%20Spacer.stl">Breaker terminal spacer</a><br><a class="glightbox" href="../images/bom/stl/Breaker%20Terminal%20Spacer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Breaker%20Terminal%20Spacer.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For covering the exposed terminals of the 5A breaker in the power distribution panel (PDP)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module%20Alignment%20Jig.stl">Caster module alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>(Optional) Helpful for installing caster modules into the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Wheel%20Alignment%20Jig.stl">Wheel alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td>For setting the encoder magnet offsets</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Bottom%20Plate%20Support%20Bracket.stl">Bottom plate support bracket</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Bottom%20Plate%20Support%20Bracket.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Bottom%20Plate%20Support%20Bracket.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td>For installing the bottom acrylic plates. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Battery%20Mount%20Left.stl">Battery mount (left)</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Battery%20Mount%20Left.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Battery%20Mount%20Left.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For securing the SLA battery to the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Battery%20Mount%20Right.stl">Battery mount (right)</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Battery%20Mount%20Right.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Battery%20Mount%20Right.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For securing the SLA battery to the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Base%20Camera%20Mount%20Top.stl">Base camera mount (top)</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Base%20Camera%20Mount%20Top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Base%20Camera%20Mount%20Top.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Base%20Camera%20Mount%20Bottom.stl">Base camera mount (bottom)</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Base%20Camera%20Mount%20Bottom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Base%20Camera%20Mount%20Bottom.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Base%20Camera%20Mount%20Shim.stl">Base camera mount shim</a><br><a class="glightbox" href="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For keeping the base camera angle fixed</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Logitech%20Fisheye%20Mount.stl">Logitech fisheye mount</a><br><a class="glightbox" href="../images/bom/stl/Logitech%20Fisheye%20Mount.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Logitech%20Fisheye%20Mount.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting a fisheye lens on the wrist camera. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Franka/Franka%20Wrist%20Camera%20Mount.stl">Wrist camera mount</a><br><a class="glightbox" href="../images/bom/stl/Franka%20Wrist%20Camera%20Mount.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Franka%20Wrist%20Camera%20Mount.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting the wrist camera on the arm. Print with supports enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="stl-table">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: center;">Quantity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20A.stl">Wheel mount A</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20A.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20B.stl">Wheel mount B</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Mount%20B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Mount%20B.png" /></a></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td><strong>Note: Printing this structural component requires special attention.</strong> Please see the <a href="../caster-modules/#wheel-mount-printing">Wheel mount printing</a> section for more details.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Breaker%20Terminal%20Spacer.stl">Breaker terminal spacer</a><br><a class="glightbox" href="../images/bom/stl/Breaker%20Terminal%20Spacer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Breaker%20Terminal%20Spacer.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For covering the exposed terminals of the 5A breaker in the power distribution panel (PDP)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module%20Alignment%20Jig.stl">Caster module alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Caster%20Module%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>(Optional) Helpful for installing caster modules into the frame</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Wheel%20Alignment%20Jig.stl">Wheel alignment jig</a><br><a class="glightbox" href="../images/bom/stl/Wheel%20Alignment%20Jig.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Wheel%20Alignment%20Jig.png" /></a></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td>For setting the encoder magnet offsets</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Battery%20Mount.stl">Battery mount</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Battery%20Mount.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Battery%20Mount.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For securing the SLA battery to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Base%20Camera%20Mount%20Top.stl">Base camera mount (top)</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Base%20Camera%20Mount%20Top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Base%20Camera%20Mount%20Top.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Base%20Camera%20Mount%20Bottom.stl">Base camera mount (bottom)</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Base%20Camera%20Mount%20Bottom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Base%20Camera%20Mount%20Bottom.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For attaching the base camera to the frame. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Base%20Camera%20Mount%20Shim.stl">Base camera mount shim</a><br><a class="glightbox" href="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Base%20Camera%20Mount%20Shim.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For keeping the base camera angle fixed</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Riser.stl">ARX5 riser</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Riser.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Riser.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For increasing the elevation of the arm's base</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Logitech%20Fisheye%20Mount.stl">Logitech fisheye mount</a><br><a class="glightbox" href="../images/bom/stl/Logitech%20Fisheye%20Mount.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/Logitech%20Fisheye%20Mount.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting a fisheye lens on the wrist camera. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Wrist%20Camera%20Mount%20Top.stl">Wrist camera mount (top)</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Wrist%20Camera%20Mount%20Top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Wrist%20Camera%20Mount%20Top.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting the wrist camera on the arm. Print with supports enabled.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/ARX5/ARX5%20Wrist%20Camera%20Mount%20Bottom.stl">Wrist camera mount (bottom)</a><br><a class="glightbox" href="../images/bom/stl/ARX5%20Wrist%20Camera%20Mount%20Bottom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/stl/ARX5%20Wrist%20Camera%20Mount%20Bottom.png" /></a></td>
+<td style="text-align: center;">1</td>
+<td>For mounting the wrist camera on the arm. Print with supports enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All STL files are in their intended print orientation.
+You should not need to reorient any of them.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Some of the support material may be difficult to remove by hand.
+We recommend using pliers and <a href="https://www.amazon.com/HARDK-Hook-Pick-Set-B/dp/B07JYWND74">picks</a> for easier removal.</p>
+</div>
+<h3 id="laser-cutting">Laser cutting</h3>
+<p><em>Estimated time: 30 minutes</em></p>
+<p>We use laser-cut acrylic plates on the top and bottom of our mobile base.
+The 6mm bottom plate supports internal components, while the 3mm top plate prevents objects from falling into the robot.
+We purchase cut-to-size acrylic sheets from TAP Plastics (as specified in the BOM) and laser cut them into final plate designs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you do not have access to a laser cutter, you can order pre-cut plates from a service like Xometry, but expect to pay roughly 4x the cost of buying uncut sheets.</p>
+</div>
+<p>Below are the DXF drawings for each plate, along with the corresponding uncut sheet dimensions:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="kinova_7" name="__tabbed_8" type="radio" /><input id="franka_7" name="__tabbed_8" type="radio" /><input id="arx5_7" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="kinova_7">Kinova</label><label for="franka_7">Franka</label><label for="arx5_7">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Top (left)</th>
+<th style="text-align: center;">Top (right)</th>
+<th style="text-align: center;">Bottom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Kinova%20Top%20Plate%20Left.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Kinova%20Top%20Plate%20Left.png" width="200px" /></a><br>3mm white<br>550 x 230 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Kinova%20Top%20Plate%20Left.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Kinova%20Top%20Plate%20Right.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Kinova%20Top%20Plate%20Right.png" width="200px" /></a><br>3mm white<br>550 x 230 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Kinova%20Top%20Plate%20Right.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Kinova%20Bottom%20Plate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Kinova%20Bottom%20Plate.png" width="200px" /></a><br>6mm clear<br>550 x 510 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Kinova%20Bottom%20Plate.dxf">DXF</a>]</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the bottom plate exceeds the bed size of your laser cutter, you can cut each half separately using these drawings:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Bottom (back)</th>
+<th style="text-align: center;">Bottom (front)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Kinova%20Bottom%20Plate%20Back.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Kinova%20Bottom%20Plate%20Back.png" width="100px" /></a><br>6mm clear<br>275 x 510 mm<br><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Kinova%20Bottom%20Plate%20Back.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Kinova%20Bottom%20Plate%20Front.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Kinova%20Bottom%20Plate%20Front.png" width="100px" /></a><br>6mm clear<br>275 x 510 mm<br><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Kinova%20Bottom%20Plate%20Front.dxf">DXF</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Top (center)</th>
+<th style="text-align: center;">Top (front)</th>
+<th style="text-align: center;">Bottom (back)</th>
+<th style="text-align: center;">Bottom (front)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Top%20Plate%20Center.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Top%20Plate%20Center.png" width="39px" /></a><br>3mm white<br>117 x 510 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Top%20Plate%20Center.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Top%20Plate%20Front.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Top%20Plate%20Front.png" width="34px" /></a><br>3mm white<br>103 x 510 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Top%20Plate%20Front.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Bottom%20Plate%20Back.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Bottom%20Plate%20Back.png" width="56px" /></a><br>6mm clear<br>160 x 310 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Bottom%20Plate%20Back.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Bottom%20Plate%20Front.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Bottom%20Plate%20Front.png" width="56px" /></a><br>6mm clear<br>160 x 310 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Bottom%20Plate%20Front.dxf">DXF</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Top</th>
+<th style="text-align: center;">Bottom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/ARX5%20Top%20Plate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/ARX5%20Top%20Plate.png" width="163px" /></a><br>3mm white<br>450 x 410 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/ARX5%20Top%20Plate.dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/ARX5%20Bottom%20Plate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/ARX5%20Bottom%20Plate.png" width="163px" /></a><br>6mm clear<br>450 x 410 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/ARX5%20Bottom%20Plate.dxf">DXF</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All sheet dimensions are specified as (x, y), where x is the horizontal dimension.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The sheet dimensions include a 5mm margin on each side to be trimmed during the cutting process.
+When cutting, position the drawing slightly inside the sheet's edge to account for this margin.</p>
+</div>
+<h3 id="machining">Machining</h3>
+<p>Our mobile base requires 4 custom shafts (one per caster module) which can be machined by a manufacturing service like Xometry.
+To place your order on <a href="https://www.xometry.com">Xometry</a>, you will need to provide the following information:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">3D model</th>
+<th style="text-align: center;">2D drawing</th>
+<th style="text-align: center;">Specifications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/Intermediate%20Shaft.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Intermediate%20Shaft.png" width="200px" /></a><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Intermediate%20Shaft.step">STEP</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/Intermediate%20Shaft%20-%202D%20Drawing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Intermediate%20Shaft%20-%202D%20Drawing.png" width="200px" /></a><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Machining/Intermediate%20Shaft%20-%202D%20Drawing.pdf">PDF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/Intermediate%20Shaft%20-%20Specifications.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/Intermediate%20Shaft%20-%20Specifications.png" width="200px" /></a><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Machining/Intermediate%20Shaft%20-%20Specifications.pdf">PDF</a>]</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to the high setup costs of CNC machining, the unit cost of manufacturing this part drops dramatically with larger quantities: the 1st piece costs almost $100 whereas the 20th piece costs only $5. Therefore, instead of ordering just 4 pieces (which would cost $50 per piece), we recommend coordinating with other labs to place a large group order. For example, by ordering 24 pieces (for 6 robots), the cost drops to $15 per piece.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We used Xometry's "International Economy" option, which offers the lowest overall cost and arrives 2–3 weeks after the order is placed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need shafts urgently and are located near Stanford, feel free to reach out as we may have some extras on hand.</p>
+</div>
+<h2 id="component-notes">Component notes</h2>
+<h3 id="portable-power-station">Portable power station</h3>
+<p><strong>Selection criteria</strong></p>
+<p>The portable power station (camping battery) supplies power to the arm and onboard compute.
+Our reference designs link to the exact models we used, but many other models can also work.
+When choosing a battery, these are the main criteria we consider:</p>
+<ol>
+<li>
+<p><em>Can it power the arm and onboard compute?</em></p>
+<p>The battery must have pure sine wave AC outlets, as well as sufficient capacity and power output for both the arm and the onboard computer.</p>
+</li>
+<li>
+<p><em>Is it fast-charging?</em></p>
+<p>This criterion is often overlooked but quickly eliminates most candidates. Many camping batteries require more than 8 hours to recharge, which can severely limit productivity as the robot remains immobile while plugged in for charging.
+To maximize uptime, we highly recommend using a battery that can recharge in 1 hour.</p>
+</li>
+<li>
+<p><em>Will it fit inside the frame?</em></p>
+<p>To verify whether a battery might fit, we note the approximate dimensions (L x W x H) of the available space in the center of the frame and narrow down the options accordingly.</p>
+</li>
+</ol>
+<p><strong>Substitutions</strong></p>
+<p>Below, we list potential substitutes for each reference design:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="kinova_8" name="__tabbed_9" type="radio" /><input id="franka_8" name="__tabbed_9" type="radio" /><input id="arx5_8" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="kinova_8">Kinova</label><label for="franka_8">Franka</label><label for="arx5_8">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Available space: 16.5" x 10" x 9.8" (42 x 25.3 x 25 cm)</p>
+<p>Potential candidates:</p>
+<ul>
+<li>EcoFlow RIVER 2 Pro (768 Wh)</li>
+<li>EcoFlow RIVER 2 Max (512 Wh)</li>
+<li>Jackery Explorer 600 Plus (632 Wh)</li>
+<li>EcoFlow RIVER Pro (720 Wh)</li>
+<li>EcoFlow DELTA Mini (882 Wh)</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Available space: 16.5" x 10" x 12.6" (42 x 25.3 x 32 cm)</p>
+<p>Potential candidates:</p>
+<ul>
+<li>Jackery Explorer 2000 Pro (2160 Wh)</li>
+<li>EcoFlow DELTA 2 Max (2048 Wh)</li>
+<li>EcoFlow DELTA Max (2048 Wh)</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Available space: 12.6" x 6" x 9.6" (32 x 15.3 x 24.4 cm)</p>
+<p>Potential candidates:</p>
+<ul>
+<li>Anker SOLIX C300 (288 Wh)</li>
+<li>EcoFlow RIVER 3 Plus (286 Wh)</li>
+<li>Jackery Explorer 300 Plus (288 Wh)</li>
+<li>EcoFlow RIVER 3 (245 Wh)</li>
+<li>Jackery Explorer 240 v2 (256 Wh)</li>
+<li>EcoFlow RIVER 2 (256 Wh)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Product listings may contain inaccurate dimensions.
+While the listed batteries likely fit, most of them have not been individually confirmed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The provided dimensions are not hard limits.
+Certain features, such as handles, can exceed the limits without interfering with the frame.</p>
+</div>
+<p>We have verified a few camping batteries as viable substitutes.
+These are listed below (click to expand), along with the modifications needed to accommodate them.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="franka_9" name="__tabbed_10" type="radio" /><input id="arx5_9" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="franka_9">Franka</label><label for="arx5_9">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<details class="note">
+<summary>EcoFlow DELTA 2 Max (2048 Wh) [<a href="https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Optional/dp/B0C4DW17PD">Amazon</a>]</summary>
+<p>Compared to the camping battery used in our reference design, the DELTA 2 Max is much wider and requires several modifications to incorporate:</p>
+<ul>
+<li>Order slightly larger acrylic sheets (6mm clear) for the bottom plates: 185 x 310 mm instead of 160 x 310 mm.</li>
+<li>Use the modified DXF drawings below when laser cutting the acrylic bottom plates.</li>
+<li>Move crossbars at the bottom of the frame closer together: 150 mm instead of 200 mm.</li>
+<li>Mount the PDP on the back rather than the left side.</li>
+<li>Use longer motor power cable extensions: 15 cm instead of 10 cm.</li>
+<li>Use longer wires from PDP to encoder power harness: 55 cm instead of 45 cm.</li>
+<li>Use <a href="https://www.amazon.com/DEWENWILS-Extension-Profile-Grounded-Flexible/dp/B0891XFDJ2">right-angle plug adapters</a> so that power cords do not protrude from the side of the robot.</li>
+</ul>
+<p>DXF drawings for the larger acrylic bottom plates:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Bottom (back)</th>
+<th style="text-align: center;">Bottom (front)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Bottom%20Plate%20Back%20%28EcoFlow%20DELTA%202%20Max%29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Bottom%20Plate%20Back%20%28EcoFlow%20DELTA%202%20Max%29.png" width="65px" /></a><br>6mm clear<br>185 x 310 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Bottom%20Plate%20Back%20(EcoFlow%20DELTA%202%20Max).dxf">DXF</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/bom/dxf/Franka%20Bottom%20Plate%20Front%20%28EcoFlow%20DELTA%202%20Max%29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/dxf/Franka%20Bottom%20Plate%20Front%20%28EcoFlow%20DELTA%202%20Max%29.png" width="65px" /></a><br>6mm clear<br>185 x 310 mm<br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/Laser%20Cutting/Franka%20Bottom%20Plate%20Front%20(EcoFlow%20DELTA%202%20Max).dxf">DXF</a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Securing the battery to the frame (7 rope ratchets):</p>
+<p><a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9778.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9778.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9765.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9765.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9780.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9780.jpg" width="49.45%" /></a></p>
+<p>Mounting the PDP on the back side:</p>
+<p><a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9969.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9969.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9971.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9971.jpg" width="49.45%" /></a></p>
+<p>CAN bus wiring:</p>
+<p><a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9979.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9979.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9987.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20DELTA%202%20Max/IMG_9987.jpg" width="49.45%" /></a></p>
+</details>
+</div>
+<div class="tabbed-block">
+<details class="note">
+<summary>EcoFlow RIVER 2 (256 Wh) [<a href="https://www.amazon.com/EF-ECOFLOW-Portable-Generator-Charging/dp/B0CMQYK2KW">Amazon</a>]</summary>
+<p>This battery has lower capacity (256 Wh) compared to the one used in our reference design (288 Wh).
+No modifications are needed.
+Below are photos showing how to secure it to the frame with a single rope ratchet:</p>
+<p><a class="glightbox" href="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2412.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2412.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2406.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2406.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2418.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bom/substitutions/EcoFlow%20RIVER%202/IMG_2418.jpg" width="49.45%" /></a></p>
+</details>
+</div>
+</div>
+</div>
+<h3 id="mini-pc">Mini PC</h3>
+<p>The onboard mini PC is a dedicated computer for running robot controllers.
+It typically operates in headless mode with no monitor attached.
+We connect to it via SSH and use <code>tmux</code> to maintain persistent sessions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To minimize latency spikes in the control loop, we recommend running all other tasks on a separate computer, such as a GPU laptop or workstation.
+This includes workloads like deep learning, point cloud processing, visualization, VS Code, web browsing, TeamViewer, etc.
+While it is possible to run everything on one computer, you may need to spend additional effort to mitigate latency issues.</p>
+</div>
+<p>These are the basic criteria we look at when selecting a mini PC:</p>
+<ul>
+<li><strong>Compact form factor:</strong> A smaller computer is easier to install inside the mobile base.</li>
+<li><strong>Low power consumption:</strong> Since the onboard mini PC runs on battery power, lower power consumption is preferred.</li>
+<li><strong>Processor:</strong> The processor does not need to be very powerful since it only runs robot controllers. For instance, we have found that the Intel N100 (a modern, energy-efficient entry-level processor) is adequate for low-level control of our robot, and consumes only 20W under load.</li>
+</ul>
+<p>We have primarily used the following models:</p>
+<ul>
+<li>Intel NUC 7 (from Q1 2017)</li>
+<li>Beelink MINI S12 Pro [<a href="https://www.bee-link.com/products/beelink-mini-s12-pro-n100">Beelink</a>] [<a href="https://www.amazon.com/Beelink-Desktop-Computer-Support-Ethernet/dp/B0BVLS7ZHP">Amazon</a>]</li>
+</ul>
+<h3 id="logitech-camera">Logitech camera</h3>
+<p>We have purchased numerous Logitech C930e webcams from Amazon and have occasionally received counterfeit units.
+Unfortunately, these fakes have poor image quality and lack support for adjusting basic camera settings in OpenCV.</p>
+<p>To identify fake webcams, check the vendor and serial number of the device:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l<span class="w"> </span>/dev/v4l/by-id/
+</code></pre></div>
+<p>Example output for a genuine webcam:</p>
+<div class="highlight"><pre><span></span><code>/dev/v4l/by-id/usb-046d_Logitech_Webcam_C930e_XXXXXXXX-video-index0
+</code></pre></div>
+<p>Example output for a fake webcam:</p>
+<div class="highlight"><pre><span></span><code>/dev/v4l/by-id/usb-Sonix_Technology_Co.__Ltd._Logitech_Webcam_C930e_SN0001-video-index0
+</code></pre></div>
+<p>Key differences:</p>
+<ul>
+<li><strong>Serial number:</strong> Genuine webcams have a unique serial number, whereas fake devices use a generic one (<code>SN0001</code>).</li>
+<li><strong>Vendor:</strong> Genuine devices list <code>Logitech</code> as the vendor, whereas fake devices show <code>Sonix Technology Co., Ltd.</code>.</li>
+</ul>
+<p>Most recently, we have received genuine cameras from the Amazon sellers "ARF Tech" and "Lumege (Serial Numbers Recorded)", and fakes from the Amazon seller "TecTrove".</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../caster-modules/" class="md-footer__link md-footer__link--next" aria-label="Next: Caster modules">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Caster modules
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
