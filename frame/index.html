@@ -1,0 +1,1327 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning">
+      
+      
+      
+        <link rel="canonical" href="http://tidybot2.github.io/docs/frame/">
+      
+      
+        <link rel="prev" href="../can-system/">
+      
+      
+        <link rel="next" href="../integration/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Frame - TidyBot++ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NBGQBQD9W5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NBGQBQD9W5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NBGQBQD9W5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Frame - TidyBot++ Docs" >
+      
+        <meta  property="og:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  property="og:image"  content="http://tidybot2.github.io/docs/assets/images/social/frame.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="http://tidybot2.github.io/docs/frame/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Frame - TidyBot++ Docs" >
+      
+        <meta  name="twitter:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  name="twitter:image"  content="http://tidybot2.github.io/docs/assets/images/social/frame.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frame" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TidyBot++ Docs" class="md-header__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TidyBot++ Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Frame
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TidyBot++ Docs" class="md-nav__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TidyBot++ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caster-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../can-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cad-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAD model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bottom-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottom frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uprights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uprights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete frame
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arm-mounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arm mounting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cad-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAD model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bottom-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottom frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uprights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uprights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete frame
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="frame">Frame</h1>
+<p><em>Estimated time: 3 hours</em></p>
+<p>This page will guide you through assembly of the T-slot aluminum frame.</p>
+<h2 id="cad-model">CAD model</h2>
+<p>To build the frame, please follow the design in the CAD model.
+Below, we link to an online viewer that allows you to navigate the CAD model directly in your browser.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="kinova" name="__tabbed_1" type="radio" /><input id="franka" name="__tabbed_1" type="radio" /><input id="arx5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="kinova">Kinova</label><label for="franka">Franka</label><label for="arx5">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame.png" width="49.45%" /></a></p>
+<p>Click to open online CAD viewer in new tab: [<a href="https://cad.onshape.com/documents/4426192f22cdac86f1d998e3/w/4b79d7e6bd9dc6f7ddcf85e2/e/0e3c7ad4393164cfdd9eb182?renderMode=0&amp;uiState=6752f5f76637ec4971736937" target="_blank">Onshape</a>]</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame.png" width="49.45%" /></a></p>
+<p>Click to open online CAD viewer in new tab: [<a href="https://cad.onshape.com/documents/4426192f22cdac86f1d998e3/w/4b79d7e6bd9dc6f7ddcf85e2/e/e743169f33e6c49a074cb8e1?renderMode=0&amp;uiState=6752f60e6637ec4971736975" target="_blank">Onshape</a>]</p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame.png" width="49.45%" /></a></p>
+<p>Click to open online CAD viewer in new tab: [<a href="https://cad.onshape.com/documents/4426192f22cdac86f1d998e3/w/4b79d7e6bd9dc6f7ddcf85e2/e/cbb48496b5abe3af1641c8c5?renderMode=0&amp;uiState=6752f6196637ec49717369a3" target="_blank">Onshape</a>]</p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To rotate the Onshape 3D view, hold down the right mouse button and drag.
+To identify a part, click on it in the 3D view, and its name will be highlighted in the parts list on the left side.
+You can hide and show parts to improve visibility.
+For more tips on navigating the user interface, please see the <a href="https://cad.onshape.com/help/Content/moving.htm">Onshape docs</a>.</p>
+</div>
+<p>We also provide the following drawing which shows all relevant measurements (in mm):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="kinova_1" name="__tabbed_2" type="radio" /><input id="franka_1" name="__tabbed_2" type="radio" /><input id="arx5_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="kinova_1">Kinova</label><label for="franka_1">Franka</label><label for="arx5_1">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%20Dimensions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%20Dimensions.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%20Dimensions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%20Dimensions.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%20Dimensions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%20Dimensions.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="parts">Parts</h2>
+<p>You will need the following parts to build the frame:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="kinova_2" name="__tabbed_3" type="radio" /><input id="franka_2" name="__tabbed_3" type="radio" /><input id="arx5_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="kinova_2">Kinova</label><label for="franka_2">Franka</label><label for="arx5_2">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 500mm rail</td>
+<td>13</td>
+</tr>
+<tr>
+<td>2020 250mm rail</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2020 28mm gusset</td>
+<td>24</td>
+</tr>
+<tr>
+<td>2020 20mm gusset</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2020 90 degree plate</td>
+<td>24</td>
+</tr>
+<tr>
+<td>2020 20mm corner bracket</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts</td>
+<td>222</td>
+</tr>
+<tr>
+<td>M5 8mm screws</td>
+<td>174</td>
+</tr>
+<tr>
+<td>M5 10mm screws</td>
+<td>48</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 500mm rail</td>
+<td>16</td>
+</tr>
+<tr>
+<td>2020 300mm rail</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2020 28mm gusset</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2020 20mm gusset</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2020 90 degree plate</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2020 20mm corner bracket</td>
+<td>32</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts</td>
+<td>237</td>
+</tr>
+<tr>
+<td>M5 8mm screws</td>
+<td>197</td>
+</tr>
+<tr>
+<td>M5 10mm screws</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020 400mm rail</td>
+<td>12</td>
+</tr>
+<tr>
+<td>2020 250mm rail</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2020 28mm gusset</td>
+<td>16</td>
+</tr>
+<tr>
+<td>2020 20mm gusset</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2020 90 degree plate</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2020 tee plate</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2020 20mm corner bracket</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2020 M5 slide-in T-nuts</td>
+<td>201</td>
+</tr>
+<tr>
+<td>M5 8mm screws</td>
+<td>158</td>
+</tr>
+<tr>
+<td>M5 10mm screws</td>
+<td>43</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some parts come with hex keys included:</p>
+<p><a class="glightbox" href="../images/frame/IMG_6681.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6681.jpg" width="32.55%" /></a></p>
+<p>We recommend discarding these, as they are typically low-quality and can easily strip screws.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The 90 degree plates come with their own screws (right).
+We recommend discarding them because they look very similar to the 8mm screws but are not as strong.</p>
+<p><a class="glightbox" href="../images/frame/IMG_0856.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_0856.jpg" width="32.55%" /></a>
+<a class="glightbox" href="../images/frame/IMG_6683.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6683.jpg" width="32.55%" /></a></p>
+</div>
+<p>The following table shows which screws and T-nuts to use for each part:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Screw</th>
+<th>T-nut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28mm gusset</td>
+<td><strong>Included</strong></td>
+<td><strong>Included</strong></td>
+</tr>
+<tr>
+<td>20mm gusset</td>
+<td>8mm</td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>90 degree plate</td>
+<td>8mm</td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>Tee plate</td>
+<td>8mm</td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>Corner bracket</td>
+<td>8mm</td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>Top plate (3mm acrylic)</td>
+<td>8mm</td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>Bottom plate (6mm acrylic)</td>
+<td><strong>10mm</strong></td>
+<td>Slide-in</td>
+</tr>
+<tr>
+<td>Caster module</td>
+<td><strong>10mm</strong></td>
+<td>Slide-in</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will find three kinds of T-nuts:</p>
+<p><a class="glightbox" href="../images/frame/IMG_6678.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6678.jpg" width="32.55%" /></a></p>
+<p>We will primarily use slide-in T-nuts (left), which need to be pre-installed because they are inserted from the end of the rail.
+Roll-in T-nuts (middle) can be used if you forgot to pre-install a slide-in T-nut.
+We recommend discarding all drop-in T-nuts (right), as we will not use them.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The 28mm gussets come with their own screws and T-nuts (middle), which are slightly different from the standard M5 screws and T-nuts (right).
+The screws for the 28mm gussets have wider heads to accommodate the larger mounting holes in the gussets.</p>
+<p><a class="glightbox" href="../images/frame/IMG_6677.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6677.jpg" width="32.55%" /></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For all other parts, we will use these two types of M5 screws:</p>
+<p><a class="glightbox" href="../images/frame/IMG_6669.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6669.jpg" width="32.55%" /></a></p>
+<p>Most parts will use the shorter 8mm screw.
+The longer 10mm screw should be used when mounting thicker parts, such as the caster modules and the bottom acrylic plate.</p>
+</div>
+<h2 id="assembly">Assembly</h2>
+<p>Please follow the CAD model to assemble your frame.
+We break down the process into more detailed steps below, but feel free to assemble in any way you prefer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The frame uses hex screws in metric sizes only.
+To avoid accidentally stripping screws, do not use any Imperial hex keys during frame assembly.
+If you are using Bondhus hex tools, use only the red ones, not the yellow ones.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before starting assembly, gather all parts and lay each one next to where it will be installed.
+This helps ensure that all parts are accounted for.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure screws are tight.
+Vibrations from robot movement may cause screws to loosen and fall out.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Screws should go in smoothly and should not feel tight until fully seated.
+If you find that a partially inserted screw is difficult to turn, it is most likely due to misalignment.
+Please loosen the screw and check the alignment.
+Do not force the screw in.</p>
+</div>
+<h3 id="bottom-frame">Bottom frame</h3>
+<p>Assemble the bottom frame:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="kinova_3" name="__tabbed_4" type="radio" /><input id="franka_3" name="__tabbed_4" type="radio" /><input id="arx5_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="kinova_3">Kinova</label><label for="franka_3">Franka</label><label for="arx5_3">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%20Step%201.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%20Step%201.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%20Step%201.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%20Step%201.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%20Step%201.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%20Step%201.png" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are two sizes of gussets: 28mm (left) and 20mm (right).</p>
+<p><a class="glightbox" href="../images/frame/IMG_6676.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_6676.jpg" width="32.55%" /></a></p>
+<p>We primarily use the larger 28mm gusset, but there are 8 locations where the smaller 20mm gusset must be used, as shown in the image below.
+If the 28mm gusset is used in any of these locations, it will collide with the caster module, preventing proper installation.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="kinova_4" name="__tabbed_5" type="radio" /><input id="franka_4" name="__tabbed_5" type="radio" /><input id="arx5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="kinova_4">Kinova</label><label for="franka_4">Franka</label><label for="arx5_4">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%2020mm%20Gussets.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%2020mm%20Gussets.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%2020mm%20Gussets.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%2020mm%20Gussets.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%2020mm%20Gussets.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%2020mm%20Gussets.png" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please pre-install slide-in T-nuts for the caster modules and the bottom acrylic plate:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="kinova_5" name="__tabbed_6" type="radio" /><input id="franka_5" name="__tabbed_6" type="radio" /><input id="arx5_5" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="kinova_5">Kinova</label><label for="franka_5">Franka</label><label for="arx5_5">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caster module</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Bottom plate</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caster module</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Bottom plate</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caster module</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Bottom plate</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>For the caster modules, each corner of the bottom frame should contain 8 T-nuts:</p>
+<p><a class="glightbox" href="../images/frame/IMG_0836.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/IMG_0836.jpg" width="32.55%" /></a></p>
+<p>For the bottom acrylic plate, please refer to the mounting hole locations in the CAD model for T-nut placement.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the bottom of your frame is not level, your mobile base may have one wheel constantly off the ground.
+Before installing the middle crossbars, place your bottom frame on a flat, level surface (such as a tabletop) and make sure it does not rock back and forth.</p>
+</div>
+<h3 id="top-frame">Top frame</h3>
+<p>Assemble the top frame:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="kinova_6" name="__tabbed_7" type="radio" /><input id="franka_6" name="__tabbed_7" type="radio" /><input id="arx5_6" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="kinova_6">Kinova</label><label for="franka_6">Franka</label><label for="arx5_6">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%20Step%202.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%20Step%202.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%20Step%202.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%20Step%202.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%20Step%202.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%20Step%202.png" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you will be using the top acrylic plate on your mobile base, please pre-install the corresponding slide-in T-nuts for mounting the plate:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="kinova_7" name="__tabbed_8" type="radio" /><input id="franka_7" name="__tabbed_8" type="radio" /><input id="arx5_7" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="kinova_7">Kinova</label><label for="franka_7">Franka</label><label for="arx5_7">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Top plate</td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Top plate</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>T-nuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Top plate</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>For T-nut placement, please refer to the mounting hole locations for the top acrylic plate in the CAD model.</p>
+</div>
+<h3 id="uprights">Uprights</h3>
+<p>Attach the 4 vertical rails to the bottom frame:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="kinova_8" name="__tabbed_9" type="radio" /><input id="franka_8" name="__tabbed_9" type="radio" /><input id="arx5_8" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="kinova_8">Kinova</label><label for="franka_8">Franka</label><label for="arx5_8">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%20Step%203.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%20Step%203.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%20Step%203.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%20Step%203.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%20Step%203.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%20Step%203.png" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For this step, we found it helpful to turn the frame sideways to prevent the T-nuts from moving around during screw installation.</p>
+</div>
+<h3 id="complete-frame">Complete frame</h3>
+<p>Put together the top and bottom parts to complete the frame:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="kinova_9" name="__tabbed_10" type="radio" /><input id="franka_9" name="__tabbed_10" type="radio" /><input id="arx5_9" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="kinova_9">Kinova</label><label for="franka_9">Franka</label><label for="arx5_9">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Kinova%20Frame%20Step%204.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Kinova%20Frame%20Step%204.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/Franka%20Frame%20Step%204.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/Franka%20Frame%20Step%204.png" width="49.45%" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/frame/ARX5%20Frame%20Step%204.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/frame/ARX5%20Frame%20Step%204.png" width="49.45%" /></a></p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We turned the frame sideways for this step as well.
+Make sure to pre-install T-nuts in the vertical uprights before attaching the top frame.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The top and bottom acrylic plates will be installed later as part of <a href="../integration/">Integration</a>.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../can-system/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CAN system">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                CAN system
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../integration/" class="md-footer__link md-footer__link--next" aria-label="Next: Integration">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Integration
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

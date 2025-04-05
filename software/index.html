@@ -1,0 +1,1609 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning">
+      
+      
+      
+        <link rel="canonical" href="http://tidybot2.github.io/docs/software/">
+      
+      
+        <link rel="prev" href="../arm-mounting/">
+      
+      
+        <link rel="next" href="../usage/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Software - TidyBot++ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NBGQBQD9W5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NBGQBQD9W5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NBGQBQD9W5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Software - TidyBot++ Docs" >
+      
+        <meta  property="og:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  property="og:image"  content="http://tidybot2.github.io/docs/assets/images/social/software.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="http://tidybot2.github.io/docs/software/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Software - TidyBot++ Docs" >
+      
+        <meta  name="twitter:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  name="twitter:image"  content="http://tidybot2.github.io/docs/assets/images/social/software.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TidyBot++ Docs" class="md-header__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TidyBot++ Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TidyBot++ Docs" class="md-nav__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TidyBot++ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caster-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../can-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arm-mounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arm mounting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mini-pc-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mini PC setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubuntu 22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-power-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic power on
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headless-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headless setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu-frequency-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU frequency scaling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi-power-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wi-Fi power management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time kernel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arm-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codebase-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Codebase setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Codebase setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-time-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time priority
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canivore" class="md-nav__link">
+    <span class="md-ellipsis">
+      CANivore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamepad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logitech-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logitech camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mamba-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mamba environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamepad-teleop-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad teleop service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arm-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mini-pc-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini PC setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mini PC setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubuntu 22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-power-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic power on
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headless-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headless setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu-frequency-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU frequency scaling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi-power-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wi-Fi power management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time kernel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arm-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codebase-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Codebase setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Codebase setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-time-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time priority
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canivore" class="md-nav__link">
+    <span class="md-ellipsis">
+      CANivore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamepad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logitech-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logitech camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mamba-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mamba environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamepad-teleop-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad teleop service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arm-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arm setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="software">Software</h1>
+<p>This page provides instructions for:</p>
+<ul>
+<li>Configuring a new mini PC to run real-time controllers.</li>
+<li>Setting up the TidyBot++ <a href="https://github.com/jimmyyhwu/tidybot2">codebase</a> on the mini PC.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These setup steps are only necessary when working with the real robot.
+If you are only using simulation, please follow the instructions in the <a href="https://github.com/jimmyyhwu/tidybot2">codebase</a> README.
+Note that our entire policy learning pipeline (phone teleoperation, data collection, policy training, and policy inference) can be tested in simulation without a physical robot.</p>
+</div>
+<h2 id="mini-pc-setup">Mini PC setup</h2>
+<p>This section describes how we configured a "Beelink S12 Pro" mini PC as an onboard computer for running real-time controllers.
+While these steps are tailored for this model, they should apply to other mini PCs as well.</p>
+<h3 id="ubuntu-22">Ubuntu 22</h3>
+<p>Follow these steps to create a bootable USB drive for Ubuntu 22:</p>
+<ol>
+<li>Go to the <a href="https://releases.ubuntu.com/jammy/">Ubuntu 22 release page</a>.</li>
+<li>Scroll down and download the <code>ubuntu-22.04.4-desktop-amd64.iso</code> image file.</li>
+<li>Download and install <a href="https://etcher.balena.io">balenaEtcher</a>.</li>
+<li>Use balenaEtcher to flash the ISO image onto a USB drive.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We used Ubuntu 22.04.4 LTS.
+Newer versions should also work but may require additional modifications.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend using a USB drive that supports USB 3.0 or higher.
+The Ubuntu installation will take much longer with a USB 2.0 drive.</p>
+</div>
+<p>Next, follow these steps to install Ubuntu 22 on the mini PC:</p>
+<ol>
+<li>Insert the Ubuntu 22 USB drive into the mini PC.</li>
+<li>Power on the mini PC and press <code>&lt;F7&gt;</code> to enter the boot menu.</li>
+<li>Select the <code>UEFI USB</code> option to boot from the USB drive.</li>
+<li>When prompted, select <em>Install Ubuntu</em>.</li>
+<li>When prompted, connect to a Wi-Fi network.</li>
+<li>In the <em>Updates and other Software</em> screen, choose <em>Minimal installation</em> (instead of <em>Normal installation</em>) and do not check the box for <em>Install third-party software</em>.</li>
+<li>In the <em>Installation type</em> screen, select <em>Erase disk and install Ubuntu</em>.</li>
+<li>Continue with the installation procedure until completion.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the boot menu does not appear, restart the mini PC and repeatedly press <code>&lt;F7&gt;</code> during the boot process.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because this mini PC is intended to run performance-critical real-time controllers, we use the "minimal installation" to avoid unnecessary software.</p>
+</div>
+<h3 id="automatic-power-on">Automatic power on</h3>
+<p>For convenience, we recommend configuring the mini PC to automatically power on when plugged in.
+Follow these steps to enable this feature in the BIOS:</p>
+<ol>
+<li>Reboot the mini PC and press <code>&lt;Del&gt;</code> to enter BIOS setup.</li>
+<li>Navigate to <code>Chipset &gt; PCH-IO Configuration &gt; State After G3</code>.</li>
+<li>Change <code>S5 State</code> to <code>S0 State</code>.</li>
+<li>Save changes and exit.</li>
+<li>Turn off the mini PC and unplug the power adapter.</li>
+<li>Plug the power adapter back in and verify that the mini PC powers on automatically.</li>
+</ol>
+<h3 id="headless-setup">Headless setup</h3>
+<p>The mini PC will mainly be used in headless mode without a monitor via SSH and <code>tmux</code>, as it is inconvenient to keep a monitor connected to a moving mobile base.</p>
+<p>Run the following command to install SSH and <code>tmux</code>:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openssh-server<span class="w"> </span>tmux
+</code></pre></div>
+<p>We use <code>tmux</code> to create persistent sessions that continue running if the SSH connection drops.
+Below is an example headless workflow using <code>tmux</code>:</p>
+<ol>
+<li>SSH into the mini PC:
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>&lt;username&gt;@&lt;minipc-hostname&gt;
+</code></pre></div></li>
+<li>If there is no existing <code>tmux</code> session, start a new one:
+<div class="highlight"><pre><span></span><code>tmux
+</code></pre></div>
+Or, if a <code>tmux</code> session already exists, reattach to it:
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span>a
+</code></pre></div></li>
+<li>Run tasks in the <code>tmux</code> session (tasks continue to run even if your connection drops).</li>
+<li>Create new windows within the <code>tmux</code> session  as needed to run tasks in parallel.</li>
+<li>If the SSH connection drops, reconnect SSH and reattach to the <code>tmux</code> session.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are on a network with no DNS server, try appending <code>.local</code> to the hostname when connecting via SSH:</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>&lt;username&gt;@&lt;minipc-hostname&gt;.local
+</code></pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have not used <code>tmux</code> before, please see the "Sessions" and "Windows" sections in the <code>tmux</code> <a href="https://tmuxcheatsheet.com">cheat sheet</a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>By default, mouse scrolling is disabled in <code>tmux</code>.
+Follow these steps to enable it:</p>
+<ol>
+<li>Open <code>~/.tmux.conf</code> in a text editor.</li>
+<li>Add the following line:
+<div class="highlight"><pre><span></span><code>set -g mouse on
+</code></pre></div></li>
+<li>Save and exit.</li>
+<li>Reload the config file:
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/.tmux.conf
+</code></pre></div></li>
+</ol>
+</div>
+<h3 id="cpu-frequency-scaling">CPU frequency scaling</h3>
+<p>To help minimize latency when running real-time controllers, follow these steps to disable CPU frequency scaling:</p>
+<ol>
+<li>Install <code>cpufrequtils</code>:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cpufrequtils
+</code></pre></div></li>
+<li>Check the current CPU frequency policy:
+<div class="highlight"><pre><span></span><code>cpufreq-info<span class="w"> </span>-p
+</code></pre></div>
+Example output showing that the <code>powersave</code> governor is active:
+<div class="highlight"><pre><span></span><code>400000 4000000 powersave
+700000 3400000 powersave
+</code></pre></div></li>
+<li>To disable scaling, set the <code>performance</code> governor as default:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;GOVERNOR=performance&quot; &gt; /etc/default/cpufrequtils&#39;</span>
+</code></pre></div></li>
+</ol>
+<p>This change will take effect upon reboot.</p>
+<h3 id="wi-fi-power-management">Wi-Fi power management</h3>
+<p>For improved performance and latency when communicating over Wi-Fi, power management should be disabled.</p>
+<p>Run this command to show the current wireless interface power management settings:</p>
+<div class="highlight"><pre><span></span><code>iwconfig
+</code></pre></div>
+<p>If <code>Power Management: on</code> appears in the output, follow these steps to disable Wi-FI power management:</p>
+<ol>
+<li>Open <code>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</code> in a text editor.</li>
+<li>Change <code>wifi.powersave</code> to <code>wifi.powersave = 2</code>.</li>
+<li>Save and exit.</li>
+</ol>
+<h3 id="real-time-kernel">Real-time kernel</h3>
+<p>For optimal real-time performance of controllers running on the mini PC, we highly recommend installing the <code>PREEMPT_RT</code> real-time kernel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The real-time kernel is not compatible with Nvidia drivers.</p>
+</div>
+<p><strong>Building the real-time kernel</strong></p>
+<p>Please follow the <a href="https://frankaemika.github.io/docs/installation_linux.html#setting-up-the-real-time-kernel">setup guide</a> from the Franka documentation to build the real-time kernel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you prefer to install the exact kernel image we built rather than building it yourself, you can download our files here:</p>
+<ul>
+<li><a href="https://www.dropbox.com/scl/fi/tf43oizgvi69ef18fdtrn/linux-image-6.8.2-rt11_6.8.2-1_amd64.deb?rlkey=gmlsnpsq2pc1nqmwe297rsojg&amp;st=u4xt7wfo"><code>linux-image-6.8.2-rt11_6.8.2-1_amd64.deb</code></a></li>
+<li><a href="https://www.dropbox.com/scl/fi/x6pymtd48nqpyxe2bgvsp/linux-headers-6.8.2-rt11_6.8.2-1_amd64.deb?rlkey=4u8do5syr0pkmyko9w5vyp97s&amp;st=bknqqs69"><code>linux-headers-6.8.2-rt11_6.8.2-1_amd64.deb</code></a></li>
+</ul>
+<p>To install these files, run the following command:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>linux-image-6.8.2-rt11_6.8.2-1_amd64.deb<span class="w"> </span>linux-headers-6.8.2-rt11_6.8.2-1_amd64.deb
+</code></pre></div>
+<p>If this installs successfully, you can skip ahead to the section on setting the default boot option.</p>
+</div>
+<p>Below is a summary of the steps we followed:</p>
+<ol>
+<li>Install required dependencies:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>build-essential<span class="w"> </span>bc<span class="w"> </span>curl<span class="w"> </span>ca-certificates<span class="w"> </span>gnupg2<span class="w"> </span>libssl-dev<span class="w"> </span>lsb-release<span class="w"> </span>libelf-dev<span class="w"> </span>bison<span class="w"> </span>flex<span class="w"> </span>dwarves<span class="w"> </span>zstd<span class="w"> </span>libncurses-dev<span class="w"> </span>debhelper
+</code></pre></div></li>
+<li>Download the source files:
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>linux-6.8.2-rt11
+<span class="nb">cd</span><span class="w"> </span>linux-6.8.2-rt11
+curl<span class="w"> </span>-SLO<span class="w"> </span>https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.xz
+curl<span class="w"> </span>-SLO<span class="w"> </span>https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.sign
+curl<span class="w"> </span>-SLO<span class="w"> </span>https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/6.8/patch-6.8.2-rt11.patch.xz
+curl<span class="w"> </span>-SLO<span class="w"> </span>https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/6.5/patch-6.8.2-rt11.patch.sign
+</code></pre></div></li>
+<li>Extract and patch the kernel:
+<div class="highlight"><pre><span></span><code>xz<span class="w"> </span>-d<span class="w"> </span>*.xz
+tar<span class="w"> </span>xf<span class="w"> </span>linux-*.tar
+<span class="nb">cd</span><span class="w"> </span>linux-*/
+patch<span class="w"> </span>-p1<span class="w"> </span>&lt;<span class="w"> </span>../patch-*.patch
+cp<span class="w"> </span>-v<span class="w"> </span>/boot/config-<span class="k">$(</span>uname<span class="w"> </span>-r<span class="k">)</span><span class="w"> </span>.config
+make<span class="w"> </span>olddefconfig
+make<span class="w"> </span>menuconfig
+</code></pre></div></li>
+<li>In the menu interface that opens, make the following changes and save before exiting:<ul>
+<li>Under <em>General setup &gt; Preemption Model</em>, select <em>Fully Preemptible Kernel (Real-Time)</em>.</li>
+<li>Under <em>Cryptographic API &gt; Certificates for signature checking &gt; Additional X.509 keys for default system keyring</em>, remove <code>"debian/canonical-certs.pem"</code>.</li>
+<li>Under <em>Cryptographic API &gt; Certificates for signature checking &gt; X.509 certificates to be preloaded into the system blacklist keyring</em>, remove <code>"debian/canonical-revoked-certs.pem"</code>.</li>
+<li>Under <em>Device Drivers &gt; Graphics support &gt; Intel 8xx/9xx/G3x/G4x/HD Graphics</em>, press <code>&lt;N&gt;</code> to exclude (this option addresses i915 latency spikes in <code>cyclictest</code>).</li>
+</ul>
+</li>
+<li>Build the kernel:
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span><span class="w"> </span>bindeb-pkg
+</code></pre></div></li>
+<li>Once it has been built, install the kernel:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>linux-image-6.8.2-rt11_6.8.2-1_amd64.deb<span class="w"> </span>linux-headers-6.8.2-rt11_6.8.2-1_amd64.deb
+</code></pre></div></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend installing the exact <code>PREEMPT_RT</code> version we used, as other versions may have issues such as broken Wi-Fi or Ethernet connectivity.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One side effect of excluding the Intel graphics driver is that if you connect a monitor after the mini PC has already booted, it will not display anything.
+If you want to use a monitor, you can simply plug it in <strong>before</strong> booting the mini PC.
+If you prefer normal monitor behavior, you can include the Intel graphics driver when building your kernel (at the cost of worse latency performance).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Building the kernel in parallel can hide error messages.
+For clearer output, you can also build sequentially:</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>bindeb-pkg
+</code></pre></div>
+<p>However, note that a sequential build can take up to 4 hours.</p>
+</div>
+<p><strong>Setting the default boot option</strong></p>
+<p>Follow these steps to set the new real-time kernel as the default boot option:</p>
+<ol>
+<li>Open <code>/etc/default/grub</code> in a text editor.</li>
+<li>Change <code>GRUB_DEFAULT=0</code> to:
+<div class="highlight"><pre><span></span><code>GRUB_DEFAULT=&quot;Advanced options for Ubuntu&gt;Ubuntu, with Linux 6.8.2-rt11&quot;
+</code></pre></div></li>
+<li>Save and exit.</li>
+<li>Update GRUB:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>update-grub
+</code></pre></div></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are not using <code>6.8.2-rt11</code>, adjust the text to match your kernel version.
+You can check <code>/boot/grub/grub.cfg</code> for the correct identifier of the real-time kernel menu entry.</p>
+</div>
+<h3 id="verification">Verification</h3>
+<p>Reboot the mini PC, then perform the following checks:</p>
+<p><strong>CPU frequency scaling</strong></p>
+<p>Run this command to verify that CPU frequency scaling is disabled:</p>
+<div class="highlight"><pre><span></span><code>cpufreq-info<span class="w"> </span>-p
+</code></pre></div>
+<p>You should see the <code>performance</code> governor in the output:</p>
+<div class="highlight"><pre><span></span><code>700000 3400000 performance
+</code></pre></div>
+<p><strong>Wi-Fi power management</strong></p>
+<p>Run this command to verify that Wi-Fi power management is disabled:</p>
+<div class="highlight"><pre><span></span><code>iwconfig
+</code></pre></div>
+<p>You should see this line in the output:</p>
+<div class="highlight"><pre><span></span><code>Power Management:off
+</code></pre></div>
+<p>You can also ping the mini PC from your dev machine to verify that you get ping times of 1-3 ms.
+When power management is enabled, ping times can be much higher (40-100 ms).</p>
+<p><strong>Real-time kernel</strong></p>
+<p>Run this command to confirm that the real-time kernel is in use:</p>
+<div class="highlight"><pre><span></span><code>uname<span class="w"> </span>-a
+</code></pre></div>
+<p>You should see the <code>PREEMPT_RT</code> label in the output, for example:</p>
+<div class="highlight"><pre><span></span><code>Linux minipc-01 6.8.2-rt11 #1 SMP PREEMPT_RT Sun Oct 27 18:09:44 PDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre></div>
+<p>If you see <code>generic</code> in the output, then your mini PC is still using the generic kernel, not the real-time one:</p>
+<div class="highlight"><pre><span></span><code>Linux minipc-01 6.8.0-48-generic #48~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Oct  7 11:24:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre></div>
+<p><strong>Latency testing</strong></p>
+<p>Follow these steps to measure the real-time latency performance of your system with the <code>cyclictest</code> tool:</p>
+<ol>
+<li>Install the <code>rt-tests</code> package:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rt-tests
+</code></pre></div></li>
+<li>Run the latency test:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cyclictest<span class="w"> </span>--mlockall<span class="w"> </span>--smp<span class="w"> </span>--priority<span class="o">=</span><span class="m">80</span><span class="w"> </span>--interval<span class="o">=</span><span class="m">200</span><span class="w"> </span>--distance<span class="o">=</span><span class="m">0</span><span class="w"> </span>--duration<span class="o">=</span>1h
+</code></pre></div></li>
+<li>Wait 1 hour for the test to finish.</li>
+</ol>
+<p>The test will output latency statistics per CPU core.
+In our tests with the "Beelink S12 Pro", the generic kernel showed significantly higher latencies, as expected:</p>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Max latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>6.8.2-rt11</code></td>
+<td>&lt; 20 us</td>
+</tr>
+<tr>
+<td><code>6.8.0-48-generic</code></td>
+<td>1000+ us</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend unplugging peripherals such as monitors during the test as they can cause latency spikes.
+We performed our tests over SSH in a <code>tmux</code> session.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please see the <a href="https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start">wiki page</a> to learn more about <code>cyclictest</code>.</p>
+</div>
+<h3 id="arm-setup">Arm setup</h3>
+<p>Follow the steps below to configure the mini PC for controlling your robotic arm.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="kinova" name="__tabbed_1" type="radio" /><input id="arx5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="kinova">Kinova</label><label for="arx5">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Ethernet setup</strong></p>
+<p>Follow these steps to set up an Ethernet connection to the Kinova arm:</p>
+<ol>
+<li>Create a new Ethernet connection named <code>Kinova</code> with static IP address <code>192.168.1.11</code>:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nmcli<span class="w"> </span>con<span class="w"> </span>add<span class="w"> </span><span class="nb">type</span><span class="w"> </span>ethernet<span class="w"> </span>con-name<span class="w"> </span>Kinova<span class="w"> </span>ifname<span class="w"> </span>&lt;ethernet-interface&gt;<span class="w"> </span>ipv4.method<span class="w"> </span>manual<span class="w"> </span>ipv4.addresses<span class="w"> </span><span class="m">192</span>.168.1.11/24
+</code></pre></div>
+Make sure to replace <code>&lt;ethernet-interface&gt;</code> with the actual interface name, which you can find by running <code>ip link</code>.</li>
+<li>List available network connections and verify that the new <code>Kinova</code> connection is present:
+<div class="highlight"><pre><span></span><code>nmcli<span class="w"> </span>con
+</code></pre></div></li>
+<li>Turn on the arm and connect its Ethernet cable to the mini PC.</li>
+<li>Activate the <code>Kinova</code> Ethernet connection:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nmcli<span class="w"> </span>con<span class="w"> </span>up<span class="w"> </span>Kinova
+</code></pre></div></li>
+<li>Test the connection by pinging the arm:
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span><span class="m">192</span>.168.1.10
+</code></pre></div></li>
+</ol>
+<p><strong>Communication test</strong></p>
+<p>Run the following command to perform a simple network communication test where we ping the arm at 1 kHz for 100 seconds:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ping<span class="w"> </span><span class="m">192</span>.168.1.10<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span>.001<span class="w"> </span>-D<span class="w"> </span>-c<span class="w"> </span><span class="m">100000</span><span class="w"> </span>-s<span class="w"> </span><span class="m">1200</span>
+</code></pre></div>
+<p>The output should show 0% packet loss and round-trip times (RTTs) well under 1 ms.
+Here is some example output:</p>
+<div class="highlight"><pre><span></span><code>100000 packets transmitted, 100000 received, 0% packet loss, time 99999ms
+rtt min/avg/max/mdev = 0.143/0.252/0.495/0.059 ms
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>CAN setup</strong></p>
+<p>Follow the setup instructions in the <a href="https://github.com/real-stanford/arx5-sdk">ARX5 SDK</a> to set up the USB-to-CAN adapter for your ARX5 arm.
+The only modification required for TidyBot++ is to replace all instances of <code>can0</code> with <code>can1</code>, as <code>can0</code> is already used by the mobile base.</p>
+</div>
+</div>
+</div>
+<h2 id="codebase-setup">Codebase setup</h2>
+<p>This section describes how to set up the <a href="https://github.com/jimmyyhwu/tidybot2">codebase</a> on the mini PC for use with the real robot.</p>
+<h3 id="real-time-priority">Real-time priority</h3>
+<p>To ensure optimal performance and minimal latency, the low-level controllers should be run with real-time process priority.</p>
+<p>Follow these steps to allow all users to set real-time priority for processes:</p>
+<ol>
+<li>Open <code>/etc/security/limits.d/99-realtime.conf</code> in a text editor.</li>
+<li>Add the following lines (including the <code>*</code> symbols):
+<div class="highlight"><pre><span></span><code>* soft rtprio 99
+* hard rtprio 99
+</code></pre></div></li>
+<li>Save and exit.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These permission changes take effect only after logging out and logging back in.</p>
+</div>
+<h3 id="canivore">CANivore</h3>
+<p>Follow these steps to enable support for the CANivore USB-to-CAN adapter, which is used to communicate with the drive system:</p>
+<ol>
+<li>Add the CTR Electronics package repository:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">YEAR</span><span class="o">=</span><span class="m">2024</span>
+sudo<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>--compressed<span class="w"> </span>-o<span class="w"> </span>/usr/share/keyrings/ctr-pubkey.gpg<span class="w"> </span><span class="s2">&quot;https://deb.ctr-electronics.com/ctr-pubkey.gpg&quot;</span>
+sudo<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>--compressed<span class="w"> </span>-o<span class="w"> </span>/etc/apt/sources.list.d/ctr<span class="si">${</span><span class="nv">YEAR</span><span class="si">}</span>.list<span class="w"> </span><span class="s2">&quot;https://deb.ctr-electronics.com/ctr</span><span class="si">${</span><span class="nv">YEAR</span><span class="si">}</span><span class="s2">.list&quot;</span>
+</code></pre></div></li>
+<li>Install the <code>canivore-usb</code> package:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>canivore-usb
+</code></pre></div></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more details, see the official <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/installation/installation-nonfrc.html#canivore-installation">CANivore documentation</a>.</p>
+</div>
+<h3 id="gamepad">Gamepad</h3>
+<p>The gamepad is used for <a href="../usage/#gamepad-teleoperation">teleoperating</a> the mobile base.
+Follow these steps to enable gamepad access in headless sessions:</p>
+<ol>
+<li>Open <code>/etc/udev/rules.d/99-gamepad.rules</code> in a text editor.</li>
+<li>Add the following lines:
+<div class="highlight"><pre><span></span><code># Logitech F710
+SUBSYSTEM==&quot;input&quot;, ATTRS{idVendor}==&quot;046d&quot;, ATTRS{idProduct}==&quot;c21f&quot;, MODE=&quot;0666&quot;
+</code></pre></div></li>
+<li>Save and exit.</li>
+<li>Apply the new udev rule:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules
+sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
+</code></pre></div></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To confirm that inputs are being received from the gamepad, you can use <code>jstest</code>:</p>
+<div class="highlight"><pre><span></span><code>sudo apt install joystick
+jstest /dev/input/js0
+</code></pre></div>
+<p>Here is some example <code>jstest</code> output:</p>
+<div class="highlight"><pre><span></span><code>Driver version is 2.1.0.
+Joystick (Logitech Gamepad F710) has 8 axes (X, Y, Z, Rx, Ry, Rz, Hat0X, Hat0Y)
+and 11 buttons (BtnA, BtnB, BtnX, BtnY, BtnTL, BtnTR, BtnSelect, BtnStart, BtnMode, BtnThumbL, BtnThumbR).
+Testing ... (interrupt to exit)
+Axes:  0:     0  1:    -2  2:-32767  3:     0  4:    -2  5:-32767  6:     0  7:     0 Buttons:  0:off  1:off  2:off  3:off  4:off  5:off  6:off  7:off  8:off  9:off 10:off
+</code></pre></div>
+</div>
+<h3 id="logitech-camera">Logitech camera</h3>
+<p>If you plan to use a Logitech camera (as a base or wrist camera), follow these steps to enable camera access in headless sessions:</p>
+<ol>
+<li>Open <code>/etc/udev/rules.d/99-webcam.rules</code> in a text editor.</li>
+<li>Add the following lines:
+<div class="highlight"><pre><span></span><code># Logitech C930e
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;046d&quot;, ATTRS{idProduct}==&quot;0843&quot;, MODE=&quot;0666&quot;
+</code></pre></div></li>
+<li>Save and exit.</li>
+<li>Apply the new udev rule:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules
+sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
+</code></pre></div></li>
+</ol>
+<h3 id="mamba-environment">Mamba environment</h3>
+<p>Please install Mamba following the <a href="https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html">official instructions</a> (we use the Miniforge distribution).</p>
+<p>Then run the following commands to set up the Mamba environment:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jimmyyhwu/tidybot2.git
+<span class="nb">cd</span><span class="w"> </span>~/tidybot2
+mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>tidybot2<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10.14
+mamba<span class="w"> </span>activate<span class="w"> </span>tidybot2
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<h3 id="constants">Constants</h3>
+<p>There are a few hardware-specific constants in the codebase which need to be modified before you run the robot.
+Please follow the steps below to set these constants in <a href="https://github.com/jimmyyhwu/tidybot2/blob/main/constants.py"><code>constants.py</code></a>:</p>
+<p><strong>Encoder offsets</strong></p>
+<p>Each mobile base has a unique set of encoder offsets which are used by the low-level controller to determine the absolute steer position of each caster.</p>
+<p>First, follow these steps to elevate the casters off the floor:</p>
+<ol>
+<li>Double-check that all components inside the mobile base, including the camping battery and SLA battery, are fully secured.</li>
+<li>Ensure that all cables are properly secured and kept away from the caster module gears.</li>
+<li>Turn the mobile base onto its side, with the right side of the base facing up.</li>
+</ol>
+<p>Manually move all casters to the zero steer position.
+This is the configuration assumed by the base when driving forward, with all casters in the trailing position:</p>
+<p><a class="glightbox" href="../images/integration/IMG_6863.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/integration/IMG_6863.jpg" width="49.45%" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In these photos, the robot's forward (+x) direction is toward the right side.</p>
+</div>
+<p>Place a <a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Wheel%20Alignment%20Jig.stl">wheel alignment jig</a> on each of the top wheels to create a flat surface:</p>
+<p><a class="glightbox" href="../images/integration/IMG_8730.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/integration/IMG_8730.jpg" width="49.45%" /></a></p>
+<p>Use a straightedge to align the top wheels so that they face as precisely forward as possible:</p>
+<p><a class="glightbox" href="../images/integration/IMG_8733.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/integration/IMG_8733.jpg" width="49.45%" /></a></p>
+<p>Repeat this process for the bottom two wheels as well.</p>
+<p>Once all four casters are aligned, run the following Python code snippet to print the current encoder magnet offsets:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">base_controller</span><span class="w"> </span><span class="kn">import</span> <span class="n">Vehicle</span>
+<span class="n">vehicle</span> <span class="o">=</span> <span class="n">Vehicle</span><span class="p">()</span>
+<span class="n">vehicle</span><span class="o">.</span><span class="n">get_encoder_offsets</span><span class="p">()</span>
+</code></pre></div>
+<p>In <a href="https://github.com/jimmyyhwu/tidybot2/blob/main/constants.py"><code>constants.py</code></a>, update <code>ENCODER_MAGNET_OFFSETS</code> with the printed values.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you find later on that your base odometry is not accurate (e.g., the robot takes a curved path or rotates slightly when commanded to go straight), you can improve its performance by fine-tuning the encoder offsets in increments of 1/4096.</p>
+</div>
+<p><strong>Base dimensions</strong></p>
+<p>The constants <code>h_x</code> and <code>h_y</code> in <code>constants.py</code> specify the distance (in the <code>x</code> and <code>y</code> directions) from the center of the mobile base to each caster's steer axis.
+If you are using one of our reference designs, simply uncomment the appropriate line in <a href="https://github.com/jimmyyhwu/tidybot2/blob/main/constants.py"><code>constants.py</code></a>.</p>
+<p>For the larger Kinova or Franka designs:</p>
+<div class="highlight"><pre><span></span><code><span class="n">h_x</span><span class="p">,</span> <span class="n">h_y</span> <span class="o">=</span> <span class="mf">0.190150</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">]),</span> <span class="mf">0.170150</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">])</span>  <span class="c1"># Kinova / Franka</span>
+</code></pre></div>
+<p>For the smaller ARX5 design:</p>
+<div class="highlight"><pre><span></span><code><span class="n">h_x</span><span class="p">,</span> <span class="n">h_y</span> <span class="o">=</span> <span class="mf">0.140150</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">]),</span> <span class="mf">0.120150</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">])</span>  <span class="c1"># ARX5</span>
+</code></pre></div>
+<p>If you are using a custom frame size, please modify <code>h_x</code> and <code>h_y</code> to match your robot's measurements.</p>
+<p><strong>Logitech camera</strong></p>
+<p>If you plan to use a Logitech camera, please specify its serial number in <code>constants.py</code>.
+Retrieve the camera's serial number using either of these commands:</p>
+<div class="highlight"><pre><span></span><code>lsusb<span class="w"> </span>-v<span class="w"> </span>-d<span class="w"> </span>046d:0843<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>iSerial
+udevadm<span class="w"> </span>info<span class="w"> </span>-n<span class="w"> </span>video0<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ID_SERIAL_SHORT
+</code></pre></div>
+<p>Then, set <code>BASE_CAMERA_SERIAL</code> in <a href="https://github.com/jimmyyhwu/tidybot2/blob/main/constants.py"><code>constants.py</code></a> to your camera's serial number.</p>
+<h3 id="gamepad-teleop-service">Gamepad teleop service</h3>
+<p>It can be useful to automatically start <a href="../usage/#gamepad-teleoperation">gamepad teleoperation</a> on boot, such as during robot transport.
+Follow these steps to create a <code>systemd</code> service for that purpose:</p>
+<ol>
+<li>Open <code>/etc/systemd/system/gamepad-teleop.service</code> in a text editor.</li>
+<li>Add the following contents:
+<div class="highlight"><pre><span></span><code>[Unit]
+Description=Gamepad Teleop
+
+[Service]
+ExecStart=/bin/bash -c &quot;/home/jwu/miniforge3/envs/tidybot2/bin/python /home/jwu/tidybot2/gamepad_teleop.py&quot;
+User=jwu
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div>
+Make sure to replace the paths in <code>ExecStart</code> with the correct paths for your setup.</li>
+<li>Save and exit.</li>
+<li>Register and start the service:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>gamepad-teleop.service
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>gamepad-teleop.service
+sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>gamepad-teleop.service
+</code></pre></div></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To disable the service later, run the following commands:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>gamepad-teleop.service
+sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>gamepad-teleop.service
+</code></pre></div>
+</div>
+<h3 id="arm-setup_1">Arm setup</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="kinova_1" name="__tabbed_2" type="radio" /><input id="arx5_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="kinova_1">Kinova</label><label for="arx5_1">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>To use the Kinova Gen3 arm with our codebase, please follow the additional setup steps below:</p>
+<p><strong>Kortex API</strong></p>
+<p>Download the Kortex Python API from either of these links:</p>
+<ul>
+<li><a href="https://artifactory.kinovaapps.com/ui/repos/tree/General/generic-public/kortex/API/2.6.0/kortex_api-2.6.0.post3-py3-none-any.whl">Kinova Artifactory</a></li>
+<li><a href="https://www.dropbox.com/scl/fi/behem9thid9benovogfdf/kortex_api-2.6.0.post3-py3-none-any.whl?rlkey=13zikoe4cwtk59q86jfx3a2k5&amp;dl=1"><code>kortex_api-2.6.0.post3-py3-none-any.whl</code></a></li>
+</ul>
+<p>Install the downloaded wheel file in the <code>tidybot2</code> Mamba environment:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>kortex_api-2.6.0.post3-py3-none-any.whl
+pip<span class="w"> </span>install<span class="w"> </span><span class="nv">protobuf</span><span class="o">==</span><span class="m">3</span>.20.0<span class="w">  </span><span class="c1"># kortex_api specifies protobuf==3.5.1 which is outdated</span>
+</code></pre></div>
+<p><strong>Wrist camera</strong></p>
+<p>If you need to read images from the Kinova wrist camera, please follow these steps to install OpenCV with GStreamer support:</p>
+<ol>
+<li>Install <a href="https://gstreamer.freedesktop.org/documentation/installing/on-linux.html">GStreamer</a>:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libgstreamer1.0-dev<span class="w"> </span>libgstreamer-plugins-base1.0-dev<span class="w"> </span>libgstreamer-plugins-bad1.0-dev<span class="w"> </span>gstreamer1.0-plugins-base<span class="w"> </span>gstreamer1.0-plugins-good<span class="w"> </span>gstreamer1.0-plugins-bad<span class="w"> </span>gstreamer1.0-plugins-ugly<span class="w"> </span>gstreamer1.0-libav<span class="w"> </span>gstreamer1.0-tools<span class="w"> </span>gstreamer1.0-x<span class="w"> </span>gstreamer1.0-alsa<span class="w"> </span>gstreamer1.0-gl<span class="w"> </span>gstreamer1.0-gtk3<span class="w"> </span>gstreamer1.0-qt5<span class="w"> </span>gstreamer1.0-pulseaudio
+</code></pre></div></li>
+<li>Download our pre-built OpenCV wheel which includes GStreamer support: <a href="https://www.dropbox.com/scl/fi/9gr7u1dw3ef5x73ppkpxi/opencv_python-4.9.0.80-cp310-cp310-linux_x86_64.whl?rlkey=8bh4tl7is0ixp69zm9ohko0yb&amp;st=5prf2cxo"><code>opencv_python-4.9.0.80-cp310-cp310-linux_x86_64.whl</code></a></li>
+<li>Install the downloaded wheel file:
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--force-reinstall<span class="w"> </span>--no-deps<span class="w"> </span>opencv_python-4.9.0.80-cp310-cp310-linux_x86_64.whl
+</code></pre></div></li>
+<li>Verify that the installed OpenCV has GStreamer support:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import cv2 as cv; print(cv.getBuildInformation())&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>GStreamer
+</code></pre></div>
+You should see the following line in the output:
+<div class="highlight"><pre><span></span><code>    GStreamer:                   YES (1.20.3)
+</code></pre></div></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are not using the same mini PC as us, you may need to build the Python wheel yourself.
+Follow these steps to build OpenCV with GStreamer support:</p>
+<ol>
+<li>Install OpenCV <a href="https://docs.opencv.org/4.9.0/d2/de6/tutorial_py_setup_in_ubuntu.html">build dependencies</a>:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-dev<span class="w"> </span>python3-numpy<span class="w"> </span>libavcodec-dev<span class="w"> </span>libavformat-dev<span class="w"> </span>libswscale-dev<span class="w"> </span>libgstreamer-plugins-base1.0-dev<span class="w"> </span>libgstreamer1.0-dev<span class="w"> </span>libgtk-3-dev
+</code></pre></div></li>
+<li>Create a dedicated Mamba environment to avoid conflicts:
+<div class="highlight"><pre><span></span><code>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>opencv-build<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10.14
+pip<span class="w"> </span>install<span class="w"> </span>scikit-build<span class="o">==</span><span class="m">0</span>.17.6<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.26.4
+mamba<span class="w"> </span>activate<span class="w"> </span>opencv-build
+</code></pre></div></li>
+<li>Build OpenCV from source with GStreamer support (using the <code>opencv-build</code> environment):
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--recursive<span class="w"> </span>https://github.com/opencv/opencv-python.git
+git<span class="w"> </span>checkout<span class="w"> </span>tags/80
+<span class="nb">export</span><span class="w"> </span><span class="nv">CMAKE_ARGS</span><span class="o">=</span><span class="s2">&quot;-DWITH_GSTREAMER=ON&quot;</span>
+pip<span class="w"> </span>wheel<span class="w"> </span>.<span class="w"> </span>--verbose
+</code></pre></div></li>
+<li>Locate the resulting wheel file: <code>opencv_python-4.9.0.80-cp310-cp310-linux_x86_64.whl</code></li>
+</ol>
+</div>
+<p><strong>Torque offsets</strong></p>
+<p>If you have never used torque control on the Kinova arm before, please follow these steps to zero the torque offsets:</p>
+<ol>
+<li>Ensure the surrounding area is clear of obstacles, as the arm will move to the zero configuration and may sweep a large space while doing so.</li>
+<li>Run the following Python code snippet:
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">kinova</span><span class="w"> </span><span class="kn">import</span> <span class="n">TorqueControlledArm</span>
+
+<span class="n">arm</span> <span class="o">=</span> <span class="n">TorqueControlledArm</span><span class="p">()</span>
+<span class="n">arm</span><span class="o">.</span><span class="n">zero_torque_offsets</span><span class="p">()</span>
+<span class="n">arm</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+</code></pre></div></li>
+<li>Follow the terminal prompts and press <code>&lt;Enter&gt;</code> after each stage.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p><strong>ARX5 controller</strong></p>
+<p>To use the ARX5 arm with our codebase, please install the <a href="https://github.com/real-stanford/arx5-sdk">ARX5 SDK</a> following the steps below:</p>
+<ol>
+<li>Switch to the <code>arx5</code> branch of our codebase, which adds support for the ARX5 arm:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jimmyyhwu/tidybot2.git
+<span class="nb">cd</span><span class="w"> </span>~/tidybot2
+git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>arx5<span class="w">  </span><span class="c1"># Branch for ARX5 arm</span>
+git<span class="w"> </span>checkout<span class="w"> </span>arx5
+</code></pre></div></li>
+<li>Install the <code>arx5-sdk</code> package within the <code>tidybot2</code> directory:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tidybot2
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/real-stanford/arx5-sdk.git
+<span class="nb">cd</span><span class="w"> </span>arx5-sdk
+git<span class="w"> </span>checkout<span class="w"> </span>d046707<span class="w">  </span><span class="c1"># Last tested commit</span>
+mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>conda_environments/py310_environment.yaml
+mamba<span class="w"> </span>activate<span class="w"> </span>arx-py310
+mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>..<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>-j
+</code></pre></div></li>
+<li>Install additional dependencies in the <code>arx-py310</code> environment:
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">mujoco</span><span class="o">==</span><span class="m">3</span>.2.4<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.12.0
+</code></pre></div></li>
+</ol>
+<p>You should now be able to use the ARX5 arm following the same steps described in the <a href="../usage/">Usage</a> page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be sure to activate the <code>arx-py310</code> Mamba environment in the terminal session where you run <code>arm_server.py</code>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../arm-mounting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Arm mounting">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Arm mounting
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../usage/" class="md-footer__link md-footer__link--next" aria-label="Next: Usage">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Usage
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

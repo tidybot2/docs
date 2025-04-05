@@ -1,0 +1,1663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning">
+      
+      
+      
+        <link rel="canonical" href="http://tidybot2.github.io/docs/caster-modules/">
+      
+      
+        <link rel="prev" href="../bom/">
+      
+      
+        <link rel="next" href="../power-system/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Caster modules - TidyBot++ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NBGQBQD9W5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NBGQBQD9W5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NBGQBQD9W5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Caster modules - TidyBot++ Docs" >
+      
+        <meta  property="og:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  property="og:image"  content="http://tidybot2.github.io/docs/assets/images/social/caster-modules.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="http://tidybot2.github.io/docs/caster-modules/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Caster modules - TidyBot++ Docs" >
+      
+        <meta  name="twitter:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  name="twitter:image"  content="http://tidybot2.github.io/docs/assets/images/social/caster-modules.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#caster-modules" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TidyBot++ Docs" class="md-header__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TidyBot++ Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Caster modules
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TidyBot++ Docs" class="md-nav__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TidyBot++ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#swerve-module-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swerve module assembly
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wheel-mount-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wheel mount printing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor assembly
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caster-module-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caster module assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caster module assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-encoder-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Encoder mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-motor-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Motor configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-wheel-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Wheel assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-bearing-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Bearing mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-intermediate-shaft-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Intermediate shaft assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-center-column-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Center column assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-pulley-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Pulley mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-wheel-mount-prep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Wheel mount prep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-wheel-mount-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Wheel mount assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-attach-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Attach wheel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-motor-plate-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 11: Motor plate mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly complete
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lubrication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lubrication
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../can-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arm-mounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arm mounting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#swerve-module-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swerve module assembly
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wheel-mount-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wheel mount printing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor assembly
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caster-module-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caster module assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caster module assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-encoder-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Encoder mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-motor-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Motor configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-wheel-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Wheel assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-bearing-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Bearing mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-intermediate-shaft-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Intermediate shaft assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-center-column-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Center column assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-pulley-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Pulley mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-wheel-mount-prep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Wheel mount prep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-wheel-mount-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Wheel mount assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-attach-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Attach wheel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-motor-plate-mounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 11: Motor plate mounting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly complete
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lubrication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lubrication
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="caster-modules">Caster modules</h1>
+<p><em>Estimated time: 4 hours</em></p>
+<p>This page will guide you through assembly of the four caster modules.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_4736.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_4736.jpg" width="49.45%" /></a></p>
+<h2 id="swerve-module-assembly">Swerve module assembly</h2>
+<p><em>Estimated time: 1 hour</em></p>
+<p>Tools:</p>
+<ul>
+<li>Imperial hex keys (3/16", 5/32", and 1/8")</li>
+</ul>
+<p>Our caster module is adapted from the <a href="https://www.swervedrivespecialties.com/products/mk4-swerve-module?variant=47316033995053">SDS MK4 swerve module</a>, widely used in the <a href="https://www.firstinspires.org/robotics/frc">FIRST robotics competition (FRC)</a>.
+The adaptation involved minor modifications to the bottom portion of the module.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Caster module</th>
+<th style="text-align: center;">Swerve module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Caster%20Module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Caster%20Module.png" /></a></td>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Swerve%20Module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Swerve%20Module.png" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The modifications add a caster offset to the wheel, similar to the offset found in office chair wheels.
+Our <a href="https://tidybot2.github.io/paper.pdf">paper</a> explains in more detail why this offset is important.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Caster module</th>
+<th style="text-align: center;">Swerve module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Caster%20Module%20Offset.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Caster%20Module%20Offset.png" /></a></td>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Swerve%20Module%20Offset.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Swerve%20Module%20Offset.png" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In our caster module, aside from three custom parts, all other components are reused directly from the swerve module kit, so the assembly process is very similar.
+Therefore, we highly recommend performing a practice assembly of an unmodified swerve module first to familiarize yourself with the process and all the different parts:</p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1AN1pVYBGM0WO-eisEzMd7OFO3_NO5MPg/view">Swerve module assembly guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=PZWl8-QA-2U">Swerve module assembly video</a></li>
+</ul>
+<p>After you have completed the practice assembly, please disassemble the swerve module before proceeding.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is no need to use threadlocker or carefully tighten screws during the practice assembly, as the swerve module will be disassembled afterward.
+You can also skip any steps involving the encoder and encoder magnet for now.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the following configurations when assembling the swerve module:</p>
+<ul>
+<li>Motor: Kraken X60 with risers</li>
+<li>Wheel: Colson wheel (secured with 3 screws instead of 6)</li>
+<li>Intermediate shaft: V3</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The swerve module kit uses hex screws in Imperial sizes only.
+To avoid accidentally stripping screws, do not use any metric hex keys during assembly.
+If you are using Bondhus hex tools, use only the yellow ones, not the red ones.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After assembly is complete, the only leftover parts should be four extra screws.
+They are not used because the Kraken motor risers require slightly longer screws.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All screws should go in smoothly and not feel tight until they are fully inserted.
+If a screw encounters resistance when it is only partially inserted, it is likely due to misalignment.
+Loosen the screw, realign it, and try again.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We highly recommend working in an uncluttered space and keeping parts in their original bags.
+Parts can easily be dropped during assembly, causing small screws to scatter everywhere.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please pay special attention to small parts such as the <a href="https://www.mcmaster.com/97431A310">E-clip</a>, <a href="https://www.mcmaster.com/98055A115">shim</a>, encoder magnet, and encoder housing screws, as they can easily get lost.</p>
+</div>
+<h2 id="wheel-mount-printing">Wheel mount printing</h2>
+<p>Each caster module uses a pair of custom 3D-printed wheel mounts.
+Below are a few photos showing the wheel mounts installed on the caster module:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_4740.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_4740.jpg" width="32.55%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_4753.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_4753.jpg" width="32.55%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_4758.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_4758.jpg" width="32.55%" /></a></p>
+<p>The wheel mounts hold the two bevel gears in precise alignment, as shown below, so high print accuracy is required.
+If the gears are too close together, gear interference will occur, preventing the wheel from turning smoothly.</p>
+<p><a class="glightbox" href="../images/caster-modules/Bevel%20Gear%20Meshing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Bevel%20Gear%20Meshing.png" width="32.55%" /></a></p>
+<p>We have made successful prints on several 3D printers.
+Below, we provide the print files we used.
+If your printer is listed, we recommend using the provided 3MF or G-code files.
+For other printers, we provide the STL files along with minimal slicer settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Print files</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="sindoh" name="__tabbed_1" type="radio" /><input id="bambu-lab" name="__tabbed_1" type="radio" /><input id="original-prusa" name="__tabbed_1" type="radio" /><input id="other" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="sindoh">Sindoh</label><label for="bambu-lab">Bambu Lab</label><label for="original-prusa">Original Prusa</label><label for="other">Other</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Sindoh 3DWOX 1</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Sindoh%203DWOX%201/Wheel%20Mount%20A.gcode">Wheel Mount A.gcode</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Sindoh%203DWOX%201/Wheel%20Mount%20B.gcode">Wheel Mount B.gcode</a></li>
+</ul>
+<details class="note">
+<summary>Slicer settings</summary>
+<p>3DWOX Desktop</p>
+<ul>
+<li>Both wheel mounts:<ul>
+<li>Settings &gt; Support &gt; Overhang Angle (deg): 30 (default is 60)</li>
+</ul>
+</li>
+<li>Wheel mount B only:<ul>
+<li>Settings &gt; Quality / Shell &gt; Shell &gt; Wall Thickness (mm): 1.6 (default is 0.8)</li>
+</ul>
+</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p><strong>Bambu Lab X1-Carbon</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1-Carbon/Wheel%20Mount%20A.3mf">Wheel Mount A.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1-Carbon/Wheel%20Mount%20B.3mf">Wheel Mount B.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1-Carbon/Wheel%20Mount%20A_PLA_1h24m.gcode">Wheel Mount A.gcode</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1-Carbon/Wheel%20Mount%20B_PLA_1h29m.gcode">Wheel Mount B.gcode</a></li>
+</ul>
+<p><strong>Bambu Lab X1E</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1E/Wheel%20Mount%20A.3mf">Wheel Mount A.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1E/Wheel%20Mount%20B.3mf">Wheel Mount B.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1E/Wheel%20Mount%20A_PLA_1h24m.gcode">Wheel Mount A.gcode</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Bambu%20Lab%20X1E/Wheel%20Mount%20B_PLA_1h29m.gcode">Wheel Mount B.gcode</a></li>
+</ul>
+<details class="note">
+<summary>Slicer settings</summary>
+<p>Bambu Studio</p>
+<ul>
+<li>Both wheel mounts:<ul>
+<li>Filament: Bambu PLA Basic</li>
+<li>Process: 0.20mm Standard @BBL X1C</li>
+<li>Support &gt; Enable support: true (default is false)</li>
+<li>Supports Painting &gt; Tool type: Fill (default is Circle)<ul>
+<li>Apply to all overhang regions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wheel mount B only:<ul>
+<li>Strength &gt; Wall loops: 4 (default is 2)</li>
+</ul>
+</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p><strong>Original Prusa MK3.9</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.9/Wheel%20Mount%20A.3mf">Wheel Mount A.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.9/Wheel%20Mount%20B.3mf">Wheel Mount B.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.9/Wheel%20Mount%20A_0.4n_0.2mm_PLA_MK3.9_1h55m.bgcode">Wheel Mount A.bgcode</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.9/Wheel%20Mount%20B_0.4n_0.2mm_PLA_MK3.9_2h1m.bgcode">Wheel Mount B.bgcode</a></li>
+</ul>
+<p><strong>Original Prusa MK3.5</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.5/Wheel%20Mount%20A.3mf">Wheel Mount A.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.5/Wheel%20Mount%20B.3mf">Wheel Mount B.3mf</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.5/Wheel%20Mount%20A_0.4n_0.2mm_PLA_MK3.5_2h13m.bgcode">Wheel Mount A.bgcode</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Original%20Prusa%20MK3.5/Wheel%20Mount%20B_0.4n_0.2mm_PLA_MK3.5_2h20m.bgcode">Wheel Mount B.bgcode</a></li>
+</ul>
+<details class="note">
+<summary>Slicer settings</summary>
+<p>PrusaSlicer</p>
+<ul>
+<li>Both wheel mounts:<ul>
+<li>Filament: Generic PLA</li>
+<li>Print Settings &gt; Support material &gt; Generate support material: true (default is false)</li>
+<li>Paint-on supports &gt; Tool type: Smart fill (default is Brush)<ul>
+<li>Apply to all overhang regions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wheel mount B only:<ul>
+<li>Layers and perimeters &gt; Vertical shells &gt; Perimeters: 4 (default is 2)</li>
+</ul>
+</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p><strong>STL files</strong></p>
+<ul>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20A.stl">Wheel Mount A.stl</a></li>
+<li><a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Caster%20Module/Wheel%20Mount%20B.stl">Wheel Mount B.stl</a></li>
+</ul>
+<p><strong>Minimal slicer settings</strong></p>
+<ul>
+<li>Both wheel mounts:<ul>
+<li>Enable supports</li>
+<li>Apply paint-on supports to all overhang regions</li>
+</ul>
+</li>
+<li>Wheel mount B only:<ul>
+<li>Increase wall/shell loops from 2 to 4 (0.8 mm to 1.6 mm)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please perform bed leveling to improve print accuracy.
+On higher-end printers, this process is often done automatically.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We tested these printers and do not recommend using them due to their low print quality:</p>
+<ul>
+<li>Creality Ender-3</li>
+<li>Creality Ender-3 S1 Pro</li>
+<li>Creality Ender-5 S1</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="note">
+<summary>Original STEP files</summary>
+<p>If you wish to make your own modifications to the CAD design, the original STEP files are available here:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Wheel mount A</th>
+<th style="text-align: center;">Wheel mount B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Wheel%20Mount%20A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Wheel%20Mount%20A.png" /></a><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20A.step">STEP</a>]</td>
+<td style="text-align: center;"><a class="glightbox" href="../images/caster-modules/Wheel%20Mount%20B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Wheel%20Mount%20B.png" /></a><br>[<a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/STEP/Caster%20Module/Wheel%20Mount%20B.step">STEP</a>]</td>
+</tr>
+</tbody>
+</table>
+<p>For 3D printing, we made the following modifications to account for printer tolerances, then exported to STL format:</p>
+<ul>
+<li>Both wheel mounts:<ul>
+<li>Reduce the width of the top protrusion that fits into the base pulley by 0.004" radially</li>
+<li>Increase the width of the clearance portion of the shoulder screw hole by 0.004" radially</li>
+</ul>
+</li>
+<li>Wheel mount B only:<ul>
+<li>Apply a 0.05" chamfer to the edge of the two mounting holes to account for burr formation during screw self-tapping</li>
+<li>Increase the width of the threaded portion of the shoulder screw hole by 0.015" radially (from 0.257" to 0.287")</li>
+<li>Increase the width of the bearing housing by 0.004" radially</li>
+<li>Add an integrated shim around the edge of the shoulder screw hole with a thickness of 0.008"</li>
+</ul>
+</li>
+</ul>
+<p>Note that the integrated shim (highlighted in orange below) helps ensure proper bevel gear spacing:</p>
+<p><a class="glightbox" href="../images/caster-modules/Wheel%20Mount%20B%20Integrated%20Shim.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Wheel%20Mount%20B%20Integrated%20Shim.png" width="32.55%" /></a></p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The top portions of the wheel mounts need to be printed accurately to ensure proper contact with the base pulley.
+Therefore, the wheel mounts should be printed in the upright orientation as shown below.
+Do not print them upside down.</p>
+<p><a class="glightbox" href="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20A%20Upright.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20A%20Upright.png" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20B%20Upright.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20B%20Upright.png" width="49.45%" /></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All overhang regions must be fully supported during printing:</p>
+<p><a class="glightbox" href="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20A%20Supports.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20A%20Supports.png" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20B%20Supports.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/3DWOX%20Desktop%20-%20Wheel%20Mount%20B%20Supports.png" width="49.45%" /></a></p>
+<p>In many slicers, the auto-generated supports may be incomplete, so you may need to add paint-on supports manually.
+For example, this video shows how to do this in Bambu Studio:</p>
+<p><video data-src="../videos/caster-modules/Bambu Studio.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend printing a few extra copies of wheel mount B, as the screw holes can sometimes be damaged during assembly.</p>
+</div>
+<h2 id="motor-assembly">Motor assembly</h2>
+<p><em>Estimated time: 30 minutes</em></p>
+<p>Tools:</p>
+<ul>
+<li>Torx screwdriver (T9)</li>
+<li>Torx screwdriver (T10)</li>
+<li>Large-gauge wire stripper (10 AWG stranded)</li>
+</ul>
+<p>Follow these steps to assemble each motor:</p>
+<ol>
+<li>Connect the power cables (red/black) using the thick screws.</li>
+<li>Connect the CAN bus cables (yellow/green) using the short, thin screws.</li>
+<li>Install the terminal cover using the long screws.</li>
+</ol>
+<p>See video (4x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1243-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ring terminals should be installed with the flat side facing downward:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_0840.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_0840.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_0846.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_0846.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure all four connections are tight! Loose connections can be very difficult to troubleshoot later.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When installing the terminal cover, make sure that the thin CAN bus cables are not pinched.</p>
+</div>
+<p>Next, use a large-gauge (10 AWG stranded) wire stripper to remove 3/8" (1 cm) of insulation from the free end of each power cable:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1278.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1278.jpg" width="49.45%" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Many wire strippers are designed for a maximum gauge of 12 AWG stranded (10 AWG solid), but the motor power cables are 10 AWG stranded, which is slightly larger.
+If using such a wire stripper, take extra care to avoid cutting the wire strands.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After assembling all eight motors, go through each one individually and double-check the polarity of all four wires.
+The wire colors should match those shown in this photo (black, yellow, green, red):</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_4771.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_4771.jpg" width="32.55%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are building this robot for the first time, consider leaving the terminal covers off until you have verified that the robot is operational.
+The covers can be easily installed later.</p>
+</div>
+<h2 id="caster-module-assembly">Caster module assembly</h2>
+<p><em>Estimated time: 2 hours</em></p>
+<p>Tools:</p>
+<ul>
+<li>Phillips screwdriver (#1)</li>
+<li>Imperial hex keys (3/16", 5/32", and 1/8")</li>
+<li>Loctite 609 retaining compound</li>
+<li>Loctite 243 threadlocker</li>
+<li>Paper towels</li>
+</ul>
+<p>You should now be ready to assemble the caster modules.
+In the following subsections, we will follow the swerve module <a href="https://drive.google.com/file/d/1AN1pVYBGM0WO-eisEzMd7OFO3_NO5MPg/view">assembly guide</a> to build the modules, with a few slight modifications.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Screws used in the caster module should be fairly tight.
+Fully insert each screw and tighten slightly past the point of firm resistance.
+The exception is any screw that threads into a plastic part rather than metal (be very careful not to overtighten those screws).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Apply Loctite 243 threadlocker (blue) to all screws that thread into metal.
+Do not apply threadlocker to screws that thread into plastic.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For caster module assembly, use only Imperial hex keys (Bondhus yellow). Do not use any metric hex keys (Bondhus red).</p>
+</div>
+<h3 id="step-1-encoder-mounting">Step 1: Encoder mounting</h3>
+<p>Follow these steps to mount the encoder onto the motor plate:</p>
+<ol>
+<li>Attach the encoder housing to the plate using the two shorter screws.</li>
+<li>Insert the encoder circuit board.</li>
+<li>Secure the housing cap on top with the longer screw.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1247-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The CANcoder encoder is not part of the MK4 swerve module kit.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Do not overtighten the screw for the housing cap, as this can crack the plastic.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Press down on the housing cap to ensure it is fully seated. In this photo, the cap is partially seated:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1252.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1252.jpg" width="49.45%" /></a></p>
+</div>
+<p>Next, insert the encoder magnet into the center column and secure it using Loctite 609 retaining compound.
+See video (4x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1245-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Loctite 609 is green, be careful not to mix it up with Loctite 243 (blue).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The retaining compound can take up to 24 hours to fully cure.
+If the magnet is not fixed in place by the time you run software, the encoder will produce inaccurate readings.
+You can check whether the magnet is secure by using a hex key to see if it can still move via magnetic force.
+This video (2x speed) shows a magnet that can still move because the retaining compound has not yet cured:</p>
+<p><video data-src="../videos/caster-modules/IMG_1246-2x.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+</div>
+<h3 id="step-2-motor-configurations">Step 2: Motor configurations</h3>
+<p>Follow these steps to secure the motors to the motor plate:</p>
+<ol>
+<li>Attach each motor to the plate using a motor riser and 7/8" screw.</li>
+<li>On each motor shaft, place 2 spacers (0.125" and 0.375"), followed by the appropriate pinion gear.</li>
+<li>Secure the pinion gears with motor screws.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1256-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the Kraken motor requires risers, the longer screws included in the motor riser kit (right) should be used instead of the shorter ones from the swerve module kit (left).</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1268.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1268.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to use these specific screw holes on the motors:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1273.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1273.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The screws should go in smoothly without resistance.
+If you encounter resistance, check for misalignment between the riser and the motor plate like in the photo below:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1280.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1280.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the pinion gears are placed on the wrong shafts, the larger gear will collide with the motor plate:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1286.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1286.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-3-wheel-assembly">Step 3: Wheel assembly</h3>
+<p>Use the three screws included with the Colson wheel kit to mount the 45T bevel gear onto the wheel hub. See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1257-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These screws should turn smoothly with no resistance until fully inserted.
+However, we have found that the bevel gear's screw hole threads sometimes have quality issues.
+In the video, we first insert the three screws directly into the gear to check that the threads were tapped properly.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The inner face of the bevel gear should be flush against the wheel hub, and the three screws should extend slightly beyond the face:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1305.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1305.jpg" width="49.45%" /></a></p>
+</div>
+<p>Next, insert the R8 bearing and wheel spacer into the wheel hub on the bevel gear side, and the R6 bearing on the opposite side.
+See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1260-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure the bearings are inserted perpendicular to the housing.
+If a bearing becomes stuck due to misalignment like in the photo below, remove it and try again.
+Do not try to force it in, as this can make removal very difficult.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1295.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1295.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-4-bearing-mounting">Step 4: Bearing mounting</h3>
+<p>Secure the X-contact bearing with five 0.25" screws.
+See video (4x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1350-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are 7 screw holes around the bearing but only 5 of them are used to mount it.</p>
+</div>
+<h3 id="step-5-intermediate-shaft-assembly">Step 5: Intermediate shaft assembly</h3>
+<p>Follow these steps to install the intermediate shaft:</p>
+<ol>
+<li>Insert a 6802 bearing into the base pulley, followed by the custom intermediate shaft.</li>
+<li>Install the hex bore gear onto the shaft.</li>
+<li>Secure the gear with the E-clip.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1352-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Our caster module uses a custom-machined intermediate shaft that is 3/8" longer than the original swerve module shaft.
+Here is a photo comparing the two shafts:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1287.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1287.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure the bearing is inserted perpendicular to the housing.
+If it does not go in all the way (see photo below), remove it and try again. Do not force it in.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1289.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1289.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Check that the E-clip is fully seated in its groove, as shown in the right image.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1301.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1301.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_1304.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1304.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-6-center-column-assembly">Step 6: Center column assembly</h3>
+<p>Insert two 6802 bearings into the double gear and capture with the center column and a 0.625" screw.
+See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1354-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check that the encoder magnet is already installed inside the center column.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If a bearing does not go all the way in, it is likely due to misalignment.
+Remove the bearing, ensure it is perpendicular to the housing, and try again.
+Do not force a misaligned bearing into place.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure the bottom bearing is fully inserted, with the bottom surfaces flush (as shown in the right image).</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1322.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1322.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_1329.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1329.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When the center column is fully inserted into the base pulley, it should be fixed in place (as shown in the right image).</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1347.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1347.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/caster-modules/IMG_1338.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1338.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-7-pulley-mounting">Step 7: Pulley mounting</h3>
+<p>Follow these steps to mount the base pulley:</p>
+<ol>
+<li>Install the R188 bearing into the main plate.</li>
+<li>Install the timing belt and steering shaft onto the base pulley.</li>
+<li>Mount the base pulley into the main plate.</li>
+<li>Fully insert the journal of the steering shaft into the R188 bearing.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1355-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The base pulley should be properly aligned with the X-contact bearing and fully inserted.
+Make sure it is not partially inserted, like in this photo:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1348.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1348.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-8-wheel-mount-prep">Step 8: Wheel mount prep</h3>
+<p>Follow these steps to install wheel mount B:</p>
+<ol>
+<li>Install the 688 bearing and 15T bevel gear into wheel mount B.</li>
+<li>Insert the intermediate shaft through the bevel gear (but not into the bearing yet).</li>
+<li>Place the 1mm shim underneath the bevel gear.</li>
+<li>Insert the intermediate shaft through the shim and into the bearing.</li>
+<li>Use two 0.625" screws to secure the wheel mount.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1366-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not overtighten the two screws going into the 3D-printed wheel mount, as this can strip the threads.
+If a screw suddenly becomes loose after fully inserting it, the threads have likely been stripped.
+If this happens, please discard the wheel mount and reprint it.
+To mitigate this potential issue, the 3D printing instructions for wheel mount B include reinforced walls (1.6 mm instead of the default 0.8 mm)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not tighten the screws too quickly as the resulting force can strip the plastic threads in the screw holes.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Threadlocker should not be applied to the two screws because they thread into plastic.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After installation, wheel mount B should sit completely flush against the base pulley.
+If there is a visible gap like in the photo below, please discard the part (since the tapped holes are misaligned) and print a new one.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1402.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1402.jpg" width="49.45%" /></a></p>
+<p>This issue may also result from an inaccurate print.
+Double-check that bed leveling was performed recently, or consider using a higher-quality 3D printer.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is very important that there is no gap between the wheel mount and the base pulley.
+This video demonstrates how such a gap can cause the gears on top to mesh too tightly:</p>
+<p><video data-src="../videos/caster-modules/IMG_1390.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+<p>When the gears are too close, they will produce loud grinding sounds.
+This video provides an auditory comparison between normally spaced gears and gears that are improperly spaced:</p>
+<p><video data-src="../videos/caster-modules/IMG_1394.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+<p>With correct spacing, the gears should spin freely, as shown in this video:</p>
+<p><video data-src="../videos/caster-modules/IMG_1380.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The wheel mounts should not exhibit any cracking, such as shown in the photo below.
+If cracking occurs, double-check that the part was printed with proper support for all overhang regions.</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_9639.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_9639.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't forget to include the shim underneath the 15T bevel gear:</p>
+<p><a class="glightbox" href="../images/caster-modules/Bevel%20Gear%20Shim.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/Bevel%20Gear%20Shim.png" width="10%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We use the partially inserted shaft to prevent the shim from falling into the recessed area behind the gear:</p>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1395.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1395.jpg" width="49.45%" /></a></p>
+</div>
+<h3 id="step-9-wheel-mount-assembly">Step 9: Wheel mount assembly</h3>
+<p>Use two 1" screws to install wheel mount A. See video (4x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1373-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not overtighten these screws, as it can make it difficult to insert the wheel in the next step.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While we mostly follow the same steps as the official swerve module assembly guide, we reordered steps 9, 10, and 11 because our modified wheel mount A must be installed before the wheel to avoid obstructing one of the screw holes.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are having trouble aligning the screws, it might help to look more closely at how the wheel mounts fit into the base pulley.
+See video (2x speed):</p>
+<p><video data-src="../videos/caster-modules/IMG_1360-2x.mp4#t=0.001" controls playsinline></video></p>
+</div>
+<h3 id="step-10-attach-wheel">Step 10: Attach wheel</h3>
+<p>Insert the wheel between the wheel mounts and secure it with the shoulder bolt.
+See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1382-2x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not overtighten the shoulder bolt as it may bring the bevel gears too close together, leading to loud grinding sounds.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The wheel should spin freely once installed, as shown at the end of the video.
+If it does not, try adjusting the shoulder bolt tightness or using a different 3D-printed wheel mount, as slight variations can occur between prints.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Threadlocker should not be applied to the shoulder bolt, as it threads into a plastic part.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To avoid stripping the plastic material in the screw hole, do not tighten the bolt too quickly.</p>
+</div>
+<h3 id="step-11-motor-plate-mounting">Step 11: Motor plate mounting</h3>
+<p>Follow these steps to mount the motor plate onto the rest of the assembly:</p>
+<ol>
+<li>Install the steering gear and the F689 bearing onto the steering shaft.</li>
+<li>Install a 6802 bearing onto the center shaft.</li>
+<li>Mount the motor plate onto the assembly, making sure both shafts are fully inserted.</li>
+</ol>
+<p>See video (2x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1387-2x.mp4#t=0.001" controls playsinline></video>
+
+<p>Next, secure the four spacers with four socket head cap screws.
+See video (4x speed):</p>
+<video data-src="../videos/caster-modules/IMG_1389-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The socket head cap screws used here have two different lengths: two of them are 2.5" long, the other two are 3" long.</p>
+</div>
+<h3 id="assembly-complete">Assembly complete</h3>
+<p>Your caster module is now fully assembled.
+Please repeat the process to build a total of four caster modules.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following parts should be the only ones left over after assembly:</p>
+<ul>
+<li>The two wheel mounts and the intermediate shaft are not used because of the swerve-to-caster modification.</li>
+<li>The four black screws are not used because the Kraken motor risers require slightly longer screws.</li>
+</ul>
+<p><a class="glightbox" href="../images/caster-modules/IMG_1404.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/caster-modules/IMG_1404.jpg" width="49.45%" /></a></p>
+<p>If you have other leftover parts not shown here, please double-check whether any step was missed during assembly.</p>
+</div>
+<h2 id="lubrication">Lubrication</h2>
+<p><em>Estimated time: 20 minutes</em></p>
+<p>Tools:</p>
+<ul>
+<li>White lithium grease</li>
+<li>Paper towels</li>
+</ul>
+<p>The gears in each caster module should be greased periodically for smooth operation and longevity.
+Each module contains 8 gears, make sure to apply grease to all of them.
+Afterwards, wipe away any excess to prevent buildup.</p>
+<p>Here is a video (4x speed) demonstrating the lubrication process:</p>
+<video data-src="../videos/caster-modules/IMG_4760-4x.mp4#t=0.001" controls playsinline></video>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../bom/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bill of materials (BOM)">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Bill of materials (BOM)
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../power-system/" class="md-footer__link md-footer__link--next" aria-label="Next: Power system">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Power system
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

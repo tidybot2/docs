@@ -1,0 +1,1319 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning">
+      
+      
+      
+        <link rel="canonical" href="http://tidybot2.github.io/docs/usage/">
+      
+      
+        <link rel="prev" href="../software/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Usage - TidyBot++ Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NBGQBQD9W5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NBGQBQD9W5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NBGQBQD9W5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Usage - TidyBot++ Docs" >
+      
+        <meta  property="og:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  property="og:image"  content="http://tidybot2.github.io/docs/assets/images/social/usage.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="http://tidybot2.github.io/docs/usage/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Usage - TidyBot++ Docs" >
+      
+        <meta  name="twitter:description"  content="TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning" >
+      
+        <meta  name="twitter:image"  content="http://tidybot2.github.io/docs/assets/images/social/usage.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TidyBot++ Docs" class="md-header__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TidyBot++ Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TidyBot++ Docs" class="md-nav__button md-logo" aria-label="TidyBot++ Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TidyBot++ Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jimmyyhwu/tidybot2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tidybot2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bill of materials (BOM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caster-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caster modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../can-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frame
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arm-mounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arm mounting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      General safety
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-on-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power on procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power on procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla-battery" class="md-nav__link">
+    <span class="md-ellipsis">
+      SLA battery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gamepad-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad teleoperation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phone-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phone teleoperation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phone teleoperation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting the client
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlling-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controlling the robot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Policy inference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-off-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power off procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power off procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla-battery_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      SLA battery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      General safety
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-on-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power on procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power on procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla-battery" class="md-nav__link">
+    <span class="md-ellipsis">
+      SLA battery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gamepad-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gamepad teleoperation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phone-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phone teleoperation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phone teleoperation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting the client
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlling-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controlling the robot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Policy inference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-off-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power off procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power off procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#portable-power-station_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portable power station
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla-battery_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      SLA battery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="usage">Usage</h1>
+<p>Welcome to the TidyBot++ usage guide!
+This page provides instructions for operating the robot, including teleoperation, data collection, and policy inference.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, please make sure that you have already set up the mini PC and codebase following the steps on the <a href="../software/">Software</a> page.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you plan to use phone teleoperation, data collection, or policy inference on the real robot, we recommend trying these components in simulation first.
+You can find instructions in the <a href="https://github.com/jimmyyhwu/tidybot2#usage">Usage</a> section of the codebase README.</p>
+</div>
+<h2 id="general-safety">General safety</h2>
+<p>It is very important to monitor the robot closely at all times during operation.
+The mobile base is equipped with powerful motors, which can cause damage or injury if not handled properly.
+The open-source software includes the following safety features to help mitigate risk:</p>
+<p><strong>Enabling device</strong></p>
+<p>Both teleoperation and policy inference use a mobile phone as an enabling device (deadman switch).
+This means the robot will only move while the user is actively enabling the robot.
+If the user stops providing input or the connection is lost, then the robot will stop moving.
+This helps prevent unintended robot movements.</p>
+<p><strong>Torque limits</strong></p>
+<p>The base controller applies torque limits to the mobile base motors to prevent the base from exerting excessive forces.
+These limits are set to a small fraction of the maximum torque capacity of the motors.
+Here is a video demonstration showing the torque limits in action:</p>
+<video data-src="../videos/usage/IMG_6875.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+
+<p><strong>Compliant arm</strong></p>
+<p>The arm controller is compliant, allowing the arm to yield when it encounters external forces.
+This behavior helps prevent damage to both the arm and its surrounding environment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Additional safety measures are highly recommended, especially if you plan to modify the low-level controller.
+Examples of additional measures include:</p>
+<ul>
+<li>E-stop on the mobile base</li>
+<li>Wireless remote E-stop</li>
+<li>Safety barriers around the robot's operating area</li>
+</ul>
+</div>
+<h2 id="power-on-procedure">Power on procedure</h2>
+<h3 id="portable-power-station">Portable power station</h3>
+<p>The portable power station (camping battery) powers the mini PC and onboard arm.
+Follow these steps to power on the robot:</p>
+<ol>
+<li>Unplug the camping battery's charging cable and check the battery level.</li>
+<li>Press the button next to the AC outlets to turn them on.</li>
+<li>The mini PC should turn on automatically.</li>
+<li>Power on the onboard arm.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the battery level runs low, just plug the charging cable back in (about 1 hour to recharge).
+The robot will no longer be mobile, but you can continue using it while the battery is charging.</p>
+</div>
+<h3 id="sla-battery">SLA battery</h3>
+<p>The sealed lead acid (SLA) battery powers the mobile base motors and encoders.
+Follow these steps to connect the SLA battery to the robot:</p>
+<ol>
+<li>Place the SLA battery into the battery mount on the back of the mobile base.</li>
+<li>Tighten the rope ratchet to secure the battery.</li>
+<li>Connect the battery to the robot's power cable.</li>
+</ol>
+<p>See video (2x speed):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="kinova" name="__tabbed_1" type="radio" /><input id="franka" name="__tabbed_1" type="radio" /><input id="arx5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="kinova">Kinova</label><label for="franka">Franka</label><label for="arx5">ARX5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><video data-src="../videos/usage/IMG_2671-2x.mp4#t=0.001" controls playsinline></video></p>
+</div>
+<div class="tabbed-block">
+<p><video data-src="../videos/usage/IMG_2716-2x.mp4#t=0.001" controls playsinline></video></p>
+</div>
+<div class="tabbed-block">
+<p><video data-src="../videos/usage/IMG_2674-2x.mp4#t=0.001" controls playsinline></video></p>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please remember to recharge the SLA battery after use.
+Leaving an SLA battery in a discharged state for an extended period of time can degrade its performance and shorten its lifespan.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The SLA battery typically lasts all day and can be hot-swapped when it runs low without having to turn off the robot.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Once the battery is connected, all motors and encoders should light up.
+If nothing happens, check whether the 120A circuit breaker has been accidentally tripped.
+Pressing the red manual trip button opens the circuit, which causes the reset button to pop out (left photo).
+To close the circuit, push the reset button back in (right photo).</p>
+<p><a class="glightbox" href="../images/usage/IMG_6661.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_6661.jpg" width="32.55%" /></a>
+<a class="glightbox" href="../images/usage/IMG_6664.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_6664.jpg" width="32.55%" /></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Anderson connectors can be tricky to operate.
+Below are videos demonstrating how to plug and unplug them:</p>
+<p><video data-src="../videos/usage/IMG_1560-2x.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+<video data-src="../videos/usage/IMG_1570-2x.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video></p>
+</div>
+<h2 id="gamepad-teleoperation">Gamepad teleoperation</h2>
+<p>Follow these steps to control the mobile base with the wireless gamepad:</p>
+<ol>
+<li>Plug the gamepad's USB receiver into the mini PC.</li>
+<li>SSH into the mini PC and start a <code>tmux</code> session.</li>
+<li>Inside the <code>tmux</code> session, run:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>gamepad_teleop.py
+</code></pre></div></li>
+<li>Press the "Start" button on the gamepad to begin teleoperation.</li>
+<li>Hold down the left shoulder button to "enable" the robot.</li>
+<li>Move the two joysticks to control translation and rotation.</li>
+<li>Release the shoulder button at any time to "disable" the robot.</li>
+</ol>
+<video data-src="../videos/usage/IMG_1662.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The interface mode switch on the side of the gamepad should be set to "X" (XInput mode) rather than "D" (DirectInput mode).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Pressing the "Mode" button switches the left joystick and D-pad functionality.
+If the left joystick seems unresponsive, try pressing the "Mode" button.</p>
+</div>
+<p>To control the robot in global frame rather than local frame, hold down the right shoulder button instead.
+Below are videos comparing local frame (left) and global frame (right) control:</p>
+<video data-src="../videos/usage/IMG_1663.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+<video data-src="../videos/usage/IMG_1665.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The global frame is set to the robot's current position when you press the "Start" button to begin teleoperation.
+To reset the global frame, press the "Back" button to stop teleoperation, then press "Start" again to restart and set a new global frame.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use local frame if you are following behind the moving robot or riding on top of it.
+Use global frame if you are standing still while controlling the robot.</p>
+</div>
+<h2 id="phone-teleoperation">Phone teleoperation</h2>
+<p>This section describes how to start the phone teleoperation system, connect your phone, and control the robot with it.</p>
+<h3 id="starting-the-server">Starting the server</h3>
+<p>Start the Flask server, which hosts the teleop web app:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="real-robot" name="__tabbed_2" type="radio" /><input id="simulation" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="real-robot">Real robot</label><label for="simulation">Simulation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>SSH into the mini PC and start a <code>tmux</code> session  with three windows.</li>
+<li>In <code>tmux</code> window 1, run:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>base_server.py
+</code></pre></div></li>
+<li>In <code>tmux</code> window 2, run:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>arm_server.py
+</code></pre></div></li>
+<li>In <code>tmux</code> window 3, run:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--teleop
+</code></pre></div></li>
+</ol>
+<p>This starts a Flask server on port <code>5000</code>, which you can connect to from your phone.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have not used <code>tmux</code> before, please see the "Sessions" and "Windows" sections in the <code>tmux</code> <a href="https://tmuxcheatsheet.com">cheat sheet</a>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>On your dev machine, run:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--sim<span class="w"> </span>--teleop
+</code></pre></div>
+<p>This starts a Flask server on port <code>5000</code>, which you can connect to from your phone.</p>
+</div>
+</div>
+</div>
+<h3 id="connecting-the-client">Connecting the client</h3>
+<p>Follow these steps to connect your phone to the server and start teleoperation:</p>
+<ol>
+<li>Connect your phone to the same network as the Flask server.</li>
+<li>Open the <a href="https://apps.apple.com/us/app/xr-browser/id1588029989">XR Browser</a> or <a href="https://apps.apple.com/us/app/webxr-viewer/id1295998056">XRViewer</a> app on your iPhone and navigate to <code>&lt;server-hostname&gt;:5000</code> to open the teleoperation web app.</li>
+<li>Align your phone with the robot (see photos below).</li>
+<li>Press "Start episode" to begin teleoperation.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For proper coordinate frame alignment, the phone should face the same direction as the robot when you press "Start episode".
+You can achieve this by physically placing the phone on the arm or base like in these photos:</p>
+<p><a class="glightbox" href="../images/usage/IMG_1683.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1683.jpg" width="49.45%" /></a>
+<a class="glightbox" href="../images/usage/IMG_1688.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1688.jpg" width="49.45%" /></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To run the teleop web app, both the server and the phone need internet access.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If <code>&lt;server-hostname&gt;:5000</code> does not connect, try <code>&lt;server-hostname&gt;.local:5000</code> instead.
+If that does not connect either, try the IP address of the mini PC instead of the hostname.</p>
+</div>
+<h3 id="controlling-the-robot">Controlling the robot</h3>
+<p>To control the arm, hold your thumb on the center of the screen (it will turn blue) and move your phone.
+The arm will try to match the phone's relative translation (left video) and rotation (right video):</p>
+<video data-src="../videos/usage/IMG_1700.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+<video data-src="../videos/usage/IMG_1703.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the arm ends up in an undesirable configuration or enters a fault state (e.g., self-collision), you can easily reset it from the phone web app:</p>
+<ol>
+<li>Press "End episode".</li>
+<li>Make sure the space around the arm is clear.</li>
+<li>Press "Reset env" to automatically clear faults and return the arm to its starting configuration.</li>
+<li>Align your phone with the robot.</li>
+<li>Press "Start episode".</li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the arm is moving in an unintuitive way, these tips may be helpful:</p>
+<ul>
+<li>After pressing "Start episode", wait until the web app has fully loaded before moving your phone.</li>
+<li>Hold your phone upright in portrait orientation, with the top edge facing up, not forward.</li>
+<li>Make sure your phone is locked to portrait orientation.</li>
+<li>Keep your body aligned with the robot so that you are both facing the same direction.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your hand position feels uncomfortable, you can release the screen at any time to "disable" the robot.
+The robot will hold its current pose while disabled, allowing you to reposition your phone before continuing.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The numbers on the phone screen show the current min/avg/max/std for the round-trip time (RTT) between your phone and the mini PC.
+On 5 GHz Wi-Fi, the expected average RTT is around <strong>7 ms</strong>.
+In some environments (e.g., a crowded conference venue with many wireless devices), the connection quality may degrade, causing large latency spikes that significantly worsen the teleoperation experience.
+In such cases, we recommend using a <a href="https://www.amazon.com/Anker-Ethernet-PowerExpand-Aluminum-Portable/dp/B08CK9X9Z8">USB-C to Ethernet adapter</a> to create a wired Ethernet connection between your phone and the mini PC.</p>
+</div>
+<p>To precisely control the gripper width, slide your thumb up and down on the screen:</p>
+<video data-src="../videos/usage/IMG_1691.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+
+<p>To control the mobile base, hold your thumb on the right edge of the screen (it will turn red) and move your phone to direct the base's movement:</p>
+<video data-src="../videos/usage/IMG_1693.mp4#t=0.001" controls playsinline style="width: 49.45%;"></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The base is controlled by moving the phone, not by sliding your thumb on the screen.</p>
+</div>
+<p>Here is a video (4x speed) showing how we use the phone interface to teleoperate the <em>load dishwasher</em> task:</p>
+<video data-src="../videos/usage/IMG_0781-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Here are a few other tips that might be helpful:</p>
+<ul>
+<li>Avoid extending the arm too far, as it can enter a singularity state. Instead, move the mobile base forward.</li>
+<li>If you restart the Flask server, you should also refresh the web app page on your phone.</li>
+<li>In low-texture environments, phone teleoperation is more prone to drifting due to weaker visual feature tracking.</li>
+<li>If the mobile base experiences wheel slip (e.g., when opening a heavy door), the base odometry may drift, causing the robot and phone coordinate frames to become misaligned. If this happens, please start a new episode.</li>
+</ul>
+</div>
+<details class="note">
+<summary>Simultaneous teleoperation</summary>
+<p>The teleoperation system also supports using a second phone to simultaneously move the base while the arm is being controlled.
+This enables more efficient execution of tasks such as <em>wipe countertop</em>, as shown in the video below (4x speed):</p>
+<p><video data-src="../videos/usage/IMG_0778-4x.mp4#t=0.001" controls playsinline></video></p>
+<p>However, this setup has a steeper learning curve, so we recommend starting with a single phone.</p>
+</details>
+<h2 id="data-collection">Data collection</h2>
+<p>To set up data collection, please follow the <a href="#phone-teleoperation">Phone teleoperation</a> section to start the Flask server and connect the phone client.
+When starting the server, add the <code>--save</code> flag to indicate that episodes should be saved to disk, and use <code>--output-dir</code> to specify the desired save location (default is <code>data/demos</code>):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="real-robot_1" name="__tabbed_3" type="radio" /><input id="simulation_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="real-robot_1">Real robot</label><label for="simulation_1">Simulation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--teleop<span class="w"> </span>--save<span class="w"> </span>--output-dir<span class="w"> </span>data/demos
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--sim<span class="w"> </span>--teleop<span class="w"> </span>--save<span class="w"> </span>--output-dir<span class="w"> </span>data/demos
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Next, follow these steps to collect a single episode of data:</p>
+<ol>
+<li>Press "Start episode" and perform one demonstration of the task.</li>
+<li>Press "End episode" to indicate that the episode has ended.</li>
+<li>In the terminal, enter <code>y</code> or <code>n</code> to indicate whether to save the episode.</li>
+<li>Use phone teleoperation to retract the arm and avoid potential collisions.</li>
+<li>Use phone teleoperation to return the mobile base to its starting position.</li>
+<li>Press "Reset env" to return the arm to its starting configuration.</li>
+<li>Manually reset objects in the environment.</li>
+</ol>
+<p>Repeat this process to collect additional episodes.</p>
+<p>Here is a video (4x speed) showing the full data collection process for two episodes of the <em>load dishwasher</em> task, including episode saving and environment resets:</p>
+<video data-src="../videos/usage/IMG_0782-4x.mp4#t=0.001" controls playsinline></video>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Data is recorded only when the robot is enabled. Periods when the robot is disabled are not recorded.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After collecting your first demonstration, it is a good idea to replay or visualize the data to check for any issues before proceeding further.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To discard the ongoing episode, press "End episode" and enter <code>n</code> in the terminal to skip saving.</p>
+</div>
+<h2 id="policy-inference">Policy inference</h2>
+<p>To run policy inference, start the policy server on the GPU laptop with your desired checkpoint path:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>policy_server.py<span class="w"> </span>--ckpt-path<span class="w"> </span>&lt;checkpoint-path&gt;
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The policy server runs within the <code>diffusion_policy</code> codebase (using the <code>robodiff</code> Mamba environment).</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="real-robot_2" name="__tabbed_4" type="radio" /><input id="simulation_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="real-robot_2">Real robot</label><label for="simulation_2">Simulation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>On the mini PC, create an SSH tunnel to the policy server:</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">5555</span>:localhost:5555<span class="w"> </span>&lt;gpu-laptop-hostname&gt;
+</code></pre></div>
+<p>This makes the policy server accessible at <code>localhost:5555</code> on the mini PC.</p>
+<p>Next, run <code>main.py</code> to connect to the policy server via <code>localhost:5555</code> and start policy inference:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py
+</code></pre></div>
+<p>As before, this will start a Flask server on port <code>5000</code>, which you can connect to from your phone.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Flask server (on the mini PC) is different from the policy server (on the GPU laptop).</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>On your dev machine, create an SSH tunnel to the policy server:</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">5555</span>:localhost:5555<span class="w"> </span>&lt;gpu-laptop-hostname&gt;
+</code></pre></div>
+<p>This makes the policy server accessible at <code>localhost:5555</code> on your dev machine.</p>
+<p>Next, run <code>main.py</code> to connect to the policy server via <code>localhost:5555</code> and start policy inference:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--sim
+</code></pre></div>
+<p>As before, this will start a Flask server on port <code>5000</code>, which you can connect to from your phone.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Flask server (on your dev machine) is different from the policy server (on the GPU laptop).</p>
+</div>
+</div>
+</div>
+</div>
+<p>Follow these steps to run one episode of policy inference:</p>
+<ol>
+<li>Connect your phone and open the teleoperation web app.</li>
+<li>Align your phone with the robot.</li>
+<li>Press "Start episode".</li>
+<li>Hold your thumb on the phone screen to enable the robot and execute the policy.</li>
+<li>Lift your thumb at any time to disable the robot and pause execution.</li>
+<li>Press "End episode" to indicate that the episode has ended.</li>
+<li>Use phone teleoperation to retract the arm and avoid potential collisions.</li>
+<li>Use phone teleoperation to return the mobile base to its starting position.</li>
+<li>Press "Reset env" to return the arm to its starting configuration.</li>
+<li>Manually reset objects in the environment.</li>
+</ol>
+<p>Repeat this process to run additional episodes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the robot is teleoperated during environment resets, your phone still needs to be aligned with the robot when you press "Start episode" (to ensure proper coordinate frame alignment).</p>
+</div>
+<h2 id="power-off-procedure">Power off procedure</h2>
+<h3 id="portable-power-station_1">Portable power station</h3>
+<p>Follow these steps to power off the robot:</p>
+<ol>
+<li>Power off the onboard arm.</li>
+<li>Power off the mini PC (<code>sudo shutdown 0</code>).</li>
+<li>Power off the camping battery.</li>
+<li>Plug in the charging cable to recharge the camping battery.</li>
+</ol>
+<h3 id="sla-battery_1">SLA battery</h3>
+<p>Plug in the SLA battery charger:</p>
+<p><a class="glightbox" href="../images/usage/IMG_1552.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1552.jpg" width="49.45%" /></a></p>
+<p>Connect the SLA battery to the charger:</p>
+<p><a class="glightbox" href="../images/usage/IMG_6614.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_6614.jpg" width="49.45%" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The SLA battery can also be charged without removing it from the robot.</p>
+</div>
+<p>The charging mode should be set to "AGM" (press the "Mode" button to change it):</p>
+<p><a class="glightbox" href="../images/usage/IMG_1553.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1553.jpg" width="49.45%" /></a></p>
+<p>Once the battery is fully charged, the indicator light will turn green:</p>
+<p><a class="glightbox" href="../images/usage/IMG_1557.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1557.jpg" width="49.45%" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend inserting a battery flag into the Anderson SB50 connector to mark batteries after they are fully charged.
+This helps distinguish fully charged batteries from used ones:</p>
+<p><a class="glightbox" href="../images/usage/IMG_1572.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/usage/IMG_1572.jpg" width="49.45%" /></a></p>
+<p>Battery flags can be purchased from <a href="https://www.andymark.com/products/battery-flag">AndyMark</a> or <a href="https://github.com/jimmyyhwu/tidybot2-resources/blob/main/3D%20Printing/Battery%20Flag.stl">3D printed</a>.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../software/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Software">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Software
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jimmy Wu. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbiWzCW_GHD1S7jvza5ynSHmWDhtgOEsHq_iqdvzEj_AU8GA/viewform" target="_blank">Feedback form</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
