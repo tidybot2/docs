@@ -53,7 +53,7 @@ To set up the CANivore, first install Phoenix Tuner X on a Windows computer foll
 We have previously tested both of these installation methods:
 
 * [Microsoft Store](https://apps.microsoft.com/store/detail/phoenix-tuner/9NVV4PWDW27Z)
-* [Offline EXE installer](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/v24.3.0/Phoenix-Offline_v24.3.0.exe)
+* [Offline EXE installer](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases) (Use the latest version of `Phoenix-Offline.exe`)
 
 !!! note
 
